@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="medcom-core-AttachmentExtension" />
+  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-core-AttachmentExtension" />
+  <name value="MedComCoreAttachmentExtension" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Composition" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://medcom.dk/fhir/StructureDefinition/medcom-core-AttachmentExtension" />
+    </element>
+    <element id="Extension.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Attachment" />
+      </type>
+    </element>
+    <element id="Extension.value[x].contentType">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.value[x].contentType" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -41,6 +41,26 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
   <derivation value="constraint" />
   <differential>
+    <element id="Composition.extension">
+      <path value="Composition.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Composition.extension:attachment">
+      <path value="Composition.extension" />
+      <sliceName value="attachment" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-core-AttachmentExtension" />
+      </type>
+    </element>
     <element id="Composition.status">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
