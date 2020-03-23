@@ -40,16 +40,6 @@
       <path value="Organization" />
       <definition value="A formally recognized organizations registered for exchanging messages within danish healthcare, registered with a EAN identifier issued by MedCom" />
     </element>
-    <element id="Organization.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Organization.identifier" />
-      <mustSupport value="true" />
-    </element>
     <element id="Organization.identifier:EANIdentifier">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -64,7 +54,6 @@
       <requirements value="The EAN identifier is necessary for exchange within daish healthcare" />
       <min value="1" />
       <max value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Organization.identifier:EANIdentifier.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -76,8 +65,6 @@
       <path value="Organization.identifier.system" />
       <short value="Official EAN Identifier" />
       <definition value="Official EAN Identifier for exchange of information using medcom messages" />
-      <min value="1" />
-      <fixedUri value="urn:medcom:ean" />
     </element>
     <element id="Organization.identifier:EANIdentifier.value">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -89,7 +76,6 @@
       <path value="Organization.identifier.value" />
       <short value="EAN Identifier for the organisation" />
       <definition value="EAN Identifier of the organisation for exchange of information using medcom messages" />
-      <min value="1" />
     </element>
     <element id="Organization.name">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
