@@ -135,44 +135,6 @@
       <definition value="An address for the individual. Danish addresses must comply with directions issued by https://dawa.aws.dk/ and underlying authorities" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.address.extension">
-      <path value="Patient.address.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Patient.address.extension:municipalityCode">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Patient.address.extension" />
-      <sliceName value="municipalityCode" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/dk/core/StructureDefinition/dk-core-municipalityCodes" />
-      </type>
-    </element>
-    <element id="Patient.address.extension:regionalSubDivisionCodes">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Patient.address.extension" />
-      <sliceName value="regionalSubDivisionCodes" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/dk/core/StructureDefinition/dk-core-RegionalSubDivisionCodes" />
-      </type>
-    </element>
     <element id="Patient.address.line">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
