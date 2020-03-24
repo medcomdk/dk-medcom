@@ -1,0 +1,102 @@
+<ImplementationGuide
+    xmlns='http://hl7.org/fhir'>
+    <license value='CC-BY-SA-4.0'/>
+    <definition>
+        <page>
+            <nameUrl value="toc.html"/>
+            <title value="Table of Contents"/>
+            <generation value="html"/>
+            <page>
+                <nameUrl value="index.html"/>
+                <title value="Home"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="profiles.html"/>
+                <title value="Profiles"/>
+                <generation value="html"/>
+            </page>
+            <page>
+                <nameUrl value="extensions.html"/>
+                <title value="Extensions"/>
+                <generation value="html"/>
+            </page>
+            <page>
+                <nameUrl value="terminology.html"/>
+                <title value="Terminology"/>
+                <generation value="html"/>
+            </page>
+            <page>
+                <nameUrl value="downloads.html"/>
+                <title value="Downloads"/>
+                <generation value="markdown"/>
+            </page>
+        </page>
+        <parameter>
+            <value value='true'/>
+            <code value='generate-xml'/>
+        </parameter>
+        <parameter>
+            <value value='false'/>
+            <code value='generate-turtle'/>
+        </parameter>
+        <parameter>
+            <value value='CI build'/>
+            <code value='releaselabel'/>
+        </parameter>
+        <parameter>
+            <value value='input/pages'/>
+            <code value='path-pages'/>
+        </parameter>
+        <parameter>
+            <value value='2020+'/>
+            <code value='copyrightyear'/>
+        </parameter>
+        <parameter>
+            <value value='urn:oid:2.16.840.1.113883.6.316'/>
+            <code value='special-url'/>
+        </parameter>
+        <parameter>
+            <value value='urn:oid:1.2.208.176.1.1'/>
+            <code value='special-url'/>
+        </parameter>
+        <parameter>
+            <value value='urn:oid:1.2.208.176.1.2'/>
+            <code value='special-url'/>
+        </parameter>
+        <grouping>
+            <name value='DK:MedCom:Core'/>
+        </grouping>
+    </definition>
+    <title value='DK MedCom Core (R4)'/>
+    <packageId value='dk.fhir.ig.dk-medcom-core'/>
+    <id value='dk.fhir.ig.dk-medcom-core'/>
+    <url value='http://hl7.dk/fhir/medcom-core/ImplementationGuide/dk.fhir.ig.dk-medcom-core'/>
+    <version value='0.8.0'/>
+    <name value='DK_MedCom_Core'/>
+    <status value='active'/>
+    <experimental value='false'/>
+    <date value='2020-03-24'/>
+    <publisher value='MedCom'/>
+    <contact>
+        <name value='MedCom'/>
+        <telecom>
+            <system value='url'/>
+            <value value='https://www.medcom.dk/'/>
+        </telecom>
+    </contact>
+    <description value='Implementationguide MedCom-Core'/>
+    <jurisdiction>
+        <coding>
+            <system value='urn:iso:std:iso:3166'/>
+            <code value='DK'/>
+        </coding>
+    </jurisdiction>
+    <copyright value='CC-BY-SA-4.0'/>
+    <fhirVersion value='4.0.1'/>
+    <!--<dependsOn>
+        <uri value="http://build.fhir.org/ig/hl7dk/dk-core-r4"/>
+        <packageId value="dk.fhir.ig.dk-core" />
+        <version value="0.1.0" />
+    </dependsOn>-->
+</ImplementationGuide>
