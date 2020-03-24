@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://medcom.dk/fhir/StructureDefinition/medcom-clinicalEmailMessage" />
+  <id value="medcom-clinicalEmailMessage" />
   <name value="MedComClinicalEmailMessage" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
