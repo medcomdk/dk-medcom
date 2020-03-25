@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-hospital-notification-message" />
   <id value="medcom-hospital-notification-message" />
-  
+  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-hospital-notification-message" />
   <name value="MedComHospitalNotificationMessage" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -32,6 +31,11 @@
   <baseDefinition value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-message" />
   <derivation value="constraint" />
   <differential>
+    <element id="Bundle">
+      <path value="Bundle" />
+      <short value="MedCom Message - Hospital Notification" />
+      <definition value="A container for a MedComHospitalNotificationMessage. The message is triggerede as patients is admitted, onleave or finished a hospital stay in order to notify the relevant Municipalicy home care." />
+    </element>
     <element id="Bundle.entry:messageHeader">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -50,12 +54,36 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Bundle.entry.resource.focus" />
+      <short value="The content of the message - Ressource" />
+      <definition value="The actual data of the message - a reference to the root/focus resource of the event. For Hospital Notification the resource in focus is HospitalNotificationEncounter" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://medcom.dk/fhir/StructureDefinition/medcom-hospital-notification-encounter" />
         <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="Bundle.entry:organization">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Bundle.entry" />
+      <sliceName value="organization" />
+      <short value="The encounter responsible" />
+      <definition value="The encounter organization. The encounter may be the same organization as the sender organization. This is often the case in smaller organizations. In organizations like hospitals the sender and encounter organization is typicaly different branches of the same root organization.  The organization resource (MedComCoreOrganization) is referenced by the MedComHospitalNotificationOrganizaition ressource." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Bundle.entry:organization.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-core-organization" />
       </type>
     </element>
     <element id="Bundle.entry:hospitalNotifcationEncounter">
@@ -67,6 +95,8 @@
       </extension>
       <path value="Bundle.entry" />
       <sliceName value="hospitalNotifcationEncounter" />
+      <short value="Focus Entry in the bundle - will have a resource" />
+      <definition value="Focus entry in a bundle resource - will econtain a MedComHospitalNotificationEncounter resource ." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -87,6 +117,8 @@
       </extension>
       <path value="Bundle.entry" />
       <sliceName value="patient" />
+      <short value="Entry in the bundle - will have a Patient resource" />
+      <definition value="An entry in a bundle resource - will contain a Patient resource (MedComCorePatient)" />
       <min value="1" />
       <max value="1" />
     </element>
