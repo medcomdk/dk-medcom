@@ -46,6 +46,20 @@
       <path value="Bundle.entry" />
       <sliceName value="messageHeader" />
     </element>
+    <element id="Bundle.entry:messageHeader.resource.destination:cc">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="MessageDestination" />
+      </extension>
+      <path value="Bundle.entry.resource.destination" />
+      <sliceName value="cc" />
+      <max value="1" />
+    </element>
     <element id="Bundle.entry:messageHeader.resource.focus">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -63,6 +77,17 @@
         <targetProfile value="http://medcom.dk/fhir/StructureDefinition/medcom-hospital-notification-encounter" />
         <aggregation value="bundled" />
       </type>
+    </element>
+    <element id="Bundle.entry:messageOrganization">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Bundle.entry" />
+      <sliceName value="messageOrganization" />
+      <min value="1" />
     </element>
     <element id="Bundle.entry:organization">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

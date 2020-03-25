@@ -152,6 +152,10 @@
       <definition value="The encounter shall be classified as a part of a specific episode of care identifier.  This association can facilitate grouping of related encounters together for a specific purpose, such as government reporting, issue tracking, association via a common problem.  The association is recorded on the encounter as these are typically created after the episode of care and grouped on entry rather than editing the episode of care to append another encounter to it (the episode of care could span years)." />
       <min value="1" />
       <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
+      </type>
     </element>
     <element id="Encounter.episodeOfCare.identifier">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -164,6 +168,7 @@
       <short value="The identifier for danish &quot;forløbs-id&quot;" />
       <definition value="An identifier that represents the danish episode of care &quot;forløbs-is&quot; for the &quot;Landspatientregister&quot;." />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Identifier" />
         <profile value="http://hl7.dk/fhir/StructureDefinition/lpr3-Identifier" />
