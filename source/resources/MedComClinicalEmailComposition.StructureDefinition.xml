@@ -187,6 +187,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-patient" />
         <aggregation value="bundled" />
       </type>
     </element>
