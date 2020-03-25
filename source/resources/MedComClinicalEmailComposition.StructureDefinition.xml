@@ -200,10 +200,6 @@
       </extension>
       <path value="Composition.encounter" />
       <min value="1" />
-      <type>
-        <code value="Reference" />
-        <aggregation value="bundled" />
-      </type>
     </element>
     <element id="Composition.encounter.identifier">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
