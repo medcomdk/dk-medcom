@@ -60,6 +60,7 @@
       </extension>
       <path value="Practitioner.identifier" />
       <sliceName value="sorIdentifier" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Identifier" />

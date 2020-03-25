@@ -75,8 +75,8 @@
       <path value="Bundle.entry" />
       <slicing>
         <discriminator>
-          <type value="type" />
-          <path value="$this" />
+          <type value="profile" />
+          <path value="resolve()" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -106,7 +106,7 @@
         <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-messageHeader" />
       </type>
     </element>
-    <element id="Bundle.entry:organization">
+    <element id="Bundle.entry:messageOrganization">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -114,12 +114,12 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Bundle.entry" />
-      <sliceName value="organization" />
+      <sliceName value="messageOrganization" />
       <short value="Sender and destination organinzations" />
       <definition value="Sender and destination organinzations - contains all MedComMessagingOrganization resources referred in the message header." />
       <orderMeaning value="The ordering of organizations has no impact on the meaning" />
     </element>
-    <element id="Bundle.entry:organization.resource">
+    <element id="Bundle.entry:messageOrganization.resource">
       <path value="Bundle.entry.resource" />
       <short value="Organizations referred from the message header" />
       <definition value="Organizations referred from the message header. Organizations must have an EAN identity for exchange of messages and optionally a SOR identity for unique identification within danish healthcare." />
