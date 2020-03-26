@@ -239,6 +239,7 @@
       </extension>
       <path value="Composition.title" />
       <fixedString value="Clinical Email" />
+      <maxLength value="255" />
     </element>
     <element id="Composition.confidentiality">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
