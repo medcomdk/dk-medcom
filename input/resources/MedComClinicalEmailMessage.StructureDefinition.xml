@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-clinicalEmailMessage" />
   <id value="medcom-clinicalEmailMessage" />
+  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-clinicalEmailMessage" />
   <name value="MedComClinicalEmailMessage" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -97,7 +97,25 @@
         <profile value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-patient" />
       </type>
     </element>
-    <element id="Bundle.entry:patient.resource.identifier">
+    <element id="Bundle.entry:coreOrganization">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Bundle.entry" />
+      <sliceName value="coreOrganization" />
+    </element>
+    <element id="Bundle.entry:coreOrganization.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-core-organization" />
+      </type>
+    </element>
+    <element id="Bundle.entry:coreOrganization.resource.identifier">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -113,39 +131,6 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
-    </element>
-    <element id="Bundle.entry:patient.resource.name">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Bundle.entry.resource.name" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="use" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:patient.resource.generalPractitioner">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Bundle.entry.resource.generalPractitioner" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="identifier.system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Bundle.entry:practitioner">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -164,22 +149,6 @@
         <code value="Resource" />
         <profile value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-practitioner" />
       </type>
-    </element>
-    <element id="Bundle.entry:practitioner.resource.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Bundle.entry.resource.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
   </differential>
 </StructureDefinition>

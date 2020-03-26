@@ -214,6 +214,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://medcom.dk/fhir/StructureDefinition/MessagingOrganization" />
+        <aggregation value="bundled" />
       </type>
     </element>
     <element id="MessageHeader.destination:cc.receiver.reference">
