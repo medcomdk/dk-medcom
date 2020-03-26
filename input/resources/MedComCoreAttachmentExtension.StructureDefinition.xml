@@ -46,6 +46,17 @@
       </extension>
       <path value="Extension.value[x].contentType" />
       <min value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MimeType" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true" />
+        </extension>
+        <strength value="required" />
+        <description value="The mime type of an attachment. Only mime types specified by MedCom are allowed." />
+        <valueSet value="http://medcom.dk/fhir/ValueSet/medcom-messaging-mimeTypes" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
