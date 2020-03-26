@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="medcom-hospital-notification-message" />
-  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-hospital-notification-message" />
+  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-hospitalNotificationMessage" />
   <name value="MedComHospitalNotificationMessage" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -74,7 +74,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://medcom.dk/fhir/StructureDefinition/medcom-hospital-notification-encounter" />
+        <targetProfile value="http://medcom.dk/fhir/StructureDefinition/medcom-hospitalNotificationEncounter" />
         <aggregation value="bundled" />
       </type>
     </element>
@@ -130,7 +130,7 @@
       <min value="1" />
       <type>
         <code value="Resource" />
-        <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-hospital-notification-encounter" />
+        <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-hospitalNotificationEncounter" />
       </type>
     </element>
     <element id="Bundle.entry:patient">
