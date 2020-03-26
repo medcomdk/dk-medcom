@@ -32,6 +32,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension" />
+      <short value="Authored date" />
+      <definition value="The date that a section in a composition is authored" />
       <min value="1" />
       <max value="1" />
     </element>

@@ -49,6 +49,8 @@
       </extension>
       <path value="Patient.identifier" />
       <sliceName value="cpr" />
+      <short value="Official Danish CRN number" />
+      <definition value="Official Danish CRN number (CPR) issued by the Danish Civil Registration System" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -71,6 +73,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <comment value="A patient may have multiple names with different uses or applicable periods." />
       <min value="1" />
     </element>
     <element id="Patient.name:official">
