@@ -43,7 +43,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-patient" />
+        <targetProfile value="http://medcom.dk/fhir/StructureDefinition/medcom-core-patient" />
       </type>
     </element>
     <element id="Encounter.episodeOfCare">
@@ -56,7 +56,7 @@
       <path value="Encounter.episodeOfCare" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://medcom.dk/fhir/StructureDefinition/medcom-core-episode-of-care" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
       </type>
     </element>
     <element id="Encounter.account">
