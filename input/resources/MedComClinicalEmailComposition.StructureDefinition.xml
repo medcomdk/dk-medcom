@@ -65,15 +65,18 @@
         <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-core-AttachmentExtension" />
       </type>
     </element>
-    <element id="Composition.status">
+    <element id="Composition.extension:attachment.value[x].title">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Composition.status" />
-      <fixedCode value="final" />
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Composition.extension.value[x].title" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.type">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -184,6 +187,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Composition.subject" />
+      <short value="The patient that the composition is about" />
+      <definition value="The patient that the composition is about." />
       <min value="1" />
       <type>
         <code value="Reference" />
@@ -199,6 +204,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Composition.encounter" />
+      <short value="Associated encounter" />
+      <definition value="Associated encounter. Must specify the LPR Identifier." />
       <min value="1" />
     </element>
     <element id="Composition.encounter.identifier">
@@ -209,6 +216,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Composition.encounter.identifier" />
+      <short value="LPR identifier" />
+      <definition value="LPR identifier for the encounter." />
       <min value="1" />
       <max value="1" />
       <type>
@@ -224,6 +233,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Composition.author" />
+      <short value="Who authored the composition" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://medcom.dk/fhir/StructureDefinition/CorePractitioner" />
@@ -238,8 +248,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Composition.title" />
+      <definition value="Official human-readable label for the composition. Must be Clinical Email." />
       <fixedString value="Clinical Email" />
-      <maxLength value="255" />
     </element>
     <element id="Composition.confidentiality">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -305,6 +315,7 @@
       <path value="Composition.section.title" />
       <short value="Email Title" />
       <definition value="Title of the clinical email" />
+      <maxLength value="255" />
     </element>
     <element id="Composition.section.code">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -458,11 +469,13 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Composition.section.section.author" />
+      <short value="Who authored the section" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://medcom.dk/fhir/StructureDefinition/CorePractitioner" />
+        <aggregation value="bundled" />
       </type>
     </element>
     <element id="Composition.section.section.focus">
@@ -483,7 +496,18 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Composition.section.section.text" />
+      <short value="Text of the section" />
       <min value="1" />
+    </element>
+    <element id="Composition.section.section.text.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Composition.section.section.text.status" />
+      <fixedCode value="additional" />
     </element>
     <element id="Composition.section.section.mode">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
