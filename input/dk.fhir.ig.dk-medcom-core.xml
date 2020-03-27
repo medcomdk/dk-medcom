@@ -64,6 +64,10 @@
             <value value='urn:oid:1.2.208.176.1.2'/>
             <code value='special-url'/>
         </parameter>
+        <parameter>
+            <value value='progress'/>
+            <code value='logging'/>
+        </parameter>
         <grouping>
             <name value='DK:MedCom:Core'/>
         </grouping>
