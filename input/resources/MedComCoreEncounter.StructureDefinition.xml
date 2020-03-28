@@ -5,7 +5,7 @@
   <name value="MedComCoreEncounter" />
   <status value="draft" />
   <description value="An interaction between a patient/citizen and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient/citizen.  &#xD;&#xA;The Encounter could be an online video consultation between a nurse and a citizen.&#xD;&#xA;&#xD;&#xA;Regional Encounter&#xD;&#xA;The Encounter corresponds to the danish LPR3 &quot;kontakt&quot; term.&#xD;&#xA;An Encouńter always references an EpiSodeOfCare FHIR resource. The EpisodeOfCare resource corresponds to the danish LPR3 term &quot;ForløbsElement&quot;. An Encounter is not able to reference another Encounter. Typically a patient has many Encounters. The Encouters may be linked to one or more EpisodeOfCare resources.&#xD;&#xA;&#xD;&#xA;Munipalicy Encounter&#xD;&#xA;The Encounter corresponds to the health services that the Munipalicy offers the citizen. For example home care.   &#xD;&#xA;There are no requirements regarding how the Municipalicy implements the Encounter.   For instance a Munipalicy may have en Encounter for the HomeCare Service provided by the nurse and another Encounter for assistence with shopping. The EpisodeOfCare FHIR resource shall be used to link Encounters.   &#xD;&#xA;&#xD;&#xA;Practitioner Encounter&#xD;&#xA;The Encounter corresponds to a citizen interaction with the practitioner. Each Encounter instance may correspond to a wisit &#xD;&#xA;The EpisodeOfCare instance shall link the Encounters that corresonds to the danish term &quot;Forløb&quot;." />
-  <fhirVersion value="4.0.1" />
+  <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
@@ -43,7 +43,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://medcom.dk/fhir/StructureDefinition/medcom-core-patient" />
+        <targetProfile value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-patient" />
       </type>
     </element>
     <element id="Encounter.episodeOfCare">

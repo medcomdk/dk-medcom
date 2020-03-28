@@ -5,7 +5,7 @@
   <name value="StatusPeriod" />
   <status value="draft" />
   <description value="Extension for managing start and end timestamp for status" />
-  <fhirVersion value="4.0.1" />
+  <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />

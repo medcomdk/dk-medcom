@@ -4,7 +4,7 @@
   <url value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-response" />
   <name value="MedComMessagingResponse" />
   <status value="draft" />
-  <fhirVersion value="4.0.1" />
+  <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="v2" />
     <uri value="http://hl7.org/v2" />

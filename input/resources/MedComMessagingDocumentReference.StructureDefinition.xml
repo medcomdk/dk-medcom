@@ -5,7 +5,7 @@
   <version value="0.8" />
   <name value="MedComMessagingDocumentReference" />
   <status value="draft" />
-  <fhirVersion value="4.0.1" />
+  <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />

@@ -7,7 +7,7 @@
   <status value="draft" />
   <description value="Encounter derivation that handles hospital notification when a patient is admitted to a hospital. The hospital notification is always send from a hospital. The receiver of the message is the patients home municipalicy. The hospital notification is send for example when patient is admitted, on leave, returned from leave, finished hospital stay." />
   <purpose value="Service that allows the home care of the municipalicy to react when patient is admitted or finished hospital stay in order to react accordingly" />
-  <fhirVersion value="4.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Encounter" />
@@ -137,7 +137,7 @@
       <comment value="This resource will be exhanged by a Message transaction that is exhanged by a bundle resource. &#xD;&#xA;Reference to the source (patient) SHALL be a reference to the patient resource id. The patient resource is  referenced by the messageheader and the reference to the patient SHALL be resolveable. The Bundle containing the FHIR message shall only have one patient resource." />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://medcom.dk/fhir/StructureDefinition/medcom-core-patient" />
+        <targetProfile value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-patient" />
         <aggregation value="bundled" />
       </type>
     </element>
