@@ -4,7 +4,7 @@
 ## Introduktion
 
 Oversigt over Use Case's, se venligst:
-http://svn.medcom.dk/svn/drafts/Standarder/HL7/FHIR/ClinicalEmail/Dokumentation/Use%20cases_Udvidet_KM_290320_v2.3.pdf
+http://svn.medcom.dk/svn/drafts/Standarder/HL7/FHIR/ClinicalEmail/Dokumentation/Use%20cases_Udvidet_KM_290320_v2.3.docx
  
 Dokumentet indeholder forskellige use case-beskrivelser og udgør en del af
 det samlede dokumentationsmateriale om MedComs nye standard for

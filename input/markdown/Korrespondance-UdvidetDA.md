@@ -1,6 +1,6 @@
 # Udvidet Korrespondancemeddelelse 
 
-For forretningsmæssig dokumentation til udviddet Korrespondancemeddedelse, se venligst http://svn.medcom.dk/svn/drafts/Standarder/HL7/FHIR/ClinicalEmail/Dokumentation/Sundhedsfaglige%20retningslinjer_tekstdel_Udvidet%20KM_v0%202.pdf
+For forretningsmæssig dokumentation til udviddet Korrespondancemeddedelse, se venligst http://svn.medcom.dk/svn/drafts/Standarder/HL7/FHIR/ClinicalEmail/Dokumentation/Sundhedsfaglige%20retningslinjer_tekstdel_Udvidet%20KM_v0%202.docx
 
 ## Introduktion
 
