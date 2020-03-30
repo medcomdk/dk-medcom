@@ -54,6 +54,9 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Bundle.entry.resource.event[x]" />
+      <code>
+        <code value="HospitalNotification" />
+      </code>
       <short value="Code for the this event" />
       <definition value="Code for the this event based on encounter status and class" />
       <binding>
@@ -63,9 +66,8 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true" />
         </extension>
-        <strength value="required" />
+        <strength value="example" />
         <description value="Message event defined as part of this version of FHIR." />
-        <valueSet value="http://medcom.dk/fhir/ValueSet/medcom-HospitalNotificationCodes" />
       </binding>
     </element>
     <element id="Bundle.entry:messageHeader.resource.destination:cc">
