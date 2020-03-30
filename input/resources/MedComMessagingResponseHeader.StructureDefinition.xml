@@ -72,5 +72,46 @@
       <sliceName value="cc" />
       <max value="0" />
     </element>
+    <element id="MessageHeader.response">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MessageHeader.response" />
+      <min value="1" />
+    </element>
+    <element id="MessageHeader.response.details.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MessageHeader.response.details.reference" />
+      <short value="Absolute URL for the v3-AcknowledgementType" />
+      <definition value="Code|Display|Definition&#xD;&#xA;AA|Application Acknowledgement Accept|Receiving application successfully processed message.&#xD;&#xA;AE|Application Acknowledgement Error|Receiving application found error in processing message. Sending error response with additional error detail information.&#xD;&#xA;AR|Application Acknowledgement Reject|Receiving application failed to process message for reason unrelated to content or format. Original message sender must decide on whether to automatically send message again.&#xD;&#xA;CA|Accept Acknowledgement Commit Accept|Receiving message handling service accepts responsibility for passing message onto receiving application.&#xD;&#xA;CE|Accept Acknowledgement Commit Error|Receiving message handling service cannot accept message for any other reason (e.g. message sequence number, etc.).&#xD;&#xA;CR|Accept Acknowledgement Commit Reject|Receiving message handling service rejects message if interaction identifier, version or processing mode is incompatible with known receiving application role information." />
+      <min value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://terminology.hl7.org/CodeSystem/v3-AcknowledgementType" />
+      </binding>
+    </element>
+    <element id="MessageHeader.response.details.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MessageHeader.response.details.display" />
+      <definition value="Code|Display|Definition&#xD;&#xA;AA|Application Acknowledgement Accept|Receiving application successfully processed message.&#xD;&#xA;AE|Application Acknowledgement Error|Receiving application found error in processing message. Sending error response with additional error detail information.&#xD;&#xA;AR|Application Acknowledgement Reject|Receiving application failed to process message for reason unrelated to content or format. Original message sender must decide on whether to automatically send message again.&#xD;&#xA;CA|Accept Acknowledgement Commit Accept|Receiving message handling service accepts responsibility for passing message onto receiving application.&#xD;&#xA;CE|Accept Acknowledgement Commit Error|Receiving message handling service cannot accept message for any other reason (e.g. message sequence number, etc.).&#xD;&#xA;CR|Accept Acknowledgement Commit Reject|Receiving message handling service rejects message if interaction identifier, version or processing mode is incompatible with known receiving application role information." />
+      <min value="1" />
+    </element>
   </differential>
 </StructureDefinition>
