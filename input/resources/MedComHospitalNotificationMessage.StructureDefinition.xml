@@ -153,7 +153,7 @@
       <path value="Bundle.entry.resource" />
       <min value="1" />
       <type>
-        <code value="Resource" />
+        <code value="Resource"  />
         <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-hospitalNotificationEncounter" />
       </type>
     </element>

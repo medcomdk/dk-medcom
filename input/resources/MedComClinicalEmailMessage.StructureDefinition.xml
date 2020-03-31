@@ -25,7 +25,7 @@
     <uri value="http://hl7.org/fhir/fivews" />
     <name value="FiveWs Pattern Mapping" />
   </mapping>
-  <kind value="resource" />
+  <kind value="resource"  />
   <abstract value="false" />
   <type value="Bundle" />
   <baseDefinition value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-message" />
