@@ -9,6 +9,8 @@ English:
 Below you find link to the clinical guidelines; the textual documentation for MedCom’s FHIR-standard ‘Hospital Notification’ includes purpose, background and overall requirements for content and business-related use of ‘Hospital Notification’
 http://svn.medcom.dk/svn/drafts/Standarder/HL7/FHIR/HospitalNotification/Dokumentation/FHIR_Hospital_Notification_v.08.docx
 
+Link til advis-koder findes nedenfor.
+http://svn.medcom.dk/svn/drafts/Standarder/HL7/FHIR/HospitalNotification/Dokumentation/Advis%20Koder.pdf
 
 | Version | Dato       | Ansvarlig       | Beskrivelse                                                        |
 |---------|------------|-----------------|--------------------------------------------------------------------|
