@@ -52,6 +52,16 @@
       <code>
         <code value="ClinicalEmail" />
       </code>
+      <short value="ClinicalEmail" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MessageEvent" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true" />
+        </extension>
+        <strength value="required" />
+      </binding>
     </element>
     <element id="Bundle.entry:messageHeader.resource.focus">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
