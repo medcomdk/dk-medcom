@@ -1,4 +1,4 @@
-## Use Cases (DA) 
+## Use Cases 
 ----------------------------
 
 Dansk:
