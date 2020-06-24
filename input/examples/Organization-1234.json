@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "profile": [
+            "http://medcom.dk/fhir/StructureDefinition/medcom-messaging-organization"
+        ]
+    },
+    "resourceType": "Organization",
+    "id": "1234",
+    "identifier": [
+        {
+            "system": "urn:oid:1.3.88",
+            "value": "5790000121830"
+        }
+    ],
+    "name": "NOVAX, Test til lægesystem"
+}

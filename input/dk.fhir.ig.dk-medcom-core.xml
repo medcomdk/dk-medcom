@@ -70,6 +70,21 @@
 		<grouping>
 			<name value="DK:MedCom:Core" />
 		</grouping>
+		<resource>
+            <reference>
+                <reference value="Organization/1234"/></reference>
+            <name value="Example of valid MedCom organization"/>
+            <description value="Example of valid MedCom organization"/>
+            <exampleCanonical value="http://medcom.dk/fhir/StructureDefinition/medcom-core-organization"/>
+        </resource>
+		<resource>
+            <reference>
+                <reference value="Organization/5678"/></reference>
+            <name value="Example of valid MedCom core organization"/>
+            <description value="Example of valid MedCom core organization"/>
+            <exampleCanonical value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-organization"/>
+        </resource>
+        
 	</definition>
 	<title value="DK MedCom Core (R4)" />
 	<packageId value="dk.fhir.ig.dk-medcom-core" />
