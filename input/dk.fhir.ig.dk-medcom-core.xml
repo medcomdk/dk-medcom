@@ -84,6 +84,13 @@
             <description value="Example of valid MedCom core organization"/>
             <exampleCanonical value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-organization"/>
         </resource>
+		<resource>
+            <reference>
+                <reference value="Patient/999"/></reference>
+            <name value="Example of valid MedCom core patient"/>
+            <description value="Example of valid MedCom core patient"/>
+            <exampleCanonical value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-patient"/>
+        </resource>
         
 	</definition>
 	<title value="DK MedCom Core (R4)" />
