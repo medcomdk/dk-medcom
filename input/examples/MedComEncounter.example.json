@@ -13,7 +13,7 @@
     "display": "inpatient encounter"
   },
   "subject": {
-    "reference": "Patient/999"
+    "reference": "Patient/example"
   }
   
 }

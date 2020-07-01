@@ -91,14 +91,14 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/999"/></reference>
+                <reference value="Patient/example"/></reference>
             <name value="Example of valid MedCom core patient"/>
             <description value="Example of valid MedCom core patient"/>
             <exampleCanonical value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-patient"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Practitioner/999"/></reference>
+                <reference value="Practitioner/example"/></reference>
             <name value="Example of valid MedCom core practitioner"/>
             <description value="Example of valid MedCom core practitioner"/>
             <exampleCanonical value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-practitioner"/>
@@ -109,6 +109,13 @@
             <name value="Example of valid MedCom core encounter"/>
             <description value="Example of valid MedCom core encounter"/>
             <exampleCanonical value="http://medcom.dk/fhir/StructureDefinition/medcom-core-encounter"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/example"/></reference>
+            <name value="Example of valid MedCom core clinicalEmailComposition"/>
+            <description value="Example of valid MedCom core clinicalEmailComposition"/>
+            <exampleCanonical value="http://medcom.dk/fhir/StructureDefinition/medcom-clinicalEmailComposition"/>
         </resource>
     </definition>
     <title value="DK MedCom Core (R4)" />
