@@ -32,6 +32,10 @@
                 <generation value="markdown" />
             </page>
         </page>
+		<parameter>
+            <value value="genExamples" />
+            <code value="generate" />
+        </parameter>
         <parameter>
             <value value="true" />
             <code value="generate-xml" />
@@ -91,6 +95,13 @@
             <name value="Example of valid MedCom core patient"/>
             <description value="Example of valid MedCom core patient"/>
             <exampleCanonical value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-patient"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/999"/></reference>
+            <name value="Example of valid MedCom core practitioner"/>
+            <description value="Example of valid MedCom core practitioner"/>
+            <exampleCanonical value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-practitioner"/>
         </resource>
         <resource>
             <reference>
