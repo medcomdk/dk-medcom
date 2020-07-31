@@ -1,7 +1,7 @@
 {
   "meta": {
     "profile": [
-      "http://medcom.dk/fhir/StructureDefinition/medcom-core-encounter"
+      "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-encounter"
     ]
   },
   "resourceType": "Encounter",

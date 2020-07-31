@@ -79,49 +79,43 @@
             <reference>
                 <reference value="Organization/1234"/></reference>
             <name value="Example of valid MedCom organization"/>
-            <description value="Example of valid MedCom organization"/>
-            <exampleCanonical value="http://medcom.dk/fhir/StructureDefinition/medcom-core-organization"/>
+            <exampleCanonical value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-organization"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Organization/5678"/></reference>
             <name value="Example of valid MedCom core organization"/>
-            <description value="Example of valid MedCom core organization"/>
-            <exampleCanonical value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-organization"/>
+            <exampleCanonical value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-organization"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Patient/example"/></reference>
             <name value="Example of valid MedCom core patient"/>
-            <description value="Example of valid MedCom core patient"/>
-            <exampleCanonical value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-patient"/>
+            <exampleCanonical value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-patient"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Practitioner/example"/></reference>
             <name value="Example of valid MedCom core practitioner"/>
-            <description value="Example of valid MedCom core practitioner"/>
-            <exampleCanonical value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-practitioner"/>
+            <exampleCanonical value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-practitioner"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Encounter/example"/></reference>
             <name value="Example of valid MedCom core encounter"/>
-            <description value="Example of valid MedCom core encounter"/>
-            <exampleCanonical value="http://medcom.dk/fhir/StructureDefinition/medcom-core-encounter"/>
+            <exampleCanonical value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-encounter"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Composition/example"/></reference>
             <name value="Example of valid MedCom core clinicalEmailComposition"/>
-            <description value="Example of valid MedCom core clinicalEmailComposition"/>
-            <exampleCanonical value="http://medcom.dk/fhir/StructureDefinition/medcom-clinicalEmailComposition"/>
+            <exampleCanonical value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-clinicalEmailComposition"/>
         </resource>
     </definition>
     <title value="DK MedCom Core (R4)" />
-    <packageId value="dk.fhir.ig.dk-medcom-core" />
+    <packageId value="dk.fhir.ig.dk-medcom" />
     <id value="dk.fhir.ig.dk-medcom-core" />
-    <url value="http://hl7.dk/fhir/medcom-core/ImplementationGuide/dk.fhir.ig.dk-medcom-core" />
+    <url value="http://medcom.dk/fhir/medcom-core/ImplementationGuide/dk.fhir.ig.dk-medcom-core" />
     <version value="0.8.0" />
     <name value="DK_MedCom_Core" />
     <status value="active" />

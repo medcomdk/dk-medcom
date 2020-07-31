@@ -4,7 +4,7 @@
   <meta>
     <lastUpdated value="2020-01-17T09:55:58.154+00:00" />
   </meta>
-  <url value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-practitioner" />
+  <url value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-practitioner" />
   <version value="0.1" />
   <name value="MedComCorePractitioner" />
   <status value="draft" />

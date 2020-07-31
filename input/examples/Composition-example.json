@@ -3,7 +3,7 @@
     "id": "example",
     "meta": {
         "profile": [
-            "http://medcom.dk/fhir/StructureDefinition/medcom-clinicalEmailComposition"
+            "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-clinicalEmailComposition"
         ]
     },
     "status": "final",

@@ -4,7 +4,7 @@
   <meta>
     <lastUpdated value="2020-01-20T10:56:16.931+00:00" />
   </meta>
-  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-organization" />
+  <url value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-organization" />
   <version value="0.1" />
   <name value="MedComMessagingOrganization" />
   <status value="draft" />
@@ -33,7 +33,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Organization" />
-  <baseDefinition value="http://medcom.dk/fhir/StructureDefinition/medcom-core-organization" />
+  <baseDefinition value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-organization" />
   <derivation value="constraint" />
   <differential>
     <element id="Organization">

@@ -3,7 +3,7 @@
     "id": "example",
     "meta": {
         "profile": [
-          "http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-practitioner"
+          "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-practitioner"
         ]
       },
     "identifier": [

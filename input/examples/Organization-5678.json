@@ -1,8 +1,8 @@
 {
     "meta": {
         "profile": [
-            "http://medcom.dk/fhir/StructureDefinition/medcom-core-organization",
-            "http://medcom.dk/fhir/StructureDefinition/medcom-messaging-organization"
+            "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-organization",
+            "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-organization"
         ]
     },
     "resourceType": "Organization",

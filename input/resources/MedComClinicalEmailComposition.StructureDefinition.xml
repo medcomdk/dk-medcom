@@ -4,7 +4,7 @@
   <meta>
     <lastUpdated value="2020-01-20T13:50:02.55+00:00" />
   </meta>
-  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-clinicalEmailComposition" />
+  <url value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-clinicalEmailComposition" />
   <version value="0.1" />
   <name value="MedComClinicalEmailComposition" />
   <status value="draft" />
