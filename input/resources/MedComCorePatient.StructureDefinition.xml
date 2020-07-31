@@ -231,7 +231,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://medcom.dk/fhir/StructureDefinition/medcom-core-organization" />
+        <targetProfile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-organization" />
         <aggregation value="bundled" />
       </type>
     </element>
