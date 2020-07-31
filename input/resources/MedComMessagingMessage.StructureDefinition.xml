@@ -4,11 +4,11 @@
   <meta>
     <lastUpdated value="2020-01-20T12:40:52.43+00:00" />
   </meta>
-  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-message" />
+  <url value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-message" />
   <name value="MedComMessagingMessage" />
   <status value="draft" />
   <date value="2020-01-20T12:40:52.2493694+00:00" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="v2" />
     <uri value="http://hl7.org/v2" />
@@ -41,24 +41,12 @@
       <definition value="A container for a MedCom message." />
     </element>
     <element id="Bundle.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.type" />
       <short value="Type of bundle, must be message" />
       <definition value="Type of bundle, must be message to indicata that this is a message and conforms to the messaging rules" />
       <fixedCode value="message" />
     </element>
     <element id="Bundle.timestamp">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.timestamp" />
       <short value="When the message was assembled" />
       <definition value="The date/time that the message was assembled" />
@@ -66,12 +54,6 @@
       <min value="1" />
     </element>
     <element id="Bundle.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <slicing>
         <discriminator>
@@ -82,12 +64,6 @@
       </slicing>
     </element>
     <element id="Bundle.entry:messageHeader">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <sliceName value="messageHeader" />
       <short value="Message header" />
@@ -100,19 +76,12 @@
       <path value="Bundle.entry.resource" />
       <short value="Message header resource" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Resource" />
-        <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-messageHeader" />
+        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-messageHeader" />
       </type>
     </element>
     <element id="Bundle.entry:messageOrganization">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <sliceName value="messageOrganization" />
       <short value="Sender and destination organinzations" />
@@ -124,10 +93,9 @@
       <short value="Organizations referred from the message header" />
       <definition value="Organizations referred from the message header. Organizations must have an EAN identity for exchange of messages and optionally a SOR identity for unique identification within danish healthcare." />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Resource" />
-        <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-organization" />
+        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-organization" />
       </type>
     </element>
   </differential>

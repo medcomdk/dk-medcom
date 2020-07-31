@@ -5,12 +5,12 @@
     <versionId value="1" />
     <lastUpdated value="2020-01-16T14:00:28.302+00:00" />
   </meta>
-  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-messageHeader" />
+  <url value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-messageHeader" />
   <version value="0.1" />
   <name value="MedComMessagingMessageHeader" />
   <status value="draft" />
   <date value="2020-01-16T14:00:28.1688312Z" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="v2" />
     <uri value="http://hl7.org/v2" />
@@ -136,7 +136,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-organization" />
+        <targetProfile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-organization" />
         <aggregation value="bundled" />
       </type>
     </element>
@@ -213,7 +213,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-organization" />
+        <targetProfile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-organization" />
         <aggregation value="bundled" />
       </type>
     </element>
@@ -238,7 +238,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-organization" />
+        <targetProfile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-organization" />
         <aggregation value="bundled" />
       </type>
     </element>

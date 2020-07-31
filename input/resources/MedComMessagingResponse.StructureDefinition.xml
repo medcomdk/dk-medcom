@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="medcom-messaging-response" />
-  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-response" />
+  <url value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-response" />
   <name value="MedComMessagingResponse" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
@@ -28,7 +28,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Bundle" />
-  <baseDefinition value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-message" />
+  <baseDefinition value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-message" />
   <derivation value="constraint" />
   <differential>
     <element id="Bundle">
@@ -52,7 +52,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Resource" />
-        <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-responseHeader" />
+        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-responseHeader" />
       </type>
     </element>
   </differential>

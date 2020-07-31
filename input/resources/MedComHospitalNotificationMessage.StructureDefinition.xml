@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="medcom-hospital-notification-message" />
-  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-hospitalNotificationMessage" />
+  <url value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-hospitalNotificationMessage" />
   <name value="MedComHospitalNotificationMessage" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
@@ -28,7 +28,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Bundle" />
-  <baseDefinition value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-message" />
+  <baseDefinition value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-message" />
   <derivation value="constraint" />
   <differential>
     <element id="Bundle">
@@ -98,7 +98,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://medcom.dk/fhir/StructureDefinition/medcom-hospitalNotificationEncounter" />
+        <targetProfile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-hospitalNotificationEncounter" />
         <aggregation value="bundled" />
       </type>
     </element>
@@ -132,7 +132,7 @@
       <min value="1" />
       <type>
         <code value="Resource" />
-        <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-core-organization" />
+        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-organization" />
       </type>
     </element>
     <element id="Bundle.entry:hospitalNotifcationEncounter">
@@ -154,7 +154,7 @@
       <min value="1" />
       <type>
         <code value="Resource"  />
-        <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-hospitalNotificationEncounter" />
+        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-hospitalNotificationEncounter" />
       </type>
     </element>
     <element id="Bundle.entry:patient">

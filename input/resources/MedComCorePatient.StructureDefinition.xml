@@ -5,7 +5,7 @@
   <version value="1.0.0" />
   <name value="MedComCorePatient" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Patient" />
@@ -20,16 +20,9 @@
         <severity value="warning" />
         <human value="Status in maritalStatus is unknown in a danish context. Consider mapping the value to UNK" />
         <expression value="maritalStatus.coding.where(code = 'P' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty() or maritalStatus.coding.where(code = 'A' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty()" />
-        <source value="Patient" />
       </constraint>
     </element>
     <element id="Patient.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier" />
       <slicing>
         <discriminator>
@@ -41,12 +34,6 @@
       <min value="1" />
     </element>
     <element id="Patient.identifier:cpr">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier" />
       <sliceName value="cpr" />
       <short value="Official Danish CRN number" />
@@ -59,12 +46,6 @@
       </type>
     </element>
     <element id="Patient.name">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.name" />
       <slicing>
         <discriminator>
@@ -77,104 +58,44 @@
       <min value="1" />
     </element>
     <element id="Patient.name:official">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.name" />
       <sliceName value="official" />
       <max value="1" />
     </element>
     <element id="Patient.name:official.use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.name.use" />
       <fixedCode value="official" />
     </element>
     <element id="Patient.name:official.family">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.name.family" />
       <min value="1" />
     </element>
     <element id="Patient.name:official.given">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.name.given" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.telecom">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.telecom" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.address">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.address" />
       <definition value="An address for the individual. Danish addresses must comply with directions issued by https://dawa.aws.dk/ and underlying authorities" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.address.line">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.address.line" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.address.city">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.address.city" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.address.postalCode">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.address.postalCode" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.maritalStatus.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.maritalStatus.coding.code" />
       <binding>
         <strength value="preferred" />
@@ -182,12 +103,6 @@
       </binding>
     </element>
     <element id="Patient.generalPractitioner">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.generalPractitioner" />
       <slicing>
         <discriminator>
@@ -198,22 +113,10 @@
       </slicing>
     </element>
     <element id="Patient.generalPractitioner:referencedSORUnit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.generalPractitioner" />
       <sliceName value="referencedSORUnit" />
     </element>
     <element id="Patient.generalPractitioner:referencedSORUnit.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.generalPractitioner.identifier" />
       <type>
         <code value="Identifier" />
@@ -221,12 +124,6 @@
       </type>
     </element>
     <element id="Patient.managingOrganization">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.managingOrganization" />
       <min value="1" />
       <type>

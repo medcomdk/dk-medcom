@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="medcom-clinicalEmailMessage" />
-  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-clinicalEmailMessage" />
+  <url value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-clinicalEmailMessage" />
   <name value="MedComClinicalEmailMessage" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="v2" />
     <uri value="http://hl7.org/v2" />
@@ -28,26 +28,14 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Bundle" />
-  <baseDefinition value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-message" />
+  <baseDefinition value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-message" />
   <derivation value="constraint" />
   <differential>
     <element id="Bundle.entry:messageHeader">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <sliceName value="messageHeader" />
     </element>
     <element id="Bundle.entry:messageHeader.resource.event[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry.resource.event[x]" />
       <code>
         <code value="ClinicalEmail" />
@@ -63,49 +51,57 @@
         <strength value="required" />
       </binding>
     </element>
+    <element id="Bundle.entry:messageHeader.resource.destination">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="MessageDestination" />
+      </extension>
+      <path value="Bundle.entry.resource.destination" />
+    </element>
+    <element id="Bundle.entry:messageHeader.resource.destination:primary">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="MessageDestination" />
+      </extension>
+      <path value="Bundle.entry.resource.destination" />
+      <sliceName value="primary" />
+    </element>
+    <element id="Bundle.entry:messageHeader.resource.destination:primary.extension:use">
+      <path value="Bundle.entry.resource.destination.extension" />
+      <sliceName value="use" />
+    </element>
+    <element id="Bundle.entry:messageHeader.resource.destination:primary.extension:use.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Bundle.entry.resource.destination.extension.value[x].display" />
+    </element>
+    <element id="Bundle.entry:messageHeader.resource.destination:cc">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="MessageDestination" />
+      </extension>
+      <path value="Bundle.entry.resource.destination" />
+      <sliceName value="cc" />
+    </element>
+    <element id="Bundle.entry:messageHeader.resource.destination:cc.extension:use">
+      <path value="Bundle.entry.resource.destination.extension" />
+      <sliceName value="use" />
+    </element>
+    <element id="Bundle.entry:messageHeader.resource.destination:cc.extension:use.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Bundle.entry.resource.destination.extension.value[x].display" />
+    </element>
     <element id="Bundle.entry:messageHeader.resource.focus">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry.resource.focus" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://medcom.dk/fhir/StructureDefinition/medcom-clinicalEmailComposition" />
+        <targetProfile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-clinicalEmailComposition" />
         <aggregation value="bundled" />
       </type>
     </element>
-    <element id="Bundle.entry:clinicalEmailComposition">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Bundle.entry" />
-      <sliceName value="clinicalEmailComposition" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Bundle.entry:clinicalEmailComposition.resource">
-      <path value="Bundle.entry.resource" />
-      <min value="1" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-clinicalEmailComposition" />
-      </type>
-    </element>
     <element id="Bundle.entry:patient">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <sliceName value="patient" />
       <min value="1" />
@@ -116,16 +112,10 @@
       <min value="1" />
       <type>
         <code value="Resource" />
-        <profile value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-patient" />
+        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-patient" />
       </type>
     </element>
     <element id="Bundle.entry:coreOrganization">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <sliceName value="coreOrganization" />
     </element>
@@ -134,16 +124,10 @@
       <min value="1" />
       <type>
         <code value="Resource" />
-        <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-core-organization" />
+        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-organization" />
       </type>
     </element>
     <element id="Bundle.entry:practitioner">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <sliceName value="practitioner" />
     </element>
@@ -152,7 +136,18 @@
       <min value="1" />
       <type>
         <code value="Resource" />
-        <profile value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-practitioner" />
+        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-practitioner" />
+      </type>
+    </element>
+    <element id="Bundle.entry:message">
+      <path value="Bundle.entry" />
+      <sliceName value="message" />
+    </element>
+    <element id="Bundle.entry:message.resource">
+      <path value="Bundle.entry.resource" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-message" />
       </type>
     </element>
   </differential>
