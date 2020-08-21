@@ -4,7 +4,7 @@
   <meta>
     <lastUpdated value="2020-01-16T14:51:01.442+00:00" />
   </meta>
-  <url value="http://medcom.dk/fhir/ValueSet/medcom-clinicalEmailCategoryCodes" />
+  <url value="http://medcom.dk/fhir/medcom-core/ValueSet/medcom-clinicalEmailCategoryCodes" />
   <version value="0.1" />
   <name value="ClinicalEmailCategoryCodes" />
   <status value="draft" />

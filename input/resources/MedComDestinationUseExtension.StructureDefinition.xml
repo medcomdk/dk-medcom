@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="medcom-messaging-destinationUseExtension" />
-  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-destinationUseExtension" />
+  <url value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-destinationUseExtension" />
   <name value="MedComDestinationUseExtension" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />

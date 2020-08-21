@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="medcom-hospital-notification-encounter" />
-  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-hospitalNotificationEncounter" />
+  <url value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-hospital-notification-encounter" />
   <version value="0.2" />
   <name value="MedComHospitalNotificationEncounter" />
   <status value="draft" />

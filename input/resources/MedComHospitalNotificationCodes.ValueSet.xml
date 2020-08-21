@@ -4,7 +4,7 @@
   <meta>
     <lastUpdated value="2020-03-24T17:00:00.0000000+00:00" />
   </meta>
-  <url value="http://medcom.dk/fhir/ValueSet/medcom-HospitalNotificationCodes" />
+  <url value="http://medcom.dk/fhir/medcom-core/ValueSet/medcom-HospitalNotificationCodes" />
   <version value="0.1" />
   <name value="HospitalNotificationCodes" />
   <status value="draft" />

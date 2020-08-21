@@ -4,7 +4,7 @@
   <meta>
     <lastUpdated value="2020-01-20T12:16:13.974+00:00" />
   </meta>
-  <url value="http://medcom.dk/fhir/StructureDefinition/medcom-clinicalEmailSectionDateExtension" />
+  <url value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-clinicalEmailSectionDateExtension" />
   <name value="MedComClinicalEmailSectionDateExtension" />
   <status value="draft" />
   <date value="2020-01-20T12:16:13.7990036+00:00" />
@@ -39,7 +39,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://medcom.dk/fhir/StructureDefinition/medcom-clinicalEmailSectionDateExtension" />
+      <fixedUri value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-clinicalEmailSectionDateExtension" />
     </element>
     <element id="Extension.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
