@@ -9,7 +9,7 @@
         "endpoint": "http://example.org/clients/ehr-lite"
     },
     "sender": {
-        "reference": "http://acme.com/ehr/fhir/Organization/1"
+        "reference": "Organization/1234"
     },
     "destination": [
         {
@@ -19,7 +19,7 @@
             },
             "extension": [
                 {
-                    "url": "http://medcom.dk/fhir/StructureDefinition/medcom-messaging-destinationUseExtension",
+                    "url": "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-destinationUseExtension",
                     "valueCoding": {
                         "system": "urn:medcom:destinationuse",
                         "code": "primary"
@@ -34,7 +34,7 @@
             },
             "extension": [
                 {
-                    "url": "http://medcom.dk/fhir/StructureDefinition/medcom-messaging-destinationUseExtension",
+                    "url": "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-destinationUseExtension",
                     "valueCoding": {
                         "system": "urn:medcom:destinationuse",
                         "code": "cc"

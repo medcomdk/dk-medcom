@@ -62,7 +62,7 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="extension('http://medcom.dk/fhir/StructureDefinition/medcom-messaging-destinationUseExtension').value[x].code" />
+          <path value="extension('http://medcom.dk/fhir/medcore-core/StructureDefinition/medcom-messaging-destinationUseExtension').value[x].code" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -112,7 +112,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-destinationUseExtension" />
+        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-destinationUseExtension" />
       </type>
     </element>
     <element id="MessageHeader.destination:primary.extension:use.value[x].code">
@@ -189,7 +189,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-destinationUseExtension" />
+        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-destinationUseExtension" />
       </type>
     </element>
     <element id="MessageHeader.destination:cc.extension:use.value[x].code">
