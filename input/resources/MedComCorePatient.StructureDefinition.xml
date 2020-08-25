@@ -36,13 +36,13 @@
     <element id="Patient.identifier:cpr">
       <path value="Patient.identifier" />
       <sliceName value="cpr" />
-      <short value="Official Danish CRN number" />
-      <definition value="Official Danish CRN number (CPR) issued by the Danish Civil Registration System" />
+      <short value="Official Danish CPR number" />
+      <definition value="Official Danish CPR number issued by the Danish Civil Registration System" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Identifier" />
-        <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-crn-identifier" />
+        <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-cpr-identifier" />
       </type>
     </element>
     <element id="Patient.name">

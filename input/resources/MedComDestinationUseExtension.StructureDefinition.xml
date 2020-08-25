@@ -4,7 +4,7 @@
   <url value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-destinationUseExtension" />
   <name value="MedComDestinationUseExtension" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />
@@ -21,39 +21,21 @@
   <derivation value="constraint" />
   <differential>
     <element id="Extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension" />
       <short value="Indicates the use of a destination" />
       <definition value="Indicates wheter the use of a destination in a MedCom message header is as a primary or a carbon copy recipient of the message" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://medcom.dk/fhir/StructureDefinition/medcom-messaging-destinationUseExtension" />
+      <fixedUri value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-destinationUseExtension" />
     </element>
     <element id="Extension.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x]" />
       <type>
         <code value="Coding" />
       </type>
     </element>
     <element id="Extension.value[x].system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x].system" />
       <short value="System for destination use" />
       <definition value="Code system for destination use." />
@@ -61,34 +43,16 @@
       <fixedUri value="urn:medcom:destinationuse" />
     </element>
     <element id="Extension.value[x].version">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x].version" />
       <max value="0" />
     </element>
     <element id="Extension.value[x].code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x].code" />
       <short value="primary or cc" />
       <definition value="Contains either primary or cc indicating the use of this destination (primary or carbon copy)" />
       <min value="1" />
     </element>
     <element id="Extension.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -96,12 +60,6 @@
       <max value="0" />
     </element>
     <element id="Extension.value[x].userSelected">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x].userSelected" />
       <max value="0" />
     </element>

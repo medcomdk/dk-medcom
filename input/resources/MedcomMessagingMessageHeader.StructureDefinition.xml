@@ -37,24 +37,12 @@
       <short value="A resource that describes a message that is exchanged within danish healthcare" />
     </element>
     <element id="MessageHeader.event[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MessageHeader.event[x]" />
       <code>
         <system value="urn:medcom:messagetype" />
       </code>
     </element>
     <element id="MessageHeader.destination">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="MessageDestination" />
       </extension>
@@ -62,8 +50,9 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="extension('http://medcom.dk/fhir/medcore-core/StructureDefinition/medcom-messaging-destinationUseExtension').value[x].code" />
+          <path value="extension('http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-destinationUseExtension').value[x].code" />
         </discriminator>
+        <description value="extension('http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-destinationUseExtension').value[x].code" />
         <rules value="open" />
       </slicing>
       <short value="Message destinations" />
@@ -72,12 +61,6 @@
       <min value="1" />
     </element>
     <element id="MessageHeader.destination:primary">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="MessageDestination" />
       </extension>
@@ -100,12 +83,6 @@
       </slicing>
     </element>
     <element id="MessageHeader.destination:primary.extension:use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MessageHeader.destination.extension" />
       <sliceName value="use" />
       <min value="1" />
@@ -116,22 +93,16 @@
       </type>
     </element>
     <element id="MessageHeader.destination:primary.extension:use.value[x].code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MessageHeader.destination.extension.value[x].code" />
       <fixedCode value="primary" />
     </element>
+    <element id="MessageHeader.destination:primary.extension:use.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MessageHeader.destination.extension.value[x].display" />
+    </element>
     <element id="MessageHeader.destination:primary.receiver">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MessageHeader.destination.receiver" />
       <min value="1" />
       <type>
@@ -141,22 +112,10 @@
       </type>
     </element>
     <element id="MessageHeader.destination:primary.receiver.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MessageHeader.destination.receiver.reference" />
       <min value="1" />
     </element>
     <element id="MessageHeader.destination:cc">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="MessageDestination" />
       </extension>
@@ -177,12 +136,6 @@
       </slicing>
     </element>
     <element id="MessageHeader.destination:cc.extension:use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MessageHeader.destination.extension" />
       <sliceName value="use" />
       <min value="1" />
@@ -193,22 +146,16 @@
       </type>
     </element>
     <element id="MessageHeader.destination:cc.extension:use.value[x].code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MessageHeader.destination.extension.value[x].code" />
       <fixedCode value="carbon-copy" />
     </element>
+    <element id="MessageHeader.destination:cc.extension:use.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MessageHeader.destination.extension.value[x].display" />
+    </element>
     <element id="MessageHeader.destination:cc.receiver">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MessageHeader.destination.receiver" />
       <min value="1" />
       <type>
@@ -218,22 +165,10 @@
       </type>
     </element>
     <element id="MessageHeader.destination:cc.receiver.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MessageHeader.destination.receiver.reference" />
       <min value="1" />
     </element>
     <element id="MessageHeader.sender">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MessageHeader.sender" />
       <min value="1" />
       <type>
@@ -243,12 +178,6 @@
       </type>
     </element>
     <element id="MessageHeader.sender.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MessageHeader.sender.reference" />
       <min value="1" />
     </element>

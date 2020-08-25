@@ -135,7 +135,7 @@
             <value value="https://www.medcom.dk/" />
         </telecom>
     </contact>
-    <description value="Implementationguide MedCom-Core" />
+    <description value="Implementationguide MedCom Core" />
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166" />
