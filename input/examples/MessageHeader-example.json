@@ -56,9 +56,8 @@
     ],
     "eventCoding": {
         "system": "http://example.org/fhir/message-events",
-        "code": [
-            "patient-link"
-        ]
+        "code": "patient-link"
+        
     },
     "resourceType": "MessageHeader"
 }
