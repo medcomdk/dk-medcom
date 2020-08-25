@@ -50,9 +50,9 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="extension('http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-destinationUseExtension').value[x].code" />
+          <path value="extension('http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-destinationUseExtension').value.code" />
         </discriminator>
-        <description value="extension('http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-destinationUseExtension').value[x].code" />
+        <description value="extension('http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-destinationUseExtension').value.code" />
         <rules value="open" />
       </slicing>
       <short value="Message destinations" />
