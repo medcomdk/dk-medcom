@@ -98,7 +98,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-hospitalNotificationEncounter" />
+        <targetProfile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-hospital-notification-encounter" />
         <aggregation value="bundled" />
       </type>
     </element>
@@ -154,7 +154,7 @@
       <min value="1" />
       <type>
         <code value="Resource"  />
-        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-hospitalNotificationEncounter" />
+        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-hospital-notification-encounter" />
       </type>
     </element>
     <element id="Bundle.entry:patient">
@@ -176,7 +176,7 @@
       <min value="1" />
       <type>
         <code value="Resource" />
-        <profile value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-patient" />
+        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-patient" />
       </type>
     </element>
   </differential>

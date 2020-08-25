@@ -44,7 +44,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://medcom.dk/fhir/StructureDefinition/status-period" />
+        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/status-period" />
       </type>
     </element>
     <element id="Encounter.extension:status-period.value[x]">
@@ -137,7 +137,7 @@
       <comment value="This resource will be exhanged by a Message transaction that is exhanged by a bundle resource. &#xD;&#xA;Reference to the source (patient) SHALL be a reference to the patient resource id. The patient resource is  referenced by the messageheader and the reference to the patient SHALL be resolveable. The Bundle containing the FHIR message shall only have one patient resource." />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/dk/core/StructureDefinition/medcom-core-patient" />
+        <targetProfile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-patient" />
         <aggregation value="bundled" />
       </type>
     </element>
