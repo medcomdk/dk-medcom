@@ -1,21 +1,21 @@
 {
+    "resourceType": "MessageHeader",
     "meta": {
         "profile": [
             "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-messageHeader"
         ]
     },
     "id": "example",
-    "source": {
-        "endpoint": "http://example.org/clients/ehr-lite"
-    },
-    "sender": {
-        "reference": "Organization/1234"
+    "eventCoding": {
+        "system": "http://example.org/fhir/message-events",
+        "code": "patient-link"
+        
     },
     "destination": [
         {
-            "endpoint": "llp:10.11.12.14:5432",
+            "endpoint": "urn:oid:1.2.208.176.1.1.18521000016003",
             "receiver": {
-                "reference": "http://acme.com/ehr/fhir/Practitioner/2323-33-4"
+                "reference": "Practitioner/example"
             },
             "extension": [
                 {
@@ -28,9 +28,9 @@
             ]
         },
         {
-            "endpoint": "llp:10.11.12.14:5432",
+            "endpoint": "urn:oid:1.2.208.176.1.1.667581000016009",
             "receiver": {
-                "reference": "http://acme.com/ehr/fhir/Practitioner/2323-33-4"
+                "reference": "Practitioner/example2"
             },
             "extension": [
                 {
@@ -43,21 +43,10 @@
             ]
         }
     ],
-    "responsible": {
-        "reference": "http://acme.com/ehr/fhir/Practitioner/2323-33-4"
+    "sender": {
+        "reference": "Organization/1234"
     },
-    "focus": [
-        {
-            "reference": "http://acme.com/ehr/fhir/Patient/pat1"
-        },
-        {
-            "reference": "http://acme.com/ehr/fhir/Patient/pat12"
-        }
-    ],
-    "eventCoding": {
-        "system": "http://example.org/fhir/message-events",
-        "code": "patient-link"
-        
-    },
-    "resourceType": "MessageHeader"
+    "source": {
+        "endpoint": "urn:oid:1.2.208.176.1.1.698331000016003"
+    }        
 }

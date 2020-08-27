@@ -1,0 +1,35 @@
+{
+    "resourceType": "Practitioner",
+    "id": "example2",
+    "meta": {
+        "profile": [
+          "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-practitioner"
+        ]
+      },
+    "identifier": [
+      {
+        "system": "https://autregweb.sst.dk/",
+        "value": "001BB"
+      }
+    ],
+    "active": true,
+    "name": [
+      {
+        "family": "Andersen",
+        "given": [
+          "Aase"
+        ]
+      }
+    ],
+    "address": [
+      {
+        "use": "work",
+        "line": [
+          "Østerbrogade 4"
+        ],
+        "city": "PleasantVille",
+        "state": "Spøttrup",
+        "postalCode": "7860"
+      }
+    ]
+  }
