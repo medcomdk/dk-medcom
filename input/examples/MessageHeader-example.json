@@ -15,7 +15,7 @@
         {
             "endpoint": "urn:oid:1.2.208.176.1.1.18521000016003",
             "receiver": {
-                "reference": "Practitioner/example"
+                "reference": "Organization/1234"
             },
             "extension": [
                 {
@@ -30,7 +30,7 @@
         {
             "endpoint": "urn:oid:1.2.208.176.1.1.667581000016009",
             "receiver": {
-                "reference": "Practitioner/example2"
+                "reference": "Organization/5678"
             },
             "extension": [
                 {
@@ -44,7 +44,7 @@
         }
     ],
     "sender": {
-        "reference": "Organization/1234"
+        "reference": "Organization/abcd"
     },
     "source": {
         "endpoint": "urn:oid:1.2.208.176.1.1.698331000016003"

@@ -32,7 +32,7 @@
                 <generation value="markdown" />
             </page>
         </page>
-		<parameter>
+        <parameter>
             <value value="genExamples" />
             <code value="generate" />
         </parameter>
@@ -108,7 +108,7 @@
         <resource>
             <reference>
                 <reference value="MessageHeader/example"/></reference>
-            <name value="Example of valid MedCom core encounter"/>
+            <name value="Example of valid MedCom core message header"/>
             <exampleCanonical value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-messageHeader"/>
         </resource>
         <resource>
@@ -116,6 +116,12 @@
                 <reference value="Composition/example"/></reference>
             <name value="Example of valid MedCom core clinicalEmailComposition"/>
             <exampleCanonical value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-clinicalEmailComposition"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/medComHospitalNotificationEncounterMessage"/></reference>
+            <name value="Example of valid MedCom core hospital notification message"/>
+            <exampleCanonical value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-hospital-notification-message"/>
         </resource>
     </definition>
     <title value="DK MedCom Core (R4)" />
