@@ -81,22 +81,5 @@
         <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-messageHeader" />
       </type>
     </element>
-    <element id="Bundle.entry:messageOrganization">
-      <path value="Bundle.entry" />
-      <sliceName value="messageOrganization" />
-      <short value="Sender and destination organinzations" />
-      <definition value="Sender and destination organinzations - contains all MedComMessagingOrganization resources referred in the message header." />
-      <orderMeaning value="The ordering of organizations has no impact on the meaning" />
-    </element>
-    <element id="Bundle.entry:messageOrganization.resource">
-      <path value="Bundle.entry.resource" />
-      <short value="Organizations referred from the message header" />
-      <definition value="Organizations referred from the message header. Organizations must have an EAN identity for exchange of messages and optionally a SOR identity for unique identification within danish healthcare." />
-      <min value="1" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-organization" />
-      </type>
-    </element>
   </differential>
 </StructureDefinition>

@@ -69,27 +69,6 @@
         <aggregation value="bundled" />
       </type>
     </element>
-    <element id="Bundle.entry:messageOrganization">
-      <path value="Bundle.entry" />
-      <sliceName value="messageOrganization" />
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:organization">
-      <path value="Bundle.entry" />
-      <sliceName value="organization" />
-      <short value="The encounter responsible" />
-      <definition value="The encounter organization. The encounter may be the same organization as the sender organization. This is often the case in smaller organizations. In organizations like hospitals the sender and encounter organization is typicaly different branches of the same root organization.  The organization resource (MedComCoreOrganization) is referenced by the MedComHospitalNotificationOrganizaition ressource." />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Bundle.entry:organization.resource">
-      <path value="Bundle.entry.resource" />
-      <min value="1" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-organization" />
-      </type>
-    </element>
     <element id="Bundle.entry:hospitalNotifcationEncounter">
       <path value="Bundle.entry" />
       <sliceName value="hospitalNotifcationEncounter" />
@@ -104,22 +83,6 @@
       <type>
         <code value="Resource" />
         <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-hospital-notification-encounter" />
-      </type>
-    </element>
-    <element id="Bundle.entry:patient">
-      <path value="Bundle.entry" />
-      <sliceName value="patient" />
-      <short value="Entry in the bundle - will have a Patient resource" />
-      <definition value="An entry in a bundle resource - will contain a Patient resource (MedComCorePatient)" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Bundle.entry:patient.resource">
-      <path value="Bundle.entry.resource" />
-      <min value="1" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-patient" />
       </type>
     </element>
   </differential>

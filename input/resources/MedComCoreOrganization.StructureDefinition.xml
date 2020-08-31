@@ -4,7 +4,7 @@
   <url value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-organization" />
   <name value="MedComCoreOrganization" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="v2" />
     <uri value="http://hl7.org/v2" />
@@ -37,12 +37,6 @@
       <definition value="A formally recognized organizations within danish healthcare, registered with a SOR identifier issued by The Danish Health Data Authority" />
     </element>
     <element id="Organization.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.identifier" />
       <slicing>
         <discriminator>
@@ -54,12 +48,6 @@
       <min value="1" />
     </element>
     <element id="Organization.identifier:sorIdentifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.identifier" />
       <sliceName value="sorIdentifier" />
       <min value="1" />
