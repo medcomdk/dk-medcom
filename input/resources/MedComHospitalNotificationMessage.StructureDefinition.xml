@@ -4,7 +4,7 @@
   <url value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-hospital-notification-message" />
   <name value="MedComHospitalNotificationMessage" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="v2" />
     <uri value="http://hl7.org/v2" />
@@ -37,22 +37,10 @@
       <definition value="A container for a MedComHospitalNotificationMessage. The message is triggerede as patients is admitted, onleave or finished a hospital stay in order to notify the relevant Municipalicy home care." />
     </element>
     <element id="Bundle.entry:messageHeader">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <sliceName value="messageHeader" />
     </element>
     <element id="Bundle.entry:messageHeader.resource.event[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry.resource.event[x]" />
       <code>
         <code value="HospitalNotification" />
@@ -60,37 +48,16 @@
       <short value="Code for the this event" />
       <definition value="Code for the this event based on encounter status and class" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="MessageEvent" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
         <strength value="example" />
         <description value="Message event defined as part of this version of FHIR." />
       </binding>
     </element>
     <element id="Bundle.entry:messageHeader.resource.destination:cc">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="MessageDestination" />
-      </extension>
       <path value="Bundle.entry.resource.destination" />
       <sliceName value="cc" />
       <max value="1" />
     </element>
     <element id="Bundle.entry:messageHeader.resource.focus">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry.resource.focus" />
       <short value="The content of the message - Ressource" />
       <definition value="The actual data of the message - a reference to the root/focus resource of the event. For Hospital Notification the resource in focus is HospitalNotificationEncounter" />
@@ -103,23 +70,11 @@
       </type>
     </element>
     <element id="Bundle.entry:messageOrganization">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <sliceName value="messageOrganization" />
       <min value="1" />
     </element>
     <element id="Bundle.entry:organization">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <sliceName value="organization" />
       <short value="The encounter responsible" />
@@ -136,12 +91,6 @@
       </type>
     </element>
     <element id="Bundle.entry:hospitalNotifcationEncounter">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <sliceName value="hospitalNotifcationEncounter" />
       <short value="Focus Entry in the bundle - will have a resource" />
@@ -153,17 +102,11 @@
       <path value="Bundle.entry.resource" />
       <min value="1" />
       <type>
-        <code value="Resource"  />
+        <code value="Resource" />
         <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-hospital-notification-encounter" />
       </type>
     </element>
     <element id="Bundle.entry:patient">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <sliceName value="patient" />
       <short value="Entry in the bundle - will have a Patient resource" />
