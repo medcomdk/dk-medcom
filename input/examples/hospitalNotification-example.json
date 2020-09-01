@@ -42,7 +42,7 @@
                                 "url": "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-destinationUseExtension",
                                 "valueCoding": {
                                     "system": "urn:medcom:destinationuse",
-                                    "code": "cc"
+                                    "code": "carbon-copy"
                                 }
                             }
                         ]
@@ -61,7 +61,7 @@
             "resource": {
                 "meta": {
                     "profile": [
-                        "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-organization",
+                     
                         "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-organization"
                     ]
                 },
@@ -85,7 +85,7 @@
             "resource": {
                 "meta": {
                     "profile": [
-                        "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-organization",
+                     
                         "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-organization"
                     ]
                 },
@@ -109,7 +109,7 @@
             "resource": {
                 "meta": {
                     "profile": [
-                        "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-organization",
+                     
                         "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-organization"
                     ]
                 },
