@@ -1,9 +1,11 @@
-temp
-template
-input-cache
-output
+.DS_Store
+Thumbs.db
 /SUSHI-GENERATED-FILES.md
+/ig.ini
+/temp
 /template
 /input/extensions
 /input/profiles
 /input/pagecontent
+/input-cache
+/output
