@@ -5,6 +5,8 @@ Title:          "Care Communication"
 Description:    "Care related communication between two or more parties in Danish healthcare"
 * category 1..1 MS
 * category from http://medcom.dk/fhir/medcom-core/ValueSet/medcom-clinicalEmailCategoryCodes
+* priority MS
+* priority ^definition = "The priority of the message shall be present if known by the sender. It is recommended to use Routine or Urgent. The recipient shall interpret absense of priority as Routine, and it is allowed to interpret ASAP and STAT as Urgent."
 * subject 1.. MS
 * subject only Reference(MedComCorePatient)
 * subject ^type.aggregation = #bundled
