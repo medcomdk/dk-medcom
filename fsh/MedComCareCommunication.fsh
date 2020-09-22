@@ -1,7 +1,7 @@
-Profile:        CareCommunication
+Profile:        MedComCareCommunication
 Parent:         Communication
 Id:             medcom-care-communication
-Title:          "Care Communication"
+Title:          "MedCom Care Communication"
 Description:    "Care related communication between two or more parties in Danish healthcare"
 * category 1..1 MS
 * category from http://medcom.dk/fhir/medcom-core/ValueSet/medcom-careCommunicationCategoryCodes
