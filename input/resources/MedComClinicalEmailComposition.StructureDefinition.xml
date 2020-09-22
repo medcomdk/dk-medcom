@@ -91,7 +91,7 @@
       <binding>
         <strength value="required" />
         <description value="Clinical email category" />
-        <valueSet value="http://medcom.dk/fhir/CodeSystem/medcom-clinicalEmailCategoryCodes" />
+        <valueSet value="http://medcom.dk/fhir/CodeSystem/medcom-careCommunicationCategoryCodes" />
       </binding>
     </element>
     <element id="Composition.type.coding">
@@ -140,7 +140,7 @@
       <binding>
         <strength value="required" />
         <description value="Clinical email category" />
-        <valueSet value="http://medcom.dk/fhir/ValueSet/medcom-clinicalEmailCategoryCodes" />
+        <valueSet value="http://medcom.dk/fhir/ValueSet/medcom-careCommunicationCategoryCodes" />
       </binding>
     </element>
     <element id="Composition.category.coding">
@@ -155,7 +155,7 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://medcom.dk/fhir/ValueSet/medcom-clinicalEmailCategoryCodes" />
+        <valueSet value="http://medcom.dk/fhir/ValueSet/medcom-careCommunicationCategoryCodes" />
       </binding>
     </element>
     <element id="Composition.category.coding.system">
@@ -167,7 +167,7 @@
       </extension>
       <path value="Composition.category.coding.system" />
       <min value="1" />
-      <fixedUri value="http://medcom.dk/fhir/CodeSystem/medcom-clinicalEmailCategoryCode" />
+      <fixedUri value="http://medcom.dk/fhir/CodeSystem/medcom-careCommunicationCategoryCodes" />
     </element>
     <element id="Composition.category.coding.code">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

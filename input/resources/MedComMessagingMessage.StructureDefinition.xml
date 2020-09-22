@@ -45,6 +45,7 @@
       <short value="Type of bundle, must be message" />
       <definition value="Type of bundle, must be message to indicata that this is a message and conforms to the messaging rules" />
       <fixedCode value="message" />
+      <mustSupport value="true" />
     </element>
     <element id="Bundle.timestamp">
       <path value="Bundle.timestamp" />
@@ -52,13 +53,14 @@
       <definition value="The date/time that the message was assembled" />
       <comment value="The date that the content of the message was assembled. This date is not changed by middleware engines unless they add additional data that changes the meaning of the time of the message." />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Bundle.entry">
       <path value="Bundle.entry" />
       <slicing>
         <discriminator>
           <type value="profile" />
-          <path value="resolve()" />
+          <path value="resource" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -71,6 +73,7 @@
       <min value="1" />
       <max value="1" />
       <orderMeaning value="For bundles of type 'message', the first resource is special (must be MessageHeader)." />
+      <mustSupport value="true" />
     </element>
     <element id="Bundle.entry:messageHeader.resource">
       <path value="Bundle.entry.resource" />
@@ -80,6 +83,22 @@
         <code value="Resource" />
         <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-messageHeader" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.entry:messageHistory">
+      <path value="Bundle.entry" />
+      <sliceName value="messageHistory" />
+      <mustSupport value="true" />
+      <definition value="Shall contain a provenance resource for all messages preceeding this message. A new provenance resource is added when a message is replied to, forwarded or in any other way handed over to a new organization." />
+    </element>
+    <element id="Bundle.entry:messageHistory.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-message-provenance" />
+      </type>
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

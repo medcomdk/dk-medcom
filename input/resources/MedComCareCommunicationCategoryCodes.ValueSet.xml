@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="medcom-clinicalEmailCategoryCodes" />
+  <id value="medcom-careCommunicationCategoryCodes" />
   <meta>
     <lastUpdated value="2020-01-16T14:51:01.442+00:00" />
   </meta>
-  <url value="http://medcom.dk/fhir/medcom-core/ValueSet/medcom-clinicalEmailCategoryCodes" />
+  <url value="http://medcom.dk/fhir/medcom-core/ValueSet/medcom-careCommunicationCategoryCodes" />
   <version value="0.1" />
-  <name value="ClinicalEmailCategoryCodes" />
+  <name value="CareCommunicationCategoryCodes" />
   <status value="draft" />
   <date value="2020-01-16T14:51:01.3391053+00:00" />
   <publisher value="medcom.dk" />
   <description value="Category codes used in clinical emails" />
   <compose>
     <include>
-      <system value="http://medcom.dk/fhir/CodeSystem/medcom-clinicalEmailCategoryCodes" />
+      <system value="http://medcom.dk/fhir/CodeSystem/medcom-careCommunicationCategoryCodes" />
       <concept>
         <code value="outpatient" />
         <display value="Outpatient" />

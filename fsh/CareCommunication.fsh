@@ -4,7 +4,7 @@ Id:             medcom-care-communication
 Title:          "Care Communication"
 Description:    "Care related communication between two or more parties in Danish healthcare"
 * category 1..1 MS
-* category from http://medcom.dk/fhir/medcom-core/ValueSet/medcom-clinicalEmailCategoryCodes
+* category from http://medcom.dk/fhir/medcom-core/ValueSet/medcom-careCommunicationCategoryCodes
 * priority MS
 * priority ^definition = "The priority of the message shall be present if known by the sender. It is recommended to use Routine or Urgent. The recipient shall interpret absense of priority as Routine, and it is allowed to interpret ASAP and STAT as Urgent."
 * subject 1.. MS
@@ -12,12 +12,25 @@ Description:    "Care related communication between two or more parties in Danis
 * subject ^type.aggregation = #bundled
 * topic MS
 * topic ^definition = "Description of the purpose/content, similar to a subject line in an email. Shall be present if topic of the message is known."
-* encounter 1.. MS
+* encounter MS
+* encounter only Reference(MedComLpr3Encounter)
+* encounter ^type.aggregation = #bundled
+* encounter ^definition = "Shall contain an encounter with a reference to the episode of care if reported to the Danish National Patient Registry"
 * sent 1.. MS
-* recipient 0.. MS
-* recipient only Reference(Organization or PractitionerRole)
+* recipient 0..
+* recipient ^slicing.discriminator.type = #type
+* recipient ^slicing.discriminator.path = "$this"
+* recipient ^slicing.rules = #open
+* recipient contains organization 0.. and practitionerRole 0.. MS
+* recipient[organization] 0.. MS
+* recipient[organization] only Reference(Organization)
+* recipient[organization] ^definition = "The recipient of the message shall be present in case the recipient is given as more specific organization than the recipient of the message. E.g. a unit in a hospital or a home care group in a municipality."
+* recipient[organization] ^type.aggregation = #bundled
+* recipient[practitionerRole] 0.. MS
+* recipient[practitionerRole] only Reference(PractitionerRole)
+* recipient[practitionerRole] ^definition = "The recipient of the message shall be present in case the recipient is given as a practitioner role. E.g. a named general practitioner."
+* recipient[practitionerRole] ^type.aggregation = #bundled
 * recipient ^type.aggregation = #bundled
-* recipient ^definition = "The recipient of the message shall be present in case the recipient is given as a practioner role or a more specific organization than the recipient of the message. E.g. a unit in a hospital, a named general practitioner or a home care group in a municipality."
 * sender 0.. MS
 * sender only Reference(Organization or PractitionerRole)
 * sender ^type.aggregation = #bundled
