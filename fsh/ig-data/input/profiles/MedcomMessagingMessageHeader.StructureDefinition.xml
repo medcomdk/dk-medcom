@@ -435,9 +435,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
-        <strength value="example"/>
-        <description value="One of the message events defined as part of this version of FHIR."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/message-events"/>
+        <strength value="required"/>
+        <description value="One of the message events defined as part of MedCom messaging."/>
+        <valueSet value="http://medcom.dk/fhir/medcom-core/ValueSet/medcom-message-event-codes"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -471,6 +471,7 @@
       <requirements value="Indicates where message is to be sent for routing purposes.  Allows verification of &quot;am I the intended recipient&quot;."/>
       <min value="1"/>
       <max value="*"/>
+      <mustSupport value="true" />
       <base>
         <path value="MessageHeader.destination"/>
         <min value="0"/>

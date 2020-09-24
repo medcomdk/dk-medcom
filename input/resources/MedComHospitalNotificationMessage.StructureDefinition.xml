@@ -41,16 +41,135 @@
       <sliceName value="messageHeader" />
     </element>
     <element id="Bundle.entry:messageHeader.resource.event[x]">
-      <path value="Bundle.entry.resource.event[x]" />
-      <code>
-        <code value="HospitalNotification" />
-      </code>
-      <short value="Code for the this event" />
-      <definition value="Code for the this event based on encounter status and class" />
+      <path value="Bundle.entry.resource.event[x]"/>
+      <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="$this"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="closed"/>
+      </slicing>
+      <short
+             value="Code for the event this message represents or link to event definition"/>
+      <definition
+                  value="Code that identifies the event this message represents and connects it with its definition. Events defined as part of the FHIR specification have the system value &quot;http://terminology.hl7.org/CodeSystem/message-events&quot;.  Alternatively uri to the EventDefinition."/>
+      <comment
+               value="The time of the event will be found in the focus resource. The time of the message will be found in [Bundle.timestamp](http://hl7.org/fhir/R4/bundle-definitions.html#Bundle.timestamp)."/>
+      <requirements value="Drives the behavior associated with this message."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="MessageHeader.event[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
       <binding>
-        <strength value="example" />
-        <description value="Message event defined as part of this version of FHIR." />
+        <extension
+                   url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MessageEvent"/>
+        </extension>
+        <extension
+                   url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true"/>
+        </extension>
+        <strength value="required"/>
+        <description
+                     value="One of the message events defined as part of MedCom messaging."/>
+        <valueSet
+                  value="http://medcom.dk/fhir/medcom-core/ValueSet/medcom-message-event-codes"/>
       </binding>
+      <mapping>
+        <identity value="w5"/>
+        <map value="FiveWs.what[x]"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="MSH-9.2"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map
+             value="./payload[classCode=&quot;CACT&quot; and moodCode=&quot;EVN&quot; and isNormalAct()]/code[isNormalDatatype()]/code"/>
+      </mapping>
+    </element>
+    <element id="Bundle.entry:messageHeader.resource.event[x]:eventCoding">
+      <path value="Bundle.entry.resource.event[x]"/>
+      <sliceName value="eventCoding"/>
+      <short
+             value="Code for the event this message represents or link to event definition"/>
+      <definition
+                  value="Code that identifies the event this message represents and connects it with its definition. Events defined as part of the FHIR specification have the system value &quot;http://terminology.hl7.org/CodeSystem/message-events&quot;.  Alternatively uri to the EventDefinition."/>
+      <comment
+               value="The time of the event will be found in the focus resource. The time of the message will be found in [Bundle.timestamp](http://hl7.org/fhir/R4/bundle-definitions.html#Bundle.timestamp)."/>
+      <requirements value="Drives the behavior associated with this message."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MessageHeader.event[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <patternCoding>
+        <system value="http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-event-codes"/>
+        <code value="hospital-notification-message"/>
+      </patternCoding>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension
+                   url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MessageEvent"/>
+        </extension>
+        <extension
+                   url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true"/>
+        </extension>
+        <strength value="required"/>
+        <description
+                     value="One of the message events defined as part of MedCom messaging."/>
+        <valueSet
+                  value="http://medcom.dk/fhir/medcom-core/ValueSet/medcom-message-event-codes"/>
+      </binding>
+      <mapping>
+        <identity value="w5"/>
+        <map value="FiveWs.what[x]"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="MSH-9.2"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map
+             value="./payload[classCode=&quot;CACT&quot; and moodCode=&quot;EVN&quot; and isNormalAct()]/code[isNormalDatatype()]/code"/>
+      </mapping>
     </element>
     <element id="Bundle.entry:messageHeader.resource.destination:cc">
       <path value="Bundle.entry.resource.destination" />
@@ -68,6 +187,17 @@
         <targetProfile value="http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-hospital-notification-encounter" />
         <aggregation value="bundled" />
       </type>
+    </element>
+    <element id="Bundle.entry:messageHistory">
+      <path value="Bundle.entry" />
+      <sliceName value="messageHistory" />
+    </element>
+    <element id="Bundle.entry:messageHistory.resource.activity">
+      <path value="Bundle.entry.resource.activity" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://medcom.dk/fhir/medcom-core/ValueSet/medcom-hospital-notification-message-activity-codes" />
+      </binding>
     </element>
     <element id="Bundle.entry:hospitalNotifcationEncounter">
       <path value="Bundle.entry" />

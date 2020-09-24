@@ -3,7 +3,7 @@ canonical: http://medcom.dk/fhir/medcom-core
 name: MedComCore
 title: "DK MedCom Core (R4)"
 status: draft
-version: 0.1
+version: 0.9
 fhirVersion: 4.0.1
 copyrightYear: 2020+
 releaseLabel: Build CI
