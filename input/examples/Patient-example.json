@@ -1,34 +1,4 @@
-{
-  "resourceType": "Bundle",
-  "id": "bundle-patient-ref",
-  "type": "collection",
-  "entry": [
-           {
-          "resource": {
-              "meta": {
-                  "profile": [
-                   
-                      "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-organization"
-                  ]
-              },
-              "resourceType": "Organization",
-              "id": "c6abef7c-5638-44dc-9596-a5c8fca57682",
-              "identifier": [
-                  {
-                      "system": "urn:oid:1.2.208.176.1.1",
-                      "value": "323841000016009"
-                  },
-                  {
-                      "system": "urn:oid:1.3.88",
-                      "value": "5790000121830"
-                  }
-              ],
-              "name": "NOVAX, Test til lægesystem"
-          },
-          "fullUrl": "urn:uuid:c6abef7c-5638-44dc-9596-a5c8fca57682"
-      },
       {
-          "resource": {
               "resourceType": "Patient",
               "id": "2456f44e-d9ad-4296-bd12-24ffebd10fb1",
               "meta": {
@@ -37,7 +7,7 @@
                   ]
               },
               "managingOrganization": {
-                  "reference": "Organization/c6abef7c-5638-44dc-9596-a5c8fca57682"
+                  "reference": "Organization/1234"
               },
               "identifier": [
                   {
@@ -70,8 +40,4 @@
                   }
               ]
 
-          },
-          "fullUrl": "urn:uuid:2456f44e-d9ad-4296-bd12-24ffebd10fb1"
-      }
-  ]
-}
+          }
