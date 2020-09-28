@@ -8,9 +8,11 @@
       },
     "identifier": [
       {
-        "system": "https://autregweb.sst.dk/",
-        "value": "00LNW"
+        "use": "official",
+        "system": "urn:oid:1.2.208.176.1.1",
+        "value": "238576463728473"
       }
+      
     ],
     "active": true,
     "name": [
