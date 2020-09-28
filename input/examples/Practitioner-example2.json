@@ -6,12 +6,15 @@
           "http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-practitioner"
         ]
       },
-    "identifier": [
-      {
-        "system": "https://autregweb.sst.dk/",
-        "value": "001BB"
-      }
-    ],
+      "identifier": [
+        {
+          "use": "official",
+          "system": "urn:oid:1.2.208.176.1.1",
+          "value": "238576463728473"
+        }
+        
+      ],
+
     "active": true,
     "name": [
       {
