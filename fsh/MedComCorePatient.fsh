@@ -36,12 +36,3 @@ Title: "Eric Flame"
 * address.city = "Aarhus"
 * address.postalCode = "8000 C"
 * managingOrganization = Reference(BurnCenter)
-
-
-Instance: BurnCenter
-InstanceOf: MedComCoreOrganization
-Title: "Aros Burn Center"
-* identifier[sorIdentifier].use = #official
-* identifier[sorIdentifier].system = "urn:oid:1.2.208.176.1.1"
-* identifier[sorIdentifier].value = "123456789012345"
-* name = "Aros Burn Center"
