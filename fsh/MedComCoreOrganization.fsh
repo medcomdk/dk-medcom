@@ -8,6 +8,8 @@ Description: "A formally recognized organizations within danish healthcare, regi
 * identifier ^slicing.rules = #open
 * identifier contains sorIdentifier 1..1 MS
 * identifier[sorIdentifier] only http://hl7.dk/fhir/core/StructureDefinition/dk-core-sor-identifier
+* name MS
+* name ^definition = "Name of the organaization. Shall be present if known by the sender."
 
 
 Instance: BurnCenter

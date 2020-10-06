@@ -63,19 +63,3 @@ Usage: #inline
 * sender = Reference(MessageSender)
 * source.endpoint = "unknown"
 * focus = Reference(CareCommunicationContent)
-
-
-Alias: $SORCode = urn:oid:1.2.208.176.1.1
-Alias: $EANCode = urn:oid:1.3.88
-
-Instance: MessageReceiver
-InstanceOf: http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-organization
-* identifier[sorIdentifier].value = "543210987654321"
-* identifier[eanIdentifier].value = "3210987654321"
-* name = "Receiver Organization"
-
-Instance: MessageSender
-InstanceOf: http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-organization
-* identifier[sorIdentifier].value = "123456789012345"
-* identifier[eanIdentifier].value = "1234567890123"
-* name = "Sender Organization"
