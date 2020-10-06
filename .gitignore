@@ -5,6 +5,7 @@ Thumbs.db
 /temp
 /template
 /input/ImplementationGuide-dk.fhir.ig.medcom-core.json
+/input/examples
 /input/extensions
 /input/includes/menu.xml
 /input/profiles
