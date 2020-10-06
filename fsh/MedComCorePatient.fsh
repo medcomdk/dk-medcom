@@ -20,3 +20,28 @@ Description: "Patient resource to use as subject in MedCom communication"
 * managingOrganization 1.. MS
 * managingOrganization only Reference(http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-organization)
 * managingOrganization ^type.aggregation = #bundled
+
+
+Instance: EricFlame
+InstanceOf: MedComCorePatient
+Title: "Eric Flame"
+* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
+* identifier[cpr].value = "0102030405"
+* name[official].use = #official
+* name[official].given = "Eric"
+* name[official].family = "Flame"
+* telecom.system = #phone
+* telecom.value = "12345678"
+* address.line = "Flammesvinget 1"
+* address.city = "Aarhus"
+* address.postalCode = "8000 C"
+* managingOrganization = Reference(BurnCenter)
+
+
+Instance: BurnCenter
+InstanceOf: MedComCoreOrganization
+Title: "Aros Burn Center"
+* identifier[sorIdentifier].use = #official
+* identifier[sorIdentifier].system = "urn:oid:1.2.208.176.1.1"
+* identifier[sorIdentifier].value = "123456789012345"
+* name = "Aros Burn Center"
