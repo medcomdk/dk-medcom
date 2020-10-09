@@ -12,3 +12,13 @@ Description: "Base resource for all MedCom messages."
 * entry.resource 1.. MS
 * entry[messageHeader].resource only MedComMessagingMessageHeader
 * entry[messageHistory].resource only MedComMessageProvenance
+
+
+Alias: $BundleType = http://hl7.org/fhir/bundle-type
+
+Instance: EmptyMessage
+InstanceOf: MedComMessagingMessage
+* type = $BundleType#message
+* timestamp = 2020-09-28T12:34:56Z
+* entry[messageHeader].fullUrl = "MessageHeader/MessageHeaderExample"
+* entry[messageHeader].resource = MessageHeaderExample

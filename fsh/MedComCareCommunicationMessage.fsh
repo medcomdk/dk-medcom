@@ -1,19 +1,23 @@
-Alias: $MessageCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-event-codes
+Alias: $MessageEvents = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-events
 
 Profile: MedComCareCommunicationMessage
-Parent: http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-messaging-message
+Parent: MedComMessagingMessage
 Id: medcom-care-communication-message
-Title: "MedCom Care Communication Message"
 Description: "Message for communication care related information between parties in Danish Health Care using MedCom Standards"
 * entry contains
     citizen 1..1
 * entry[citizen] 1..1 MS
 * entry[citizen].resource 1.. MS
 * entry[citizen].resource only MedComCorePatient
-* entry[messageHeader].resource.focus 1..1 MS
-* entry[messageHeader].resource.focus only Reference(MedComCareCommunication)
-* entry[messageHeader].resource.eventCoding = $MessageCode#care-communication-message
+* entry[messageHeader].resource only MedComCareCommunicationMessageHeader
 * entry[messageHistory].resource.activity from http://medcom.dk/fhir/medcom-core/ValueSet/medcom-care-communication-message-activity-codes
+
+
+Profile: MedComCareCommunicationMessageHeader
+Parent: MedComMessagingMessageHeader
+* eventCoding = $MessageEvents#care-communication-message
+* focus 1..1 MS
+* focus only Reference(MedComCareCommunication)
 
 
 Alias: $BundleType = http://hl7.org/fhir/bundle-type
@@ -27,11 +31,6 @@ Title: "MedCom Care Communication Message Example"
 * timestamp = 2020-09-28T12:34:56Z
 * entry[messageHeader].fullUrl = "MessageHeader/CareCommunicationMessageHeader"
 * entry[messageHeader].resource = CareCommunicationMessageHeader
-* entry[messageHeader].resource.destination.extension[use] = PrimaryCoding
-* entry[messageHeader].resource.eventCoding.code = #care-communication-message
-* entry[messageHeader].resource.destination.endpoint = "unknown"
-* entry[messageHeader].resource.source.endpoint = "unknown"
-* entry[messageHeader].resource.focus = Reference(CareCommunicationContent)
 * entry[citizen].fullUrl = "Citizen/EricFlame"
 * entry[citizen].resource = EricFlame
 * entry[2].fullUrl = "Organization/BurnCenter"
@@ -48,18 +47,13 @@ Title: "MedCom Care Communication Message Example"
 * entry[7].resource = MessageSender
 
 
-Instance: PrimaryCoding
-InstanceOf: MedComDestinationUseExtension
-Usage: #inline
-* valueCoding = $Use#primary
-
 Instance: CareCommunicationMessageHeader
-InstanceOf: MedComMessagingMessageHeader
-Usage: #inline
-* destination[primary].extension[use].valueCoding = $Use#primary
-* eventCoding.code = #care-communication-message
-* destination[primary].endpoint = "unknown"
-* destination[primary].receiver = Reference(MessageReceiver)
+InstanceOf: MedComCareCommunicationMessageHeader
+// Usage: #inline
+* destination.extension[use] = PrimaryCoding
+* eventCoding = $MessageEvents#care-communication-message
+* destination.endpoint = "unknown"
+* destination.receiver = Reference(MessageReceiver)
 * sender = Reference(MessageSender)
 * source.endpoint = "unknown"
 * focus = Reference(CareCommunicationContent)
