@@ -1,5 +1,3 @@
-Alias: $CategoryValueSet = http://medcom.dk/fhir/medcom-core/ValueSet/medcom-careCommunicationCategories
-
 Profile:        MedComCareCommunication
 Parent:         Communication
 Id:             medcom-care-communication
@@ -69,7 +67,7 @@ Description:    "Care related communication between two or more parties in Danis
 
 
 Alias: $EventStatus = http://hl7.org/fhir/event-status
-Alias: $CategoryCodes = http://medcom.dk/fhir/CodeSystem/medcom-care-communication-category-codes
+Alias: $CategoryCodes = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-careCommunicationCategoryCodes
 
 Instance: CareCommunicationContent
 InstanceOf: MedComCareCommunication
