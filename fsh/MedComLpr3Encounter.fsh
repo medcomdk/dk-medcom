@@ -1,5 +1,5 @@
 Profile: MedComLpr3Encounter
-Parent: Encounter
+Parent: MedComCoreEncounter
 Id: medcom-lpr3-encounter
 Title: "MedCom LPR3 Encounter"
 Description: "Encounter which is part of an episode of care reported to the Danish National Patient Registry"
@@ -19,5 +19,6 @@ InstanceOf: MedComLpr3Encounter
 Title: "Encounter with LPR3 identifier"
 * status = $StatusCodes#unknown
 * class = $ActCodes#AMB
+* subject = Reference(EricFlame)
 * episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare.identifier.value = "12345678-1234-1234-1234-123456789012" 
