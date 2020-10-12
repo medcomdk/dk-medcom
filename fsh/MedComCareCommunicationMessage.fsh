@@ -1,4 +1,4 @@
-Alias: $MessageEvents = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-events
+Alias: $MessageEvents = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-event-codes
 
 Profile: MedComCareCommunicationMessage
 Parent: MedComMessagingMessage
@@ -10,7 +10,7 @@ Description: "Message for communication care related information between parties
 * entry[citizen].resource 1.. MS
 * entry[citizen].resource only MedComCorePatient
 * entry[messageHeader].resource only MedComCareCommunicationMessageHeader
-* entry[messageHistory].resource.activity from http://medcom.dk/fhir/medcom-core/ValueSet/medcom-care-communication-message-activity-codes
+* entry[messageHistory].resource.activity from MedComCareCommunicationMessageActivities
 
 
 Profile: MedComCareCommunicationMessageHeader

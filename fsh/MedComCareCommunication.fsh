@@ -56,7 +56,7 @@ Description:    "Care related communication between two or more parties in Danis
 * payload[attachment].contentAttachment 1.. MS
 * payload[attachment].contentAttachment.contentType MS
 * payload[attachment].contentAttachment.contentType ^definition = "The content type shall be present in case the content is provided as an attached document (data) or links to a document."
-* payload[attachment].contentAttachment.contentType from http://medcom.dk/fhir/medcom-core/ValueSet/medcom-attachment-mimetypes
+* payload[attachment].contentAttachment.contentType from MedComAttachmentMimeTypes
 * payload[attachment].contentAttachment.data MS
 * payload[attachment].contentAttachment.data ^definition = "Shall be present and contain the base64 encoded content if the attachment is an attached document"
 * payload[attachment].contentAttachment.url MS

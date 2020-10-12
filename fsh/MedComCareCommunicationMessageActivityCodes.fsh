@@ -1,6 +1,6 @@
 Alias: $ActivityCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-activity-codes
 
-ValueSet: MedComCareCommunicationMessageActivityCodes
+ValueSet: MedComCareCommunicationMessageActivities
 Id: medcom-care-communication-message-activity-codes
 Title: "MedCom Care Communication Message Activity Codes"
 Description: "ValueSet containg activity codes for care communication messages"

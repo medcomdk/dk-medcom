@@ -34,7 +34,7 @@ InstanceOf: MedComDestinationUseExtension
 Usage: #inline
 * valueCoding = $Use#primary
 
-Alias: $MessageEvents = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-events
+Alias: $MessageEvents = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-event-codes
 
 Instance: MessageHeaderExample
 InstanceOf: MedComMessagingMessageHeader
