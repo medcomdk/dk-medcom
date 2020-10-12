@@ -31,7 +31,7 @@ Title: "MedCom Care Communication Message Example"
 * timestamp = 2020-09-28T12:34:56Z
 * entry[messageHeader].fullUrl = "MessageHeader/CareCommunicationMessageHeader"
 * entry[messageHeader].resource = CareCommunicationMessageHeader
-* entry[citizen].fullUrl = "Citizen/EricFlame"
+* entry[citizen].fullUrl = "Patient/EricFlame"
 * entry[citizen].resource = EricFlame
 * entry[2].fullUrl = "Organization/BurnCenter"
 * entry[2].resource = BurnCenter
@@ -49,7 +49,6 @@ Title: "MedCom Care Communication Message Example"
 
 Instance: CareCommunicationMessageHeader
 InstanceOf: MedComCareCommunicationMessageHeader
-// Usage: #inline
 * destination.extension[use] = PrimaryCoding
 * eventCoding = $MessageEvents#care-communication-message
 * destination.endpoint = "unknown"

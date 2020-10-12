@@ -40,18 +40,17 @@ Description:    "Care related communication between two or more parties in Danis
 * sender ^type.aggregation = #bundled
 * sender ^definition = "The sender of the message shall be present in case the recipient is given as a practioner role or a more specific organization than the sender of the message. E.g. a unit in a hospital, a named general practitioner or a home care group in a municipality."
 * payload 1..
+* payload.extension contains medcom-core-date-time-extension named date 1..1 MS
+* payload.extension contains medcom-core-author-extension named author 1..1 MS
 * payload ^slicing.discriminator.type = #type
 * payload ^slicing.discriminator.path = "$this.content"
 * payload ^slicing.rules = #open
 * payload ^slicing.ordered = true
 * payload contains
-    string 0.. and
-    attachment 0..
+    string 0.. MS and
+    attachment 0.. MS
 * payload[string].content[x] only string
-* payload[string] 1.. MS
 * payload[string].content[x] MS
-* payload[string].extension contains medcom-core-date-time-extension named date 1..1 MS
-* payload[string].extension contains medcom-core-author-extension named author 1..1 MS
 * payload[attachment].content[x] only Attachment
 * payload[attachment] 0.. MS
 * payload[attachment] ^definition = "The payload of the message shall contain all links or content attached to the message."
@@ -80,10 +79,10 @@ Title: "Example of Care Communication Content"
 * subject = Reference(EricFlame)
 * encounter = Reference(EncounterWithLPR3Identifier)
 * sent = 2020-09-28T12:34:56Z
-* payload[string].content[x] = ""   // HACK to slip through SUSHI (leads to one error)
-* payload[string].contentString = "The burns are quite severe"
-* payload[string].extension[date].valueDateTime = 2020-09-28
-* payload[string].extension[author].valueReference = Reference(MichaelBurns)
+* payload.contentString = "The burns are quite severe"
+* payload.extension[date].valueDateTime = 2020-09-28
+* payload.extension[author].valueReference = Reference(MichaelBurns)
+
 
 Instance: MichaelBurns
 InstanceOf: Practitioner
