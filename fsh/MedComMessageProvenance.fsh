@@ -1,7 +1,6 @@
 Profile: MedComMessageProvenance
 Parent: Provenance
 Id: medcom-message-provenance
-Title: "MedCom Message Provenance"
 Description: "Provenance information about the messages preceeding the current message"
 * target 1..1 MS
 * target ^definition = "Shall reference the message header being targeted."

@@ -1,7 +1,6 @@
 Profile:        MedComCareCommunication
 Parent:         Communication
 Id:             medcom-care-communication
-Title:          "MedCom Care Communication"
 Description:    "Care related communication between two or more parties in Danish healthcare"
 * status MS
 * category 1..1 MS

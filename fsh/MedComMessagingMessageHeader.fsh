@@ -3,7 +3,6 @@ Alias: $Use = urn:medcom:destinationuse
 Profile: MedComMessagingMessageHeader
 Parent: MessageHeader
 Id: medcom-messaging-messageHeader
-Title: "MedCom Messaging Message Header"
 Description: "Message Header for MedCom message bundles"
 * event[x] MS
 * event[x] only Coding

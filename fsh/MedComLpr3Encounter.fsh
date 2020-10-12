@@ -1,7 +1,6 @@
 Profile: MedComLpr3Encounter
 Parent: MedComCoreEncounter
 Id: medcom-lpr3-encounter
-Title: "MedCom LPR3 Encounter"
 Description: "Encounter which is part of an episode of care reported to the Danish National Patient Registry"
 * status MS
 * episodeOfCare MS
