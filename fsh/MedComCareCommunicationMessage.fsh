@@ -16,6 +16,7 @@ Description: "Message for communication care related information between parties
 Profile: MedComCareCommunicationMessageHeader
 Parent: MedComMessagingMessageHeader
 Id: medcom-careCommunication-messageHeader
+Description: "Message header for a care communication message"
 * eventCoding = $MessageEvents#care-communication-message
 * focus 1..1 MS
 * focus only Reference(MedComCareCommunication)
