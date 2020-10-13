@@ -1,6 +1,6 @@
 Profile:        MedComCareCommunication
 Parent:         Communication
-Id:             medcom-care-communication
+Id:             medcom-careCommunication-communication
 Description:    "Care related communication between two or more parties in Danish healthcare"
 * status MS
 * category 1..1 MS
@@ -66,7 +66,7 @@ Description:    "Care related communication between two or more parties in Danis
 
 
 Alias: $EventStatus = http://hl7.org/fhir/event-status
-Alias: $CategoryCodes = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-careCommunicationCategoryCodes
+Alias: $CategoryCodes = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-careCommunication-categoryCodes
 
 Instance: CareCommunicationContent
 InstanceOf: MedComCareCommunication

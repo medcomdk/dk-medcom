@@ -1,7 +1,7 @@
-Alias: $ActivityCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-activity-codes
+Alias: $ActivityCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-activityCodes
 
-ValueSet: MedComHospitalNotificationMessageActivityCodes
-Id: medcom-hospital-notification-message-activity-codes
+ValueSet: MedComHospitalNotificationMessageActivities
+Id: medcom-hospitalNotification-messageActivities
 Title: "MedCom Hospital Notification Message Activity Codes"
 Description: "ValueSet containg activity codes for hospital notification messages"
 * $ActivityCode#admit-emergency "Start hospital stay-acute ambulant"

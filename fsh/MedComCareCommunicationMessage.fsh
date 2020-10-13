@@ -1,8 +1,8 @@
-Alias: $MessageEvents = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-event-codes
+Alias: $MessageEvents = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-eventCodes
 
 Profile: MedComCareCommunicationMessage
 Parent: MedComMessagingMessage
-Id: medcom-care-communication-message
+Id: medcom-careCommunication-message
 Description: "Message for communication care related information between parties in Danish Health Care using MedCom Standards"
 * entry contains
     citizen 1..1
@@ -15,6 +15,7 @@ Description: "Message for communication care related information between parties
 
 Profile: MedComCareCommunicationMessageHeader
 Parent: MedComMessagingMessageHeader
+Id: medcom-careCommunication-messageHeader
 * eventCoding = $MessageEvents#care-communication-message
 * focus 1..1 MS
 * focus only Reference(MedComCareCommunication)
@@ -22,7 +23,7 @@ Parent: MedComMessagingMessageHeader
 
 Alias: $BundleType = http://hl7.org/fhir/bundle-type
 Alias: $Use = urn:medcom:destinationuse
-Alias: $ActivityCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-activity-codes
+Alias: $ActivityCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-activityCodes
 
 Instance: CareCommunicationMessageExample
 InstanceOf: MedComCareCommunicationMessage

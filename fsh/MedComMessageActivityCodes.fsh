@@ -1,5 +1,5 @@
-CodeSystem: MedComMessageActivityCodes
-Id: medcom-message-activity-codes
+CodeSystem: MedComMessagingActivityCodes
+Id: medcom-messaging-activityCodes
 Title: "MedCom Message Activity Codes"
 Description: "Activity codes for MedCom messages"
 * #new-message "A new message has been sent"

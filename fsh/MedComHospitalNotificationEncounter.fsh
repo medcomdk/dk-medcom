@@ -11,3 +11,10 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * extension[spe].value[x] N
 * status 1..1
 * status ^short = "arrived  | in-progress | onleave | finished | cancelled | entered-in-error"
+
+
+Instance: HospitalNotificationEncounter
+InstanceOf: MedComHospitalNotificationEncounter
+* status = $StatusCodes#arrived
+* class = $ActCodes#AMB 
+* subject = Reference(EricFlame)

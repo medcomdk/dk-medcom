@@ -1,6 +1,6 @@
-Profile: MedComMessageProvenance
+Profile: MedComMessagingProvenance
 Parent: Provenance
-Id: medcom-message-provenance
+Id: medcom-messaging-provenance
 Description: "Provenance information about the messages preceeding the current message"
 * target 1..1 MS
 * target ^definition = "Shall reference the message header being targeted."
@@ -8,7 +8,7 @@ Description: "Provenance information about the messages preceeding the current m
 * occurredDateTime 1.. MS
 * recorded MS
 * activity 1.. MS
-* activity.coding.system = "http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-activity-codes"
+* activity.coding.system = "http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-activityCodes"
 * agent 1.. MS
 * agent.who 1.. MS
 * agent.who only Reference(MedComMessagingOrganization)
@@ -20,10 +20,10 @@ Description: "Provenance information about the messages preceeding the current m
 * entity.what.reference ^definition = "Shall contain the message header id of messages given as input to the activity"
 
 
-Alias: $ActivityCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-activity-codes
+Alias: $ActivityCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-activityCodes
 
 Instance: NewCareCommunicationProvenance
-InstanceOf: MedComMessageProvenance
+InstanceOf: MedComMessagingProvenance
 * target = Reference(CareCommunicationMessageHeader)
 * occurredDateTime = 2020-09-28T12:34:56Z
 * recorded = 2020-09-28T12:34:56Z
