@@ -45,6 +45,8 @@ Title: "MedCom Care Communication Message Example"
 * entry[6].resource = MessageReceiver
 * entry[7].fullUrl = "Organization/MessageSender"
 * entry[7].resource = MessageSender
+* entry[8].fullUrl = "Provenance/NewCareCommunicationProvenance"
+* entry[8].resource = NewCareCommunicationProvenance
 
 
 Instance: CareCommunicationMessageHeader
