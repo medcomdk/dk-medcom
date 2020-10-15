@@ -31,5 +31,5 @@ MichaelBurns"
 * entry[4].resource = MessageReceiver
 * entry[5].fullUrl = "Organization/MessageSender"
 * entry[5].resource = MessageSender
-/* entry[8].fullUrl = "Provenance/NewCareCommunicationProvenance"
-* entry[8].resource = NewCareCommunicationProvenance*/
+* entry[6].fullUrl = "Provenance/HospitalNotificationCommunicationProvenance"
+* entry[6].resource = HospitalNotificationCommunicationProvenance
