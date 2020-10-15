@@ -32,3 +32,12 @@ Description: "Provenance information for a medcom message. Valid only if used in
 * recorded = 2020-09-28T12:34:56Z
 * activity = $ActivityCode#new-message
 * agent.who = Reference(MessageSender)
+
+Instance: HospitalNotificationCommunicationProvenance
+InstanceOf: MedComMessageProvenance
+Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
+* target = Reference(HospitalNotificationMessageHeader)
+* occurredDateTime = 2020-10-15T13:44:14Z
+* recorded = 2020-10-15T13:45:15Z
+* activity = $ActivityCode#admit-emergency
+* agent.who = Reference(MessageSender)
