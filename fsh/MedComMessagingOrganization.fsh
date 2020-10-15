@@ -12,12 +12,14 @@ Alias: $EANCode = urn:oid:1.3.88
 
 Instance: MessageReceiver
 InstanceOf: MedComMessagingOrganization
+Description: "Example of an organization with a SOR and an EAN identifier."
 * identifier[sorIdentifier].value = "543210987654321"
 * identifier[eanIdentifier].value = "3210987654321"
 * name = "Receiver Organization"
 
 Instance: MessageSender
 InstanceOf: MedComMessagingOrganization
+Description: "Example of an organization with a SOR and an EAN identifier."
 * identifier[sorIdentifier].value = "123456789012345"
 * identifier[eanIdentifier].value = "1234567890123"
 * name = "Sender Organization"

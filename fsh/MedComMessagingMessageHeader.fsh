@@ -16,10 +16,12 @@ Description: "Message Header for MedCom message bundles"
 * destination[primary].extension[use].valueCoding = $Use#primary
 * destination[primary].receiver only Reference(MedComMessagingOrganization)
 * destination[primary].receiver 1.. MS
+* destination[primary].receiver ^type.aggregation = #bundled
 * destination[primary].endpoint MS
 * destination[cc].extension[use].valueCoding = $Use#cc
 * destination[cc].receiver only Reference(MedComMessagingOrganization)
 * destination[cc].receiver 1.. MS
+* destination[cc].receiver ^type.aggregation = #bundled
 * destination[cc].endpoint MS
 * destination[cc] ^definition = "Shall contain carbon copy recipients of the message"
 * sender 1.. MS
@@ -37,6 +39,7 @@ Alias: $MessageEvents = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-mess
 
 Instance: MessageHeaderExample
 InstanceOf: MedComMessagingMessageHeader
+Description: "Message Header for an empty message. Valid only if used in a bundle (message)."
 * destination.extension[use] = PrimaryCoding
 * eventCoding = $MessageEvents#empty-message
 * destination.endpoint = "unknown"

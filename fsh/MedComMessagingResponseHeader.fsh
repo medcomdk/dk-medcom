@@ -15,6 +15,7 @@ Alias: $ResponseCode = http://hl7.org/fhir/ValueSet/response-code
 
 Instance: ResponseHeaderExample
 InstanceOf: MedComMessagingResponseHeader
+Description: "Message header for an empty message. Valid only if used in a bundle (message)."
 * destination.extension[use] = PrimaryCoding
 * eventCoding = $MessageEvents#empty-message
 * destination.endpoint = "unknown"

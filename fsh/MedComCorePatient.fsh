@@ -24,6 +24,7 @@ Description: "Patient resource to use as subject in MedCom communication"
 Instance: EricFlame
 InstanceOf: MedComCorePatient
 Title: "Eric Flame"
+Description: "Patient with a managing organization. Valid only if used in a bundle (message)."
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "0102030405"
 * name[official].use = #official

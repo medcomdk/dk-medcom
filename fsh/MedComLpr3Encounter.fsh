@@ -16,6 +16,7 @@ Alias: $ActCodes = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Instance: EncounterWithLPR3Identifier
 InstanceOf: MedComLpr3Encounter
 Title: "Encounter with LPR3 identifier"
+Description: "Encounter with a LPR3 identifier. Valid only if used in a bundle (message)."
 * status = $StatusCodes#unknown
 * class = $ActCodes#AMB
 * subject = Reference(EricFlame)

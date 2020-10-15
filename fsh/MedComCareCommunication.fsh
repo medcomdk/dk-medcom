@@ -71,6 +71,7 @@ Alias: $CategoryCodes = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-care
 Instance: CareCommunicationContent
 InstanceOf: MedComCareCommunication
 Title: "Example of Care Communication Content"
+Description: "Content of care communication message. Valid only if used in a bundle (message)."
 * status = $EventStatus#unknown
 * category = $CategoryCodes#carecoordination
 * subject = Reference(EricFlame)

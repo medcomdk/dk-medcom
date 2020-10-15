@@ -15,6 +15,7 @@ Description: "A formally recognized organizations within danish healthcare, regi
 Instance: BurnCenter
 InstanceOf: MedComCoreOrganization
 Title: "Aros Burn Center"
+Description: "A core organization with a SOR identifier."
 * identifier[sorIdentifier].use = #official
 * identifier[sorIdentifier].system = "urn:oid:1.2.208.176.1.1"
 * identifier[sorIdentifier].value = "123456789012345"
