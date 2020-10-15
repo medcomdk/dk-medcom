@@ -7,7 +7,7 @@ Description: "Base resource for all MedCom response messages."
 
 Instance: ResponseExample
 InstanceOf: MedComMessagingResponse
-Description: "Example of a response message. Valid only if used in a bundle (message)."
+Description: "Example of a response message."
 * type = $BundleType#message
 * timestamp = 2020-10-01T12:34:56Z
 * entry[messageHeader].fullUrl = "MessageHeader/ResponseHeaderExample"
