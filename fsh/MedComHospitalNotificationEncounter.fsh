@@ -33,6 +33,8 @@ Description: "Encounter derivation that handles hospital notification when a pat
 Instance: HospitalNotificationEncounter
 InstanceOf: MedComHospitalNotificationEncounter
 Title: "MedCom Hospital Notification Encounter"
+Description: "Exampel of MedCom hospital Noticication Encounter 
+with  Burncenter as serviceProvider"
 * extension[spe].valuePeriod.start = 2020-10-13T10:22:12Z
 * extension[spe].valuePeriod.end = 2020-10-14T11:23:13Z
 * status = $StatusCodes#arrived
