@@ -1,7 +1,7 @@
-Alias: $ActivityCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-activity-codes
+Alias: $ActivityCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-activityCodes
 
 ValueSet: MedComCareCommunicationMessageActivities
-Id: medcom-care-communication-message-activity-codes
+Id: medcom-careCommunication-messagingActivities
 Title: "MedCom Care Communication Message Activity Codes"
 Description: "ValueSet containg activity codes for care communication messages"
 * $ActivityCode#new-message "A new message has been sent"

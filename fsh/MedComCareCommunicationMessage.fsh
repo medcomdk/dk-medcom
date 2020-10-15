@@ -1,8 +1,6 @@
-Alias: $MessageEvents = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-event-codes
-
 Profile: MedComCareCommunicationMessage
 Parent: MedComMessagingMessage
-Id: medcom-care-communication-message
+Id: medcom-careCommunication-message
 Description: "Message for communication care related information between parties in Danish Health Care using MedCom Standards"
 * entry contains
     citizen 1..1
@@ -13,16 +11,8 @@ Description: "Message for communication care related information between parties
 * entry[messageHistory].resource.activity from MedComCareCommunicationMessageActivities
 
 
-Profile: MedComCareCommunicationMessageHeader
-Parent: MedComMessagingMessageHeader
-* eventCoding = $MessageEvents#care-communication-message
-* focus 1..1 MS
-* focus only Reference(MedComCareCommunication)
-
-
 Alias: $BundleType = http://hl7.org/fhir/bundle-type
-Alias: $Use = urn:medcom:destinationuse
-Alias: $ActivityCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-message-activity-codes
+Alias: $ActivityCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-activityCodes
 
 Instance: CareCommunicationMessageExample
 InstanceOf: MedComCareCommunicationMessage
@@ -47,14 +37,3 @@ Title: "MedCom Care Communication Message Example"
 * entry[7].resource = MessageSender
 * entry[8].fullUrl = "Provenance/NewCareCommunicationProvenance"
 * entry[8].resource = NewCareCommunicationProvenance
-
-
-Instance: CareCommunicationMessageHeader
-InstanceOf: MedComCareCommunicationMessageHeader
-* destination.extension[use] = PrimaryCoding
-* eventCoding = $MessageEvents#care-communication-message
-* destination.endpoint = "unknown"
-* destination.receiver = Reference(MessageReceiver)
-* sender = Reference(MessageSender)
-* source.endpoint = "unknown"
-* focus = Reference(CareCommunicationContent)
