@@ -18,7 +18,7 @@ Alias: $BundleType = http://hl7.org/fhir/bundle-type
 
 Instance: EmptyMessage
 InstanceOf: MedComMessagingMessage
-Description: "Example of an emty message. Valid only if used in a bundle (message)."
+Description: "Example of an emty message."
 * type = $BundleType#message
 * timestamp = 2020-09-28T12:34:56Z
 * entry[messageHeader].fullUrl = "MessageHeader/MessageHeaderExample"
