@@ -27,11 +27,9 @@ MichaelBurns"
 * entry[2].resource = BurnCenter
 * entry[3].fullUrl = "Encounter/HospitalNotificationEncounter"
 * entry[3].resource = HospitalNotificationEncounter
-* entry[4].fullUrl = "Practitioner/MichaelBurns"
-* entry[4].resource = MichaelBurns
-* entry[5].fullUrl = "Organization/MessageReceiver"
-* entry[5].resource = MessageReceiver
-* entry[6].fullUrl = "Organization/MessageSender"
-* entry[6].resource = MessageSender
+* entry[4].fullUrl = "Organization/MessageReceiver"
+* entry[4].resource = MessageReceiver
+* entry[5].fullUrl = "Organization/MessageSender"
+* entry[5].resource = MessageSender
 /* entry[8].fullUrl = "Provenance/NewCareCommunicationProvenance"
 * entry[8].resource = NewCareCommunicationProvenance*/
