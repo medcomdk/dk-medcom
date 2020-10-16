@@ -1,6 +1,6 @@
 Profile: MedComHospitalNotificationEncounter
 Parent: MedComLpr3Encounter
-Id: medcom-hospital-notification-encounter
+Id: medcom-hospitalNotification-encounter
 Description: "Encounter derivation that handles hospital notification when a patient is admitted to a hospital. The hospital notification is always send from a hospital. The receiver of the message is the patients home municipalicy. The hospital notification is send for example when patient is admitted, on leave, returned from leave, finished hospital stay."
 * extension ^slicing.discriminator[0].type = #value
 * extension ^slicing.discriminator[0].path = "url"
