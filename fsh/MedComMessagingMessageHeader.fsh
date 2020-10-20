@@ -1,4 +1,4 @@
-Alias: $Use = urn:medcom:destinationuse
+Alias: $Use = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-destinationUse
 
 Profile: MedComMessagingMessageHeader
 Parent: MessageHeader

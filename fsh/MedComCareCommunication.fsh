@@ -84,6 +84,6 @@ Description: "Content of care communication message. Valid only if used in a bun
 
 Instance: MichaelBurns
 InstanceOf: Practitioner
-Usage: #inline
+Description: "Simple practitioner with a name"
 * name.given = "Michael"
 * name.family = "Burns"
