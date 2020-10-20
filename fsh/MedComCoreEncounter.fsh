@@ -12,6 +12,7 @@ Description: "An interaction between a patient/citizen and healthcare provider(s
 Instance: example
 InstanceOf: MedComCoreEncounter
 Title: "MedCom Core Encounter"
+Description: "Example of a simple MedCom Core Encounter"
 * status = $StatusCodes#planned 
 * class = $ActCodes#AMB 
 * subject = Reference(EricFlame)
