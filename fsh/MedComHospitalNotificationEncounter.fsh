@@ -13,9 +13,9 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * basedOn ..0
 * participant ..0
 * appointment ..0
-* period 1..
+* period 1.. MS
 * period ^definition = "The start and end time of the encounter. For notification of hospitalization an start interval is always known as the notification of adminssion is trigged by the arrival of a patient. There a period will always exist as the notification of admission always starts the communication flow. Please that the encounter.period values always referes to the encounter start and end. The period of the leave of absence is not part of the notification of hospitalization FHIR resource ."
-* period.start 1.. 
+* period.start 1.. MS
 * period.start ^definition = "Encounter Starting time.  \r\nFor the notificationOfHospitalization a starting time is the timestamp that is registered by the hospital at patient physical arrival at the ward or emergency department."
 * length ..0
 * reasonCode ..0
@@ -24,7 +24,7 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * account ^definition = "The set of accounts and issurance information that may be used for billing for this Encounter. The account element shall not be used in NotificationOfHospitalStayEncounter"
 * hospitalization ..0
 * location ..0
-* serviceProvider 1..
+* serviceProvider 1.. MS
 * partOf ..0
 
 Instance: HospitalNotificationEncounter

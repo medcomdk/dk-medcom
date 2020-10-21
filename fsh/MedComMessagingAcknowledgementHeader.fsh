@@ -1,6 +1,6 @@
-Profile: MedComMessagingResponseHeader
+Profile: MedComMessagingAcknowledgementHeader
 Parent: MedComMessagingMessageHeader
-Id: medcom-messaging-responseHeader
+Id: medcom-messaging-AcknowledgementHeader
 Description: "A resource that describes a reponse to a message that is exchanged as a MedCom messgage within danish healthcare"
 * destination[cc] ..0
 * response 1.. MS
@@ -11,10 +11,10 @@ Description: "A resource that describes a reponse to a message that is exchanged
 
 
 Alias: $MessageEvents = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-eventCodes
-Alias: $ResponseCode = http://hl7.org/fhir/ValueSet/response-code
+Alias: $AcknowledgementCode = http://hl7.org/fhir/ValueSet/Acknowledgement-code
 
-Instance: ResponseHeaderExample
-InstanceOf: MedComMessagingResponseHeader
+Instance: AcknowledgementHeaderExample
+InstanceOf: MedComMessagingAcknowledgementHeader
 Description: "Message header for an empty message. Valid only if used in a bundle (message)."
 * destination.extension[use] = PrimaryCoding
 * eventCoding = $MessageEvents#empty-message
@@ -23,4 +23,4 @@ Description: "Message header for an empty message. Valid only if used in a bundl
 * sender = Reference(MessageSender)
 * source.endpoint = "unknown"
 * response.identifier = "EmptyMessage"
-* response.code = $ResponseCode#ok
+* response.code = $AcknowledgementCode#ok

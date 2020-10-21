@@ -46,13 +46,13 @@ if [ ! -d "$input_cache_path" ] ; then
   if [ $FORCE != true ]; then
     echo "$input_cache_path does not exist"
     message="create it?"
-    read -r -p "$message" response
+    read -r -p "$message" Acknowledgement
     else
-    response=y
+    Acknowledgement=y
   fi
 fi
 
-if [[ $response =~ ^[yY].*$ ]] ; then
+if [[ $Acknowledgement =~ ^[yY].*$ ]] ; then
   mkdir ./input-cache
 fi
 
@@ -87,11 +87,11 @@ if [[ $skipPrompts == false ]]; then
     echo Will place publisher jar here: "$jarlocation"
     message="Ok (enter 'y' or 'Y' to continue, any other key to cancel)?"
   fi
-  read -r -p "$message" response
+  read -r -p "$message" Acknowledgement
 else
-  response=y
+  Acknowledgement=y
 fi
-if [[ $skipPrompts == true ]] || [[ $response =~ ^[yY].*$ ]]; then
+if [[ $skipPrompts == true ]] || [[ $Acknowledgement =~ ^[yY].*$ ]]; then
 
 	echo "Downloading most recent publisher to $jarlocationname - it's ~100 MB, so this may take a bit"
 	curl -L $dlurl -o "$jarlocation" --create-dirs
@@ -101,10 +101,10 @@ fi
 
 if [[ $skipPrompts != true ]]; then
     message="Update scripts? (enter 'y' or 'Y' to continue, any other key to cancel)?"
-    read -r -p "$message" response
+    read -r -p "$message" Acknowledgement
   fi
 
-if [[ $skipPrompts == true ]] || [[ $response =~ ^[yY].*$ ]]; then
+if [[ $skipPrompts == true ]] || [[ $Acknowledgement =~ ^[yY].*$ ]]; then
   echo "Downloading most recent scripts "
 
   curl -L $update_bat_url -o /tmp/_updatePublisher.new
