@@ -5,8 +5,9 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * extension ^slicing.discriminator[0].type = #value
 * extension ^slicing.discriminator[0].path = "url"
 * extension ^slicing.rules = #open
+* status from MedComHospitalNotificationEncounterStatus
 * status 1..1
-* status ^short = "arrived  | in-progress | onleave | finished | cancelled | entered-in-error"
+* status ^short = "in-progress | onleave | finished | entered-in-error"
 * type 0..0
 * serviceType 0..0
 * priority 0..0
