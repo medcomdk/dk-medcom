@@ -6,6 +6,7 @@ Id: medcom-messaging-messageHeader
 Description: "Message Header for MedCom message bundles"
 * event[x] MS
 * event[x] only Coding
+* eventCoding 1..
 * eventCoding from MedComMessagingMessageTypes
 * destination.extension contains MedComMessagingDestinationUseExtension named use 1..1
 * destination.extension[use] MS
