@@ -9,6 +9,7 @@ Description: "Provenance information about the messages preceeding the current m
 * occurredDateTime 1.. MS
 * recorded MS
 * activity 1.. MS
+* activity.coding.system 1.. MS
 * activity.coding.system = "http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-activityCodes"
 * agent 1.. MS
 * agent.who 1.. MS
