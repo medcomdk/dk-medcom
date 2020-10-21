@@ -3,10 +3,10 @@ Parent: MedComMessagingMessage
 Id: medcom-hospitalNotification-message
 Description: "A message for a Hospital Notification. The message is triggered as patients are admitted, onleave or has finished a hospital stay in order to notify the relevant Municipalicy home care"
 * entry contains
-    citizen 1..1
-* entry[citizen] 1..1 MS
-* entry[citizen].resource 1.. MS
-* entry[citizen].resource only MedComCorePatient
+    patient 1..1
+* entry[patient] 1..1 MS
+* entry[patient].resource 1.. MS
+* entry[patient].resource only MedComCorePatient
 * entry[messageHeader].resource only MedComHospitalNotificationMessageHeader
 * entry[messageHistory].resource.activity from MedComHospitalNotificationMessageActivities
 
@@ -21,8 +21,8 @@ MichaelBurns"
 * timestamp = 2020-09-28T12:34:56Z
 * entry[messageHeader].fullUrl = "MessageHeader/HospitalNotificationMessageHeader"
 * entry[messageHeader].resource = HospitalNotificationMessageHeader
-* entry[citizen].fullUrl = "Patient/EricFlame"
-* entry[citizen].resource = EricFlame
+* entry[patient].fullUrl = "Patient/EricFlame"
+* entry[patient].resource = EricFlame
 * entry[2].fullUrl = "Organization/BurnCenter"
 * entry[2].resource = BurnCenter
 * entry[3].fullUrl = "Encounter/HospitalNotificationEncounter"
