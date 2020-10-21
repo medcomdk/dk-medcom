@@ -6,15 +6,15 @@ Description:    "Care related communication between two or more parties in Danis
 * category 1..1 MS
 * category from MedComCareCommunicationCategories
 * priority MS
-* priority from MedComRequestPriority
-* priority ^definition = "Shall be present if the message priority is known to be urgent"
+* priority from MedComCareCommunicationRequestPriority
+* priority ^definition = "Shall be present if the message priority is known to be ASAP"
 * subject 1.. MS
 * subject only Reference(MedComCorePatient)
 * subject ^type.aggregation = #bundled
 * topic MS
 * topic ^definition = "Description of the purpose/content, similar to a subject line in an email. Shall be present if topic of the message is known."
 * encounter MS
-* encounter only Reference(MedComLpr3Encounter)
+* encounter only Reference(MedComCoreLpr3Encounter)
 * encounter ^type.aggregation = #bundled
 * encounter ^definition = "Shall contain an encounter with a reference to the episode of care if reported to the Danish National Patient Registry"
 * sent 1.. MS
@@ -37,7 +37,7 @@ Description:    "Care related communication between two or more parties in Danis
 * sender ^type.aggregation = #bundled
 * sender ^definition = "The sender of the message shall be present in case the recipient is given as a practioner role or a more specific organization than the sender of the message. E.g. a unit in a hospital, a named general practitioner or a home care group in a municipality."
 * payload 1..
-* payload.extension contains medcom-core-date-time-extension named date 1..1 MS
+* payload.extension contains medcom-core-datetime-extension named date 1..1 MS
 * payload.extension contains medcom-core-author-extension named author 1..1 MS
 * payload ^slicing.discriminator.type = #type
 * payload ^slicing.discriminator.path = "$this.content"
@@ -55,7 +55,7 @@ Description:    "Care related communication between two or more parties in Danis
 * payload[attachment].contentAttachment 1.. MS
 * payload[attachment].contentAttachment.contentType MS
 * payload[attachment].contentAttachment.contentType ^definition = "The content type shall be present in case the content is provided as an attached document (data) or links to a document."
-* payload[attachment].contentAttachment.contentType from MedComAttachmentMimeTypes
+* payload[attachment].contentAttachment.contentType from MedComCoreAttachmentMimeTypes
 * payload[attachment].contentAttachment.data MS
 * payload[attachment].contentAttachment.data ^definition = "Shall be present and contain the base64 encoded content if the attachment is an attached document"
 * payload[attachment].contentAttachment.url MS

@@ -1,4 +1,4 @@
-Profile: MedComMessageProvenance
+Profile: MedComMessagingProvenance
 Parent: Provenance
 Id: medcom-messaging-provenance
 Description: "Provenance information about the messages preceeding the current message"
@@ -25,7 +25,7 @@ Description: "Provenance information about the messages preceeding the current m
 Alias: $ActivityCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-activityCodes
 
 Instance: NewCareCommunicationProvenance
-InstanceOf: MedComMessageProvenance
+InstanceOf: MedComMessagingProvenance
 Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
 * target = Reference(CareCommunicationMessageHeader)
 * occurredDateTime = 2020-09-28T12:34:56Z
@@ -34,7 +34,7 @@ Description: "Provenance information for a medcom message. Valid only if used in
 * agent.who = Reference(MessageSender)
 
 Instance: HospitalNotificationCommunicationProvenance
-InstanceOf: MedComMessageProvenance
+InstanceOf: MedComMessagingProvenance
 Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
 * target = Reference(HospitalNotificationMessageHeader)
 * occurredDateTime = 2020-10-15T13:44:14Z

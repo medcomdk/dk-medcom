@@ -1,4 +1,4 @@
-Extension:  PayloadAuthorExtension
+Extension:  MedComCorePayloadAuthorExtension
 Id: medcom-core-author-extension
 Title: "Payload Author Extension"
 Description: "Reference to author of this payload"

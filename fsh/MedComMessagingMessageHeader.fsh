@@ -7,7 +7,7 @@ Description: "Message Header for MedCom message bundles"
 * event[x] MS
 * event[x] only Coding
 * eventCoding from MedComMessagingMessageTypes
-* destination.extension contains MedComDestinationUseExtension named use 1..1
+* destination.extension contains MedComMessagingDestinationUseExtension named use 1..1
 * destination.extension[use] MS
 * destination ^slicing.discriminator.type = #value
 * destination ^slicing.discriminator.path = "$this.extension.value"
@@ -31,7 +31,7 @@ Description: "Message Header for MedCom message bundles"
 
 
 Instance: PrimaryCoding
-InstanceOf: MedComDestinationUseExtension
+InstanceOf: MedComMessagingDestinationUseExtension
 Usage: #inline
 * valueCoding = $Use#primary
 

@@ -1,4 +1,4 @@
-Profile: MedComEANIdentifier
+Profile: MedComCoreEANIdentifier
 Parent: Identifier
 Id: medcom-core-eanIdentifier
 Description: "EAN identifier issued by MedCom"
