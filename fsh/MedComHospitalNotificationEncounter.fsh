@@ -38,7 +38,7 @@ with  Burncenter as serviceProvider"
 * status = $StatusCodes#arrived
 * class = $ActCodes#AMB 
 * subject = Reference(EricFlame)
-* episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
-* episodeOfCare.identifier.value = "87654321-1234-1234-1234-123456789012" 
+* episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
+* episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 
 * period.start = 2020-10-13T12:22:12Z
 * serviceProvider = Reference(BurnCenter)

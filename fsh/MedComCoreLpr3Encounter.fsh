@@ -4,10 +4,14 @@ Id: medcom-core-lpr3Encounter
 Description: "Encounter which is part of an episode of care reported to the Danish National Patient Registry"
 * status MS
 * episodeOfCare MS
-* episodeOfCare ^definition = "Shall contain the episode of care if reported to the Danish National Patient Registry"
-* episodeOfCare.identifier MS
-* episodeOfCare.identifier only Lpr3Identifier
-* episodeOfCare.identifier ^definition = "Shall contain the id of the episode of care reported to the Danish National Patient Registry if known"
+* episodeOfCare ^slicing.discriminator.type = #value
+* episodeOfCare ^slicing.discriminator.path = "identifier.system"
+* episodeOfCare ^slicing.rules = #open
+* episodeOfCare contains lpr3identifier 1..1 MS
+* episodeOfCare[lpr3identifier] ^definition = "Shall contain the episode of care if reported to the Danish National Patient Registry"
+* episodeOfCare[lpr3identifier].identifier 1..1 MS
+* episodeOfCare[lpr3identifier].identifier only Lpr3Identifier
+* episodeOfCare[lpr3identifier].identifier ^definition = "Shall contain the id of the episode of care reported to the Danish National Patient Registry if known"
 
 Alias: $StatusCodes = http://hl7.org/fhir/encounter-status
 Alias: $LPR = https://www.esundhed.dk/Registre/Landspatientsregisteret
@@ -20,5 +24,5 @@ Description: "Encounter with a LPR3 identifier. Valid only if used in a bundle (
 * status = $StatusCodes#unknown
 * class = $ActCodes#AMB
 * subject = Reference(EricFlame)
-* episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
-* episodeOfCare.identifier.value = "12345678-1234-1234-1234-123456789012" 
+* episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
+* episodeOfCare[lpr3identifier].identifier.value = "12345678-1234-1234-1234-123456789012" 
