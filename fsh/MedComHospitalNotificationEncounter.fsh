@@ -8,8 +8,8 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * status from MedComHospitalNotificationEncounterStatus
 * status 1..1
 * status ^short = "in-progress | onleave | finished | entered-in-error"
-* classHistory.class ^short = "inpatient | emergency"
-* classHistory.class from MedComHospitalNotificationEncounterClass
+* class ^short = "inpatient | emergency"
+* class from MedComHospitalNotificationEncounterClass
 * type 0..0
 * serviceType 0..0
 * priority 0..0
@@ -35,8 +35,8 @@ InstanceOf: MedComHospitalNotificationEncounter
 Title: "MedCom Hospital Notification Encounter"
 Description: "Exampel of MedCom hospital Noticication Encounter 
 with  Burncenter as serviceProvider"
-* status = $StatusCodes#arrived
-* class = $ActCodes#AMB 
+* status = #in-progress
+* class = $ActCodes#IMP 
 * subject = Reference(EricFlame)
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 

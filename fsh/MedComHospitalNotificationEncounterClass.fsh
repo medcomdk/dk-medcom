@@ -1,4 +1,4 @@
-Alias: $ClassCode = http://terminology.hl7.org/ValueSet/v3-ActEncounterCode
+Alias: $ClassCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 
 ValueSet: MedComHospitalNotificationEncounterClass
 Id: medcom-hospitalNotification-encounterClass

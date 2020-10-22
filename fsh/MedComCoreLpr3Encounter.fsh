@@ -3,6 +3,7 @@ Parent: MedComCoreEncounter
 Id: medcom-core-lpr3Encounter
 Description: "Encounter which is part of an episode of care reported to the Danish National Patient Registry"
 * status MS
+* class MS
 * episodeOfCare MS
 * episodeOfCare ^slicing.discriminator.type = #value
 * episodeOfCare ^slicing.discriminator.path = "identifier.system"

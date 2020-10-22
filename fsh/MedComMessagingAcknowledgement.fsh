@@ -1,6 +1,6 @@
 Profile: MedComMessagingAcknowledgement
 Parent: MedComMessagingMessage
-Id: medcom-messaging-Acknowledgement
+Id: medcom-messaging-acknowledgement
 Description: "Base resource for all MedCom Acknowledgement messages."
 * entry[messageHeader].resource only MedComMessagingAcknowledgementHeader
 
