@@ -13,6 +13,8 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * type 0..0
 * serviceType 0..0
 * priority 0..0
+* episodeOfCare[lpr3identifier].reference ..0
+* episodeOfCare.reference ..0
 * basedOn ..0
 * participant ..0
 * appointment ..0
