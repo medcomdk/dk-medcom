@@ -1,7 +1,0 @@
-== Suppressed Messages ==
-
-# Examples outside bundles are allowed
-Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)
-
-# Allowed MimeTypes are checked manually 
-Unable to check if http://medcom.dk/fhir/medcom-core/ValueSet/medcom-core-attachmentMimeTypes is a proper subset of http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 - base value set is too large to check
