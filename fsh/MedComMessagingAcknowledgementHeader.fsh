@@ -18,9 +18,9 @@ InstanceOf: MedComMessagingAcknowledgementHeader
 Description: "Message header for an empty message. Valid only if used in a bundle (message)."
 * destination.extension[use] = PrimaryCoding
 * eventCoding = $MessageEvents#empty-message
-* destination.endpoint = "unknown"
+* destination.endpoint = "http://medcom.dk/unknown"
 * destination.receiver = Reference(MessageReceiver)
 * sender = Reference(MessageSender)
-* source.endpoint = "unknown"
+* source.endpoint = "http://medcom.dk/unknown"
 * response.identifier = "EmptyMessage"
 * response.code = $AcknowledgementCode#ok

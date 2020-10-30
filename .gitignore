@@ -4,6 +4,7 @@ Thumbs.db
 /ig.ini
 /temp
 /template
+/input/ignoreWarnings.txt
 /input/ImplementationGuide-dk.fhir.ig.medcom-core.json
 /input/examples
 /input/extensions

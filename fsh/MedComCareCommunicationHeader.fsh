@@ -15,8 +15,8 @@ InstanceOf: MedComCareCommunicationMessageHeader
 Description: "Message header for care communication message. Valid only if used in a bundle (message)."
 * destination.extension[use] = PrimaryCoding
 * eventCoding = $MessageEvents#care-communication-message
-* destination.endpoint = "unknown"
+* destination.endpoint = "http://medcom.dk/unknown"
 * destination.receiver = Reference(MessageReceiver)
 * sender = Reference(MessageSender)
-* source.endpoint = "unknown"
+* source.endpoint = "http://medcom.dk/unknown"
 * focus = Reference(CareCommunicationContent)
