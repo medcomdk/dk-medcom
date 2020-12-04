@@ -2,7 +2,7 @@ Alias: $StatusCode = http://hl7.org/fhir/encounter-status
 
 ValueSet: MedComHospitalNotificationEncounterStatus
 Id: medcom-hospitalNotification-encounterstatus
-Title: "MedCom hospital notification encounter statys Codes"
+Title: "MedCom hospital notification encounter status Codes"
 Description: "ValueSet containg status codes for hospital notification encounter"
 * $StatusCode#in-progress "In Progress"
 * $StatusCode#onleave "On Leave"
