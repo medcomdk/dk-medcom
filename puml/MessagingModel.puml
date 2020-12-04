@@ -1,0 +1,17 @@
+@startuml MessagingModel
+
+hide empty members
+
+class "MedComMessagingMessage" as message
+class "MedComMessagingMessageHeader" as messageHeader
+class "MedComMessagingOrganization" as organization
+class "MedComMessagingProvenance" as provenance
+
+message -- messageHeader
+message -- provenance
+
+messageHeader -- organization : "sender"
+messageHeader -- organization : "receiver"
+messageHeader --"*" organization : "carbon-copy"
+
+@enduml

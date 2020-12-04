@@ -13,8 +13,8 @@ InstanceOf: MedComHospitalNotificationMessageHeader
 Description: "Message header for a hospital notification message. Valid only if used in a bundle (message)."
 * destination.extension[use] = PrimaryCoding
 * eventCoding = $MessageEvents#hospital-notification-message
-* destination.endpoint = "unknown"
+* destination.endpoint = "http://medcom.dk/unknown"
 * destination.receiver = Reference(MessageReceiver)
 * sender = Reference(MessageSender)
-* source.endpoint = "unknown"
+* source.endpoint = "http://medcom.dk/unknown"
 * focus = Reference(HospitalNotificationEncounter)
