@@ -1,16 +1,27 @@
 Profile: MedComHospitalNotificationEncounter
-Parent: MedComCoreLpr3Encounter
+Parent: MedComCoreEncounter
 Id: medcom-hospitalNotification-encounter
 Description: "Encounter derivation that handles hospital notification when a patient is admitted to a hospital. The hospital notification is always send from a hospital. The receiver of the message is the patients home municipalicy. The hospital notification is send for example when patient is admitted, on leave, returned from leave, finished hospital stay."
-* extension ^slicing.discriminator[0].type = #value
-* extension ^slicing.discriminator[0].path = "url"
-* extension ^slicing.rules = #open
+* identifier 1.. MS
+* identifier ^definition = "Shall contain an identifier for the encounter that is unique within the hospital"
+* identifier.value 1.. MS
+* status MS
 * status from MedComHospitalNotificationEncounterStatus
 * status 1..1
 * status ^short = "in-progress | onleave | finished | entered-in-error"
+* class MS
 * class ^short = "inpatient | emergency"
 * class from MedComHospitalNotificationEncounterClass
 * type 0..0
+* episodeOfCare MS
+* episodeOfCare ^slicing.discriminator.type = #value
+* episodeOfCare ^slicing.discriminator.path = "identifier.system"
+* episodeOfCare ^slicing.rules = #open
+* episodeOfCare contains lpr3identifier 0..1 MS
+* episodeOfCare[lpr3identifier] ^definition = "Shall contain the episode of care if reported to the Danish National Patient Registry"
+* episodeOfCare[lpr3identifier].identifier 1..1 MS
+* episodeOfCare[lpr3identifier].identifier only Lpr3Identifier
+* episodeOfCare[lpr3identifier].identifier ^definition = "Shall contain the id of the episode of care reported to the Danish National Patient Registry if known"
 * serviceType 0..0
 * priority 0..0
 * episodeOfCare[lpr3identifier].reference ..0
@@ -35,8 +46,8 @@ Description: "Encounter derivation that handles hospital notification when a pat
 Instance: HospitalNotificationEncounter
 InstanceOf: MedComHospitalNotificationEncounter
 Title: "MedCom Hospital Notification Encounter"
-Description: "Exampel of MedCom hospital Noticication Encounter 
-with  Burncenter as serviceProvider"
+Description: "Example of MedCom hospital Noticication Encounter with Burncenter as serviceProvider"
+* identifier.value = "1234567890"
 * status = #in-progress
 * class = $ActCodes#IMP 
 * subject = Reference(EricFlame)
