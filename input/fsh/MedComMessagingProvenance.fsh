@@ -19,7 +19,7 @@ Description: "Provenance information about the messages preceeding the current m
 * entity MS
 * entity.role MS
 * entity.what MS
-* entity.what.reference 0.. MS
+* entity.what.reference 1.. MS
 * entity.what.reference ^definition = "Shall contain the message header id of messages given as input to the activity"
 
 
