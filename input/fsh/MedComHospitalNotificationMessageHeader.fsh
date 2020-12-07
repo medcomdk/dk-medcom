@@ -3,6 +3,7 @@ Parent: MedComMessagingMessageHeader
 Id: medcom-hospitalNotification-messageHeader
 Description: "Message header for a hospital notification message."
 * eventCoding = $MessageEvents#hospital-notification-message
+* destination[cc] ..0
 * focus 1..1 MS
 * focus only Reference(MedComHospitalNotificationEncounter)
 * focus ^type.aggregation = #bundled
