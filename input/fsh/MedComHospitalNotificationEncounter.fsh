@@ -13,15 +13,6 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * class ^short = "inpatient | emergency"
 * class from MedComHospitalNotificationEncounterClass
 * type 0..0
-* episodeOfCare MS
-* episodeOfCare ^slicing.discriminator.type = #value
-* episodeOfCare ^slicing.discriminator.path = "identifier.system"
-* episodeOfCare ^slicing.rules = #open
-* episodeOfCare contains lpr3identifier 0..1 MS
-* episodeOfCare[lpr3identifier] ^definition = "Shall contain the episode of care if reported to the Danish National Patient Registry"
-* episodeOfCare[lpr3identifier].identifier 1..1 MS
-* episodeOfCare[lpr3identifier].identifier only Lpr3Identifier
-* episodeOfCare[lpr3identifier].identifier ^definition = "Shall contain the id of the episode of care reported to the Danish National Patient Registry if known"
 * serviceType 0..0
 * priority 0..0
 * episodeOfCare[lpr3identifier].reference ..0

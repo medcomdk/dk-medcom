@@ -2,17 +2,9 @@ Profile: MedComCoreLpr3Encounter
 Parent: MedComCoreEncounter
 Id: medcom-core-lpr3Encounter
 Description: "Encounter which is part of an episode of care reported to the Danish National Patient Registry"
-* status MS
-* class MS
 * episodeOfCare MS
-* episodeOfCare ^slicing.discriminator.type = #value
-* episodeOfCare ^slicing.discriminator.path = "identifier.system"
-* episodeOfCare ^slicing.rules = #open
-* episodeOfCare contains lpr3identifier 1..1 MS
-* episodeOfCare[lpr3identifier] ^definition = "Shall contain the episode of care if reported to the Danish National Patient Registry"
-* episodeOfCare[lpr3identifier].identifier 1..1 MS
-* episodeOfCare[lpr3identifier].identifier only Lpr3Identifier
-* episodeOfCare[lpr3identifier].identifier ^definition = "Shall contain the id of the episode of care reported to the Danish National Patient Registry if known"
+* episodeOfCare[lpr3identifier] 1..1 MS
+* episodeOfCare[lpr3identifier].identifier MS
 
 Alias: $StatusCodes = http://hl7.org/fhir/encounter-status
 Alias: $LPR = https://www.esundhed.dk/Registre/Landspatientsregisteret
