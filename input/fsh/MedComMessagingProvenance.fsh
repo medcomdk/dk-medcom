@@ -35,11 +35,95 @@ Description: "Provenance information for a medcom message. Valid only if used in
 * activity = $ActivityCode#new-message
 * agent.who = Reference(MessageSender)
 
-Instance: HospitalNotificationCommunicationProvenance
+
+// Admit example
+
+Instance: HospitalNotificationAdmitProvenance
 InstanceOf: MedComMessagingProvenance
 Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
-* target = Reference(HospitalNotificationMessageHeader)
+* target = Reference(HospitalNotificationAdmittedMessageHeader)
 * occurredDateTime = 2020-10-15T13:44:14Z
 * recorded = 2020-10-15T13:45:15Z
-* activity = $ActivityCode#admit-emergency
+* activity = $ActivityCode#admit-inpatient
 * agent.who = Reference(MessageSender)
+
+// Start leave example
+
+Instance: HospitalNotificationAdmitForStartLeaveProvenance
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(HospitalNotificationOnLeaveMessageHeader)
+* occurredDateTime = 2020-10-20T10:21:56Z
+* recorded = 2020-10-20T10:21:56Z
+* activity = $ActivityCode#admit-inpatient
+* agent.who = Reference(MessageSender)
+
+Instance: HospitalNotificationStartLeaveProvenance
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
+* target = Reference(HospitalNotificationOnLeaveMessageHeader)
+* occurredDateTime = 2020-10-20T10:21:56Z
+* recorded = 2020-10-20T10:21:56Z
+* activity = $ActivityCode#start-leave-inpatient
+* agent.who = Reference(MessageSender)
+* entity.role = #derivation
+* entity.what = Reference(HospitalNotificationAdmittedMessageHeader)
+
+// End leave example
+
+Instance: HospitalNotificationEndLeaveProvenance
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
+* target = Reference(HospitalNotificationEndLeaveMessageHeader)
+* occurredDateTime = 2020-10-25T09:12:34Z
+* recorded = 2020-10-25T09:12:34Z
+* activity = $ActivityCode#end-leave-inpatient
+* agent.who = Reference(MessageSender)
+* entity.role = #derivation
+* entity.what = Reference(HospitalNotificationOnLeaveMessageHeader)
+
+Instance: HospitalNotificationStartLeaveForEndLeaveProvenance
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
+* target = Reference(HospitalNotificationEndLeaveMessageHeader)
+* occurredDateTime = 2020-10-20T10:21:56Z
+* recorded = 2020-10-20T10:21:56Z
+* activity = $ActivityCode#start-leave-inpatient
+* agent.who = Reference(MessageSender)
+* entity.role = #derivation
+* entity.what = Reference(HospitalNotificationAdmittedMessageHeader)
+
+Instance: HospitalNotificationAdmitForEndLeaveProvenance
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(HospitalNotificationEndLeaveMessageHeader)
+* occurredDateTime = 2020-10-15T13:44:14Z
+* recorded = 2020-10-15T13:45:15Z
+* activity = $ActivityCode#admit-inpatient
+* agent.who = Reference(MessageSender)
+
+// Discharge example
+
+Instance: HospitalNotificationAdmitForDischargeProvenance
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(HospitalNotificationDischargedMessageHeader)
+* occurredDateTime = 2020-10-15T13:44:14Z
+* recorded = 2020-10-15T13:45:15Z
+* activity = $ActivityCode#admit-inpatient
+* agent.who = Reference(MessageSender)
+
+Instance: HospitalNotificationDischargeProvenance
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(HospitalNotificationDischargedMessageHeader)
+* occurredDateTime = 2020-10-28T09:21:26Z
+* recorded = 2020-10-28T09:21:26Z
+* activity = $ActivityCode#admit-inpatient
+* agent.who = Reference(MessageSender)
+* entity.role = #derivation
+* entity.what = Reference(HospitalNotificationAdmittedMessageHeader)

@@ -9,13 +9,46 @@ Description: "Message header for a hospital notification message."
 * focus ^type.aggregation = #bundled
 
 
-Instance: HospitalNotificationMessageHeader
+Instance: HospitalNotificationAdmittedMessageHeader
 InstanceOf: MedComHospitalNotificationMessageHeader
-Description: "Message header for a hospital notification message. Valid only if used in a bundle (message)."
+Description: "Message header for a hospital notification admit message. Valid only if used in a bundle (message)."
 * destination.extension[use] = PrimaryCoding
 * eventCoding = $MessageEvents#hospital-notification-message
 * destination.endpoint = "http://medcom.dk/unknown"
 * destination.receiver = Reference(MessageReceiver)
 * sender = Reference(MessageSender)
 * source.endpoint = "http://medcom.dk/unknown"
-* focus = Reference(HospitalNotificationEncounter)
+* focus = Reference(HospitalNotificationEncounterInProgress)
+
+Instance: HospitalNotificationOnLeaveMessageHeader
+InstanceOf: MedComHospitalNotificationMessageHeader
+Description: "Message header for a hospital notification start leave message. Valid only if used in a bundle (message)."
+* destination.extension[use] = PrimaryCoding
+* eventCoding = $MessageEvents#hospital-notification-message
+* destination.endpoint = "http://medcom.dk/unknown"
+* destination.receiver = Reference(MessageReceiver)
+* sender = Reference(MessageSender)
+* source.endpoint = "http://medcom.dk/unknown"
+* focus = Reference(HospitalNotificationEncounterOnLeave)
+
+Instance: HospitalNotificationEndLeaveMessageHeader
+InstanceOf: MedComHospitalNotificationMessageHeader
+Description: "Message header for a hospital notification start leave message. Valid only if used in a bundle (message)."
+* destination.extension[use] = PrimaryCoding
+* eventCoding = $MessageEvents#hospital-notification-message
+* destination.endpoint = "http://medcom.dk/unknown"
+* destination.receiver = Reference(MessageReceiver)
+* sender = Reference(MessageSender)
+* source.endpoint = "http://medcom.dk/unknown"
+* focus = Reference(HospitalNotificationEncounterInProgress)
+
+Instance: HospitalNotificationDischargedMessageHeader
+InstanceOf: MedComHospitalNotificationMessageHeader
+Description: "Message header for a hospital notification discharge message. Valid only if used in a bundle (message)."
+* destination.extension[use] = PrimaryCoding
+* eventCoding = $MessageEvents#hospital-notification-message
+* destination.endpoint = "http://medcom.dk/unknown"
+* destination.receiver = Reference(MessageReceiver)
+* sender = Reference(MessageSender)
+* source.endpoint = "http://medcom.dk/unknown"
+* focus = Reference(HospitalNotificationEncounterFinished)

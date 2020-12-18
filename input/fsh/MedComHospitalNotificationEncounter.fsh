@@ -2,9 +2,6 @@ Profile: MedComHospitalNotificationEncounter
 Parent: MedComCoreEncounter
 Id: medcom-hospitalNotification-encounter
 Description: "Encounter derivation that handles hospital notification when a patient is admitted to a hospital. The hospital notification is always send from a hospital. The receiver of the message is the patients home municipalicy. The hospital notification is send for example when patient is admitted, on leave, returned from leave, finished hospital stay."
-* identifier 1.. MS
-* identifier ^definition = "Shall contain an identifier for the encounter that is unique within the hospital"
-* identifier.value 1.. MS
 * status MS
 * status from MedComHospitalNotificationEncounterStatus
 * status 1..1
@@ -15,6 +12,9 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * type 0..0
 * serviceType 0..0
 * priority 0..0
+* episodeOfCare 1.. MS
+* episodeOfCare.identifier 1.. MS
+* episodeOfCare ^definition = "Shall contain an episode of care identifier for the entire hospitalization"
 * episodeOfCare[lpr3identifier].reference ..0
 * episodeOfCare.reference ..0
 * basedOn ..0
@@ -34,15 +34,42 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * serviceProvider 1.. MS
 * partOf ..0
 
-Instance: HospitalNotificationEncounter
+
+Instance: HospitalNotificationEncounterInProgress
 InstanceOf: MedComHospitalNotificationEncounter
-Title: "MedCom Hospital Notification Encounter"
-Description: "Example of MedCom hospital Noticication Encounter with Burncenter as serviceProvider"
+Title: "MedCom Hospital Notification Encounter in progress"
+Description: "Example of MedCom Hospital Noticication inpatient Encounter in progress with Burncenter as serviceProvider"
 * identifier.value = "1234567890"
 * status = #in-progress
 * class = $ActCodes#IMP 
 * subject = Reference(EricFlame)
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 
-* period.start = 2020-10-13T12:22:12Z
+* period.start = 2020-10-15T13:44:14Z
+* serviceProvider = Reference(BurnCenter)
+
+Instance: HospitalNotificationEncounterOnLeave
+InstanceOf: MedComHospitalNotificationEncounter
+Title: "MedCom Hospital Notification Encounter on leave"
+Description: "Example of MedCom Hospital Noticication inpatient Encounter on leave with Burncenter as serviceProvider"
+* identifier.value = "1234567890"
+* status = #onleave
+* class = $ActCodes#IMP 
+* subject = Reference(EricFlame)
+* episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
+* episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 
+* period.start = 2020-10-15T13:44:14Z
+* serviceProvider = Reference(BurnCenter)
+
+Instance: HospitalNotificationEncounterFinished
+InstanceOf: MedComHospitalNotificationEncounter
+Title: "MedCom Hospital Notification Encounter in progress"
+Description: "Example of MedCom Hospital Noticication inpatient Encounter in progress with Burncenter as serviceProvider"
+* identifier.value = "1234567890"
+* status = #finished
+* class = $ActCodes#IMP 
+* subject = Reference(EricFlame)
+* episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
+* episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 
+* period.start = 2020-10-15T13:44:14Z
 * serviceProvider = Reference(BurnCenter)
