@@ -1,11 +1,12 @@
 Profile: MedComCorePatient
 Parent: http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient
 Id: medcom-core-patient
-Description: "Patient resource to use as subject in MedCom communication"
+Description: "Patient/citizen resource to use as subject in MedCom communication"
 * name[official] 1.. MS
 * name[official].given MS
-* name[official].given ^definition = "Shall be present if the official given name of the patient is known"
+* name[official].given ^definition = "Shall be present if the official given name of the patient is known, danish \"fornavn\" "
 * name[official].family MS
+* name[official].family ^definition = "Shall always be present, danish \"efternavn\" "
 * telecom MS
 * telecom ^definition = "Shall contain all known, relevant telecom information of the patient"
 * address MS
@@ -21,7 +22,7 @@ Description: "Patient resource to use as subject in MedCom communication"
 * managingOrganization ^type.aggregation = #bundled
 
 
-Instance: EricFlame
+Instance: 733cef33-3626-422b-955d-d506aaa65fe1
 InstanceOf: MedComCorePatient
 Title: "Eric Flame"
 Description: "Patient with a managing organization. Valid only if used in a bundle (message)."

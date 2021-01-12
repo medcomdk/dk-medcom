@@ -13,9 +13,9 @@ Alias: $ActCodes = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Instance: EncounterWithLPR3Identifier
 InstanceOf: MedComCoreLpr3Encounter
 Title: "Encounter with LPR3 identifier"
-Description: "Encounter with a LPR3 identifier. Valid only if used in a bundle (message)."
+Description: "Encounter with an identifier that may be a LPR3 id. Valid only if used in a bundle (message)."
 * status = $StatusCodes#unknown
 * class = $ActCodes#AMB
-* subject = Reference(EricFlame)
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "12345678-1234-1234-1234-123456789012" 

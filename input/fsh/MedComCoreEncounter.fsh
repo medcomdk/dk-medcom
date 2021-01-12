@@ -26,4 +26,4 @@ Title: "MedCom Core Encounter"
 Description: "Example of a simple MedCom Core Encounter"
 * status = $StatusCodes#planned 
 * class = $ActCodes#AMB 
-* subject = Reference(EricFlame)
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)

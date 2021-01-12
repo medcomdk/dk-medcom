@@ -22,8 +22,8 @@ Description: "Example of a care communication message."
 * timestamp = 2020-09-28T12:34:56Z
 * entry[messageHeader].fullUrl = "MessageHeader/CareCommunicationMessageHeader"
 * entry[messageHeader].resource = CareCommunicationMessageHeader
-* entry[citizen].fullUrl = "Patient/EricFlame"
-* entry[citizen].resource = EricFlame
+* entry[citizen].fullUrl = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
+* entry[citizen].resource = 733cef33-3626-422b-955d-d506aaa65fe1
 * entry[2].fullUrl = "Organization/BurnCenter"
 * entry[2].resource = BurnCenter
 * entry[3].fullUrl = "Communication/CareCommunicationContent"

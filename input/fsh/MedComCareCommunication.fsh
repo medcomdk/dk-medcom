@@ -74,7 +74,7 @@ Title: "Example of Care Communication Content"
 Description: "Content of care communication message. Valid only if used in a bundle (message)."
 * status = $EventStatus#unknown
 * category = $CategoryCodes#carecoordination
-* subject = Reference(EricFlame)
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * encounter = Reference(EncounterWithLPR3Identifier)
 * sent = 2020-09-28T12:34:56Z
 * payload.contentString = "The burns are quite severe"

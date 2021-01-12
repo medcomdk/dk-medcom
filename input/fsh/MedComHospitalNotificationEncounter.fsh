@@ -42,7 +42,7 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter in pro
 * identifier.value = "1234567890"
 * status = #in-progress
 * class = $ActCodes#IMP 
-* subject = Reference(EricFlame)
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 
 * period.start = 2020-10-15T13:44:14Z
@@ -55,7 +55,7 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter on lea
 * identifier.value = "1234567890"
 * status = #onleave
 * class = $ActCodes#IMP 
-* subject = Reference(EricFlame)
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 
 * period.start = 2020-10-15T13:44:14Z
@@ -68,7 +68,7 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter in pro
 * identifier.value = "1234567890"
 * status = #finished
 * class = $ActCodes#IMP 
-* subject = Reference(EricFlame)
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 
 * period.start = 2020-10-15T13:44:14Z
