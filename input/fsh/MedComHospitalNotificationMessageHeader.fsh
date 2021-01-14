@@ -52,3 +52,30 @@ Description: "Message header for a hospital notification discharge message. Vali
 * sender = Reference(MessageSender)
 * source.endpoint = "http://medcom.dk/unknown"
 * focus = Reference(HospitalNotificationEncounterFinished)
+
+// admit message - for patient that will be discharged as deceased
+Instance: HospitalNotificationAdmitDeceasedMessageHeader
+InstanceOf: MedComHospitalNotificationMessageHeader
+Description: "Message header for a hospital notification admit message when patient later is deceased. Valid only if used in a bundle (message)."
+* destination.extension[use] = PrimaryCoding
+* eventCoding = $MessageEvents#hospital-notification-message
+* destination.endpoint = "http://medcom.dk/unknown"
+* destination.receiver = Reference(MessageReceiver)
+* sender = Reference(MessageSender)
+* source.endpoint = "http://medcom.dk/unknown"
+* focus = Reference(HospitalNotificationEncounterAdmittetBeforeDeceased)
+
+
+// Discharge message - patient discharged as deceased
+Instance: HospitalNotificationDischargedDeceasedMessageHeader
+InstanceOf: MedComHospitalNotificationMessageHeader
+Description: "Message header for a hospital notification discharge message when patient is deceased. Valid only if used in a bundle (message)."
+* destination.extension[use] = PrimaryCoding
+* eventCoding = $MessageEvents#hospital-notification-message
+* destination.endpoint = "http://medcom.dk/unknown"
+* destination.receiver = Reference(MessageReceiver)
+* sender = Reference(MessageSender)
+* source.endpoint = "http://medcom.dk/unknown"
+* focus = Reference(HospitalNotificationEncounterFinishedWhenDeceased)
+
+

@@ -127,3 +127,27 @@ Usage: #inline
 * agent.who = Reference(MessageSender)
 * entity.role = #derivation
 * entity.what = Reference(HospitalNotificationAdmittedMessageHeader)
+
+
+//patient is admitted before deceased
+Instance: HospitalNotificationAdmitBeforeDeceasedProvenance
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(HospitalNotificationAdmitDeceasedMessageHeader)
+* occurredDateTime = 2021-01-10T13:44:14Z
+* recorded = 2021-01-10T13:45:15Z
+* activity = $ActivityCode#admit-inpatient
+* agent.who = Reference(MessageSender)
+
+//patient is deceased
+Instance: HospitalNotificationAdmitForDischargeDeceasedProvenance
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom Hospital Notification message when patient deceased. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(HospitalNotificationDischargedDeceasedMessageHeader)
+* occurredDateTime = 2021-01-13T13:44:14Z
+* recorded = 2021-01-13T13:45:15Z
+* activity = $ActivityCode#discharge-inpatient-home
+* agent.who = Reference(MessageSender)
+

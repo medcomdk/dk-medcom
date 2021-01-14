@@ -37,3 +37,37 @@ Description: "Patient with a managing organization. Valid only if used in a bund
 * address.city = "Aarhus"
 * address.postalCode = "8000 C"
 * managingOrganization = Reference(BurnCenter)
+
+Instance: 382fb8a3-6725-41e2-a615-2b1cfcfe9931
+InstanceOf: MedComCorePatient
+Title: "Erik Clausen"
+Description: "Patient deceased with a managing organization. Valid only if used in a bundle (message)."
+* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
+* identifier[cpr].value = "0101010141"
+* name[official].use = #official
+* name[official].given = "Erik"
+* name[official].family = "Clausen"
+* telecom.system = #phone
+* telecom.value = "24533421"
+* address.line = "Forskerparken 10"
+* address.city = "Odense M"
+* address.postalCode = "5230"
+* managingOrganization = Reference(PractitionerClinic)
+* deceasedBoolean = true
+
+Instance: 5b72c625-0570-4111-b272-f0351344f8b6
+InstanceOf: MedComCorePatient
+Title: "Erik Clausen"
+Description: "Patient not deceased with a managing organization. Valid only if used in a bundle (message)."
+* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
+* identifier[cpr].value = "0101010141"
+* name[official].use = #official
+* name[official].given = "Erik"
+* name[official].family = "Clausen"
+* telecom.system = #phone
+* telecom.value = "24533421"
+* address.line = "Forskerparken 10"
+* address.city = "Odense M"
+* address.postalCode = "5230"
+* managingOrganization = Reference(PractitionerClinic)
+* deceasedBoolean = false
