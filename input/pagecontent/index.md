@@ -60,6 +60,18 @@ The hospital notification message header constrains the messaging message header
 #### MedComHospitalNotificationEncounter
 The hospital notification message encounter contains the main content of the message and constrain the core encounter further to require a uniqe identifier for the encounter and restrict the status and class to a value set of relevant values. The start time of the encounter and a reference to the service provider is made mandatory. Most other values are disallowed due to the legislation. 
 
+#### Information regarding non-technical guide lines and use cases for HospitalNotification is found here:
+
+English:
+* [HosptialNotification Use Cases](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/HospitalNotification/published/Use%20cases_Hospital%20Notification_eng.pdf)
+* [Non-technical guidelines for HospitalNotification](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/HospitalNotification/published/FHIR_Hospital%20Notification.pdf)
+
+Danish:
+* [HospitalNotification Use Cases](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/CareCommunication/published/Use%20Cases_FHIR%20Korrespondancemeddelelse.pdf)
+* [Non-technical guidelines for HospitalNotification](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/HospitalNotification/published/Use_cases_advis_om_sygehusophold.pdf)
+
+
+
 ### Care Communication Message
 The care communication message is a message sent between danish healthcare organizations, similar to an email with or without attachments.
 
@@ -78,6 +90,18 @@ The care communication message header constrains the messaging message header fu
 #### MedComCareCommunication
 The care communication contains the main content of the message. It constrains the communication to the categories given in the MedComCareCommunicationCategories values and the priority to be either routine or ASAP. An optional title of the message is given in the topic of the communication. Care communication must contain an lpr3 encounter if an lpr3 identifier is known. The payload of the message is either text fragments or attachments, each given with a timestamp and an author. It is allowed to add a sender and/or recipient that is more precise than the sender and destination organizations given in the message header.
 
+#### Information regarding non-technical guide lines and use cases for CareCommunication is found here:
+
+English:
+* [CareCommunication Use Cases](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/CareCommunication/published/USE%20CASES_FHIR%20Care%20Communication.pdf)
+* [Non-technical guidelines for CareCommunication](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/CareCommunication/published/FHIR%20Care%20Communication%2C%20MedCom%20FHIR%20Standard.pdf)
+
+Danish:
+* [CareCommunication Use Cases](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/CareCommunication/published/Use%20Cases_FHIR%20Korrespondancemeddelelse.pdf)
+* [Non-technical guidelines for CareCommunication](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/CareCommunication/published/FHIR_Korrespondancemeddelelse.pdf)
+
+### Genenal references
+
 All referenced resources within the message are contained in the entry list.
 
 ### Content
@@ -88,12 +112,6 @@ This document presents MedCom messaging concepts defined via FHIR processable ar
 * [Extensions](extensions.html) - are FHIR extensions that are added for local use, covering needed concepts for the messaging
 * [Terminologies](terminology.html) - are defined or referenced code systems and value sets for the messaging context
 
-### References
-
-Further information is found here:
-
-* [Care Communication Use Cases](http://svn.medcom.dk/svn/drafts/Standarder/HL7/FHIR/ClinicalEmail/Dokumentation/USE%20CASES_FHIR%20Care%20Communication_20201208.pdf)
-* [Non-technical guidelines for Care Communication](http://svn.medcom.dk/svn/drafts/Standarder/HL7/FHIR/ClinicalEmail/Dokumentation/FHIR%20Care%20Communication,%20MedCom%20FHIR%20Standard%20v.%200.4_20201208.pdf)
 
 ### Governance
 
