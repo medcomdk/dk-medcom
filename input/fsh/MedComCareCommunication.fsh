@@ -68,6 +68,7 @@ Description:    "Care related communication between two or more parties in Danis
 Alias: $EventStatus = http://hl7.org/fhir/event-status
 Alias: $CategoryCodes = http://medcom.dk/fhir/core/CodeSystem/medcom-careCommunication-categoryCodes
 
+// CareCommunication example
 Instance: CareCommunicationContent
 InstanceOf: MedComCareCommunication
 Title: "Example of Care Communication Content"
@@ -81,10 +82,12 @@ Description: "Content of care communication message. Valid only if used in a bun
 * payload.extension[date].valueDateTime = 2020-09-28
 * payload.extension[author].valueReference = Reference(MichaelBurns)
 
+// CareCommunication reply example
 Instance: CareCommunicationReplyContent
 InstanceOf: MedComCareCommunication
 Title: "Example of Care Communication Content"
 Description: "Content of care communication message. Valid only if used in a bundle (message)."
+Usage: #inline
 * status = $EventStatus#unknown
 * category = $CategoryCodes#carecoordination
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
@@ -97,15 +100,36 @@ Description: "Content of care communication message. Valid only if used in a bun
 * payload[1].extension[date].valueDateTime = 2020-09-30
 * payload[1].extension[author].valueReference = Reference(EmmaWaters)
 
+// CareCommunication example
+Instance: CareCommunicationForwardContent
+InstanceOf: MedComCareCommunication
+Title: "Example of Care Communication Content"
+Description: "Content of care communication message. Valid only if used in a bundle (message)."
+Usage: #inline
+* status = $EventStatus#unknown
+* category = $CategoryCodes#carecoordination
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
+* encounter = Reference(EncounterWithLPR3Identifier)
+* sent = 2020-09-30T10:22:11Z
+* payload[0].contentString = "The burns are quite severe"
+* payload[0].extension[date].valueDateTime = 2020-09-28
+* payload[0].extension[author].valueReference = Reference(MichaelBurns)
+* payload[1].contentString = "I have received this from Michael Burns"
+* payload[1].extension[date].valueDateTime = 2020-09-30
+* payload[1].extension[author].valueReference = Reference(EmmaWaters)
 
+
+// Practitioners
 Instance: MichaelBurns
 InstanceOf: Practitioner
 Description: "Simple practitioner with a name"
+Usage: #inline
 * name.given = "Michael"
 * name.family = "Burns"
 
 Instance: EmmaWaters
 InstanceOf: Practitioner
 Description: "Simple practitioner with a name"
+Usage: #inline
 * name.given = "Emma"
 * name.family = "Waters"

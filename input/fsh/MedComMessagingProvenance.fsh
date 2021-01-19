@@ -27,6 +27,7 @@ Description: "Provenance information about the messages preceeding the current m
 Alias: $ActivityCode = http://medcom.dk/fhir/core/CodeSystem/medcom-messaging-activityCodes
 
 // CareCommunication example
+
 Instance: NewCareCommunicationProvenance
 InstanceOf: MedComMessagingProvenance
 Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
@@ -37,9 +38,11 @@ Description: "Provenance information for a medcom message. Valid only if used in
 * agent.who = Reference(MessageSender)
 
 // CareCommunication reply example
+
 Instance: NewCareCommunicationProvenanceForReply
 InstanceOf: MedComMessagingProvenance
 Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
+Usage: #inline
 * target = Reference(CareCommunicationReplyMessageHeader)
 * occurredDateTime = 2020-09-28T12:34:56Z
 * recorded = 2020-09-28T12:34:56Z
@@ -51,6 +54,28 @@ InstanceOf: MedComMessagingProvenance
 Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
 Usage: #inline
 * target = Reference(CareCommunicationReplyMessageHeader)
+* occurredDateTime = 2020-09-30T10:22:11Z
+* recorded = 2020-09-30T10:22:11Z
+* activity = $ActivityCode#reply-message
+* agent.who = Reference(MessageReceiver)
+
+// CareCommunication forward example
+
+Instance: NewCareCommunicationProvenanceForForward
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(CareCommunicationForwardMessageHeader)
+* occurredDateTime = 2020-09-28T12:34:56Z
+* recorded = 2020-09-28T12:34:56Z
+* activity = $ActivityCode#new-message
+* agent.who = Reference(MessageSender)
+
+Instance: ForwardCareCommunicationProvenance
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(CareCommunicationForwardMessageHeader)
 * occurredDateTime = 2020-09-30T10:22:11Z
 * recorded = 2020-09-30T10:22:11Z
 * activity = $ActivityCode#reply-message

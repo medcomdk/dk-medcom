@@ -67,3 +67,32 @@ Description: "Example of a reply to a care communication message."
 * entry[9].resource = NewCareCommunicationProvenanceForReply
 * entry[10].fullUrl = "Provenance/ReplyCareCommunicationProvenance"
 * entry[10].resource = ReplyCareCommunicationProvenance
+
+Instance: CareCommunicationMessageForwardExample
+InstanceOf: MedComCareCommunicationMessage
+Title: "MedCom Care Communication Forward Message Example"
+Description: "Example of a forward of a care communication message."
+* type = $BundleType#message
+* timestamp = 2020-09-30T10:22:11Z
+* entry[messageHeader].fullUrl = "MessageHeader/CareCommunicationForwardMessageHeader"
+* entry[messageHeader].resource = CareCommunicationForwardMessageHeader
+* entry[citizen].fullUrl = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
+* entry[citizen].resource = 733cef33-3626-422b-955d-d506aaa65fe1
+* entry[2].fullUrl = "Organization/BurnCenter"
+* entry[2].resource = BurnCenter
+* entry[3].fullUrl = "Communication/CareCommunicationForwardContent"
+* entry[3].resource = CareCommunicationForwardContent
+* entry[4].fullUrl = "Encounter/EncounterWithLPR3Identifier"
+* entry[4].resource = EncounterWithLPR3Identifier
+* entry[5].fullUrl = "Practitioner/MichaelBurns"
+* entry[5].resource = MichaelBurns
+* entry[6].fullUrl = "Practitioner/EmmaWaters"
+* entry[6].resource = EmmaWaters
+* entry[7].fullUrl = "Organization/MessageReceiver"
+* entry[7].resource = MessageReceiver
+* entry[8].fullUrl = "Organization/MessageSender"
+* entry[8].resource = MessageSender
+* entry[9].fullUrl = "Provenance/NewCareCommunicationProvenanceForForward"
+* entry[9].resource = NewCareCommunicationProvenanceForForward
+* entry[10].fullUrl = "Provenance/ForwardCareCommunicationProvenance"
+* entry[10].resource = ForwardCareCommunicationProvenance

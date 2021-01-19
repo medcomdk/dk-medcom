@@ -25,6 +25,7 @@ Description: "Message header for care communication message. Valid only if used 
 Instance: CareCommunicationReplyMessageHeader
 InstanceOf: MedComCareCommunicationMessageHeader
 Description: "Message header for care communication reply message. Valid only if used in a bundle (message)."
+Usage: #inline
 * destination.extension[use] = PrimaryCoding
 * eventCoding = $MessageEvents#care-communication-message
 * destination.endpoint = "http://medcom.dk/unknown"
@@ -32,3 +33,16 @@ Description: "Message header for care communication reply message. Valid only if
 * sender = Reference(MessageReceiver)
 * source.endpoint = "http://medcom.dk/unknown"
 * focus = Reference(CareCommunicationReplyContent)
+
+// CareCommunication forward example
+Instance: CareCommunicationForwardMessageHeader
+InstanceOf: MedComCareCommunicationMessageHeader
+Description: "Message header for care communication forward message. Valid only if used in a bundle (message)."
+Usage: #inline
+* destination.extension[use] = PrimaryCoding
+* eventCoding = $MessageEvents#care-communication-message
+* destination.endpoint = "http://medcom.dk/unknown"
+* destination.receiver = Reference(MessageSender)
+* sender = Reference(MessageReceiver)
+* source.endpoint = "http://medcom.dk/unknown"
+* focus = Reference(CareCommunicationForwardContent)
