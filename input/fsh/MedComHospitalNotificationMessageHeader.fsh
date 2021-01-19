@@ -7,7 +7,9 @@ Description: "Message header for a hospital notification message."
 * focus 1..1 MS
 * focus only Reference(MedComHospitalNotificationEncounter)
 * focus ^type.aggregation = #bundled
-
+* extension contains MedComHospitalNotificationReportOfAdmissionExtension named reportOfAdmissionFlag ..1
+* extension[reportOfAdmissionFlag] MS
+* extension[reportOfAdmissionFlag] ^definition = "Shall be set to true if recipient is requested to send a report of admission"
 
 Instance: HospitalNotificationAdmittedMessageHeader
 InstanceOf: MedComHospitalNotificationMessageHeader
@@ -19,6 +21,7 @@ Description: "Message header for a hospital notification admit message. Valid on
 * sender = Reference(MessageSender)
 * source.endpoint = "http://medcom.dk/unknown"
 * focus = Reference(HospitalNotificationEncounterInProgress)
+* extension[reportOfAdmissionFlag].valueBoolean = true
 
 Instance: HospitalNotificationOnLeaveMessageHeader
 InstanceOf: MedComHospitalNotificationMessageHeader
