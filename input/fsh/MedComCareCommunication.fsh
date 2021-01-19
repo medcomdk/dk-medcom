@@ -66,7 +66,7 @@ Description:    "Care related communication between two or more parties in Danis
 
 
 Alias: $EventStatus = http://hl7.org/fhir/event-status
-Alias: $CategoryCodes = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-careCommunication-categoryCodes
+Alias: $CategoryCodes = http://medcom.dk/fhir/core/CodeSystem/medcom-careCommunication-categoryCodes
 
 Instance: CareCommunicationContent
 InstanceOf: MedComCareCommunication
@@ -81,9 +81,31 @@ Description: "Content of care communication message. Valid only if used in a bun
 * payload.extension[date].valueDateTime = 2020-09-28
 * payload.extension[author].valueReference = Reference(MichaelBurns)
 
+Instance: CareCommunicationReplyContent
+InstanceOf: MedComCareCommunication
+Title: "Example of Care Communication Content"
+Description: "Content of care communication message. Valid only if used in a bundle (message)."
+* status = $EventStatus#unknown
+* category = $CategoryCodes#carecoordination
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
+* encounter = Reference(EncounterWithLPR3Identifier)
+* sent = 2020-09-30T10:22:11Z
+* payload[0].contentString = "The burns are quite severe"
+* payload[0].extension[date].valueDateTime = 2020-09-28
+* payload[0].extension[author].valueReference = Reference(MichaelBurns)
+* payload[1].contentString = "Keep the patient under observation for at least 5 days"
+* payload[1].extension[date].valueDateTime = 2020-09-30
+* payload[1].extension[author].valueReference = Reference(EmmaWaters)
+
 
 Instance: MichaelBurns
 InstanceOf: Practitioner
 Description: "Simple practitioner with a name"
 * name.given = "Michael"
 * name.family = "Burns"
+
+Instance: EmmaWaters
+InstanceOf: Practitioner
+Description: "Simple practitioner with a name"
+* name.given = "Emma"
+* name.family = "Waters"

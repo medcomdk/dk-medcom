@@ -1,4 +1,4 @@
-Alias: $MessageEvents = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-eventCodes
+Alias: $MessageEvents = http://medcom.dk/fhir/core/CodeSystem/medcom-messaging-eventCodes
 
 Profile: MedComCareCommunicationMessageHeader
 Parent: MedComMessagingMessageHeader
@@ -9,7 +9,7 @@ Description: "Message header for care communication message"
 * focus only Reference(MedComCareCommunication)
 * focus ^type.aggregation = #bundled
 
-
+// CareCommunication example
 Instance: CareCommunicationMessageHeader
 InstanceOf: MedComCareCommunicationMessageHeader
 Description: "Message header for care communication message. Valid only if used in a bundle (message)."
@@ -20,3 +20,15 @@ Description: "Message header for care communication message. Valid only if used 
 * sender = Reference(MessageSender)
 * source.endpoint = "http://medcom.dk/unknown"
 * focus = Reference(CareCommunicationContent)
+
+// CareCommunication reply example
+Instance: CareCommunicationReplyMessageHeader
+InstanceOf: MedComCareCommunicationMessageHeader
+Description: "Message header for care communication reply message. Valid only if used in a bundle (message)."
+* destination.extension[use] = PrimaryCoding
+* eventCoding = $MessageEvents#care-communication-message
+* destination.endpoint = "http://medcom.dk/unknown"
+* destination.receiver = Reference(MessageSender)
+* sender = Reference(MessageReceiver)
+* source.endpoint = "http://medcom.dk/unknown"
+* focus = Reference(CareCommunicationReplyContent)

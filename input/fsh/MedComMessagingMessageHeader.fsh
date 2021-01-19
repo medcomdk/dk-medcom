@@ -1,4 +1,4 @@
-Alias: $Use = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-destinationUse
+Alias: $Use = http://medcom.dk/fhir/core/CodeSystem/medcom-messaging-destinationUse
 
 Profile: MedComMessagingMessageHeader
 Parent: MessageHeader
@@ -36,7 +36,7 @@ InstanceOf: MedComMessagingDestinationUseExtension
 Usage: #inline
 * valueCoding = $Use#primary
 
-Alias: $MessageEvents = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-eventCodes
+Alias: $MessageEvents = http://medcom.dk/fhir/core/CodeSystem/medcom-messaging-eventCodes
 
 Instance: MessageHeaderExample
 InstanceOf: MedComMessagingMessageHeader

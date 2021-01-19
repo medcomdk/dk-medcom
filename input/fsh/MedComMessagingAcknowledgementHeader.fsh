@@ -10,7 +10,7 @@ Description: "A resource that describes a reponse to a message that is exchanged
 * response.details ^definition = "Shall contain identified hints/warnings/error in case the code is transient-error or fatal-error"
 
 
-Alias: $MessageEvents = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-eventCodes
+Alias: $MessageEvents = http://medcom.dk/fhir/core/CodeSystem/medcom-messaging-eventCodes
 Alias: $AcknowledgementCode = http://hl7.org/fhir/ValueSet/Acknowledgement-code
 
 Instance: AcknowledgementHeaderExample

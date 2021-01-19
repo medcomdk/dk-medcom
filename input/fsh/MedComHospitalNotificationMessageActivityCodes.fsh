@@ -1,4 +1,4 @@
-Alias: $ActivityCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-activityCodes
+Alias: $ActivityCode = http://medcom.dk/fhir/core/CodeSystem/medcom-messaging-activityCodes
 
 ValueSet: MedComHospitalNotificationMessageActivities
 Id: medcom-hospitalNotification-messageActivities

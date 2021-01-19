@@ -11,7 +11,7 @@ Description: "Provenance information about the messages preceeding the current m
 * activity 1.. MS
 * activity ^definition = "Activity that occurred and triggered the current or a previous message"
 * activity.coding.system 1.. MS
-* activity.coding.system = "http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-activityCodes"
+* activity.coding.system = "http://medcom.dk/fhir/core/CodeSystem/medcom-messaging-activityCodes"
 * agent 1.. MS
 * agent.who 1.. MS
 * agent.who only Reference(MedComMessagingOrganization)
@@ -24,8 +24,9 @@ Description: "Provenance information about the messages preceeding the current m
 * entity.what.reference ^definition = "Shall contain the message header id of messages given as input to the activity"
 
 
-Alias: $ActivityCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-activityCodes
+Alias: $ActivityCode = http://medcom.dk/fhir/core/CodeSystem/medcom-messaging-activityCodes
 
+// CareCommunication example
 Instance: NewCareCommunicationProvenance
 InstanceOf: MedComMessagingProvenance
 Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
@@ -35,6 +36,25 @@ Description: "Provenance information for a medcom message. Valid only if used in
 * activity = $ActivityCode#new-message
 * agent.who = Reference(MessageSender)
 
+// CareCommunication reply example
+Instance: NewCareCommunicationProvenanceForReply
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
+* target = Reference(CareCommunicationReplyMessageHeader)
+* occurredDateTime = 2020-09-28T12:34:56Z
+* recorded = 2020-09-28T12:34:56Z
+* activity = $ActivityCode#new-message
+* agent.who = Reference(MessageSender)
+
+Instance: ReplyCareCommunicationProvenance
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(CareCommunicationReplyMessageHeader)
+* occurredDateTime = 2020-09-30T10:22:11Z
+* recorded = 2020-09-30T10:22:11Z
+* activity = $ActivityCode#reply-message
+* agent.who = Reference(MessageReceiver)
 
 // Admit example
 
