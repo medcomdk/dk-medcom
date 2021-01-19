@@ -9,6 +9,8 @@ Description: "Patient/citizen resource to use as subject in MedCom communication
 * name[official].family ^definition = "Shall always be present, danish \"efternavn\" "
 * telecom MS
 * telecom ^definition = "Shall contain all known, relevant telecom information of the patient"
+* deceased[x] MS
+* deceased[x] ^definition = "Shall contain information if the patient is deceased and it is relevant in the given context"
 * address MS
 * address ^definition = "Shall contain all known, relevant addresses of the patient"
 * address.line MS
