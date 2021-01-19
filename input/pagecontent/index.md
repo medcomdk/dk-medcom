@@ -1,4 +1,5 @@
 ### Introduction
+
 This implementation guide is provided by MedCom to describe the use of FHIR<sup>&reg;&copy;</sup> in message based exchange of data in Danish healthcare.
 
 The implementation guide contains profiles in three areas
@@ -63,13 +64,12 @@ The hospital notification message encounter contains the main content of the mes
 #### Information regarding non-technical guide lines and use cases for HospitalNotification is found here:
 
 English:
-* [HosptialNotification Use Cases](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/HospitalNotification/published/Use%20cases_Hospital%20Notification_eng.pdf)
-* [Non-technical guidelines for HospitalNotification](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/HospitalNotification/published/FHIR_Hospital%20Notification.pdf)
+* [HosptialNotification Use Cases](./pdf/Use%20cases_Hospital%20Notification_eng.pdf)
+* [Non-technical guidelines for HospitalNotification](./pdf/FHIR_Hospital%20Notification.pdf)
 
 Danish:
-* [HospitalNotification Use Cases](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/CareCommunication/published/Use%20Cases_FHIR%20Korrespondancemeddelelse.pdf)
-* [Non-technical guidelines for HospitalNotification](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/HospitalNotification/published/Use_cases_advis_om_sygehusophold.pdf)
-
+* [HospitalNotification Use Cases](./pdf/Use_cases_advis_om_sygehusophold.pdf)
+* [Non-technical guidelines for HospitalNotification](./pdf/FHIR_advis_om_sygehusophold.pdf)
 
 
 ### Care Communication Message
@@ -93,12 +93,12 @@ The care communication contains the main content of the message. It constrains t
 #### Information regarding non-technical guide lines and use cases for CareCommunication is found here:
 
 English:
-* [CareCommunication Use Cases](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/CareCommunication/published/USE%20CASES_FHIR%20Care%20Communication.pdf)
-* [Non-technical guidelines for CareCommunication](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/CareCommunication/published/FHIR%20Care%20Communication%2C%20MedCom%20FHIR%20Standard.pdf)
+* [CareCommunication Use Cases](./pdf/USE%20CASES_FHIR%20Care%20Communication.pdf)
+* [Non-technical guidelines for CareCommunication](./pdf/FHIR%20Care%20Communication%2C%20MedCom%20FHIR%20Standard.pdf)
 
 Danish:
-* [CareCommunication Use Cases](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/CareCommunication/published/Use%20Cases_FHIR%20Korrespondancemeddelelse.pdf)
-* [Non-technical guidelines for CareCommunication](https://github.com/hl7dk/dk-medcom/blob/dev-0.9-leftovers/doc/message/CareCommunication/published/FHIR_Korrespondancemeddelelse.pdf)
+* [CareCommunication Use Cases](./pdf/Use%20Cases_FHIR%20Korrespondancemeddelelse.pdf)
+* [Non-technical guidelines for CareCommunication](./pdf/FHIR_Korrespondancemeddelelse.pdf)
 
 ### Genenal references
 
