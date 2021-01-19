@@ -6,9 +6,8 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * status from MedComHospitalNotificationEncounterStatus
 * status 1..1
 * status ^short = "in-progress | onleave | finished | entered-in-error"
-* class MS
-* class ^short = "inpatient | emergency"
 * class from MedComHospitalNotificationEncounterClass
+* class ^short = "inpatient | emergency | other"
 * type 0..0
 * serviceType 0..0
 * priority 0..0

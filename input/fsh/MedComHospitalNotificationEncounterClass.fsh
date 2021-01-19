@@ -6,4 +6,5 @@ Title: "MedCom hospital notification encounter class Codes"
 Description: "ValueSet containg class codes for hospital notification encounter"
 * $ClassCode#EMER "emergency"
 * $ClassCode#IMP "inpatient encounter"
+* include codes from system MedComCoreEncounterActCodes 
 
