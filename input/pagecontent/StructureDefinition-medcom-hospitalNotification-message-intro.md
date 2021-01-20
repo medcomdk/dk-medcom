@@ -1,6 +1,6 @@
 ### Scope and usage 
 This profile is the root profile of MedCom HosptialNotification message. 
-<img alt="Care Communication" src="./hospitalnotification/HospitalNotification.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
+<img alt="HospitalNotification" src="./hospitalnotification/HospitalNotification.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
 
 The message contains a bundle that is selfcontained regarding references. 
 The Bundle containing the HospitalNotification message shall contain one instance of the MedComMessagingMessage. By convention the cardinality is shown as 0..*
