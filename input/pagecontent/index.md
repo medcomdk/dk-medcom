@@ -46,7 +46,7 @@ The hospital notification messages is a message sent to relevant healthcare orga
 
 The following diagram depicts the structure of the hospital notification mesage.
 
-<img alt="Hospital Notification" src="./HospitalNotification.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
+<img alt="Hospital Notification" src="./hospitalnotification/HospitalNotification.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
 
 The hospital notification message follows the general message structure described above, except that the carbon-copy destination is not allowed. The following sections describe the overall purpose of each profiled resource.
 
@@ -64,12 +64,12 @@ The hospital notification message encounter contains the main content of the mes
 #### Information regarding non-technical guide lines and use cases for HospitalNotification is found here:
 
 English:
-* [HosptialNotification Use Cases](./pdf/Use%20cases_Hospital%20Notification_eng.pdf)
-* [Non-technical guidelines for HospitalNotification](./pdf/FHIR_Hospital%20Notification.pdf)
+* [HosptialNotification Use Cases](./hospitalnotification/pdf/Use%20cases_Hospital%20Notification_eng.pdf)
+* [Non-technical guidelines for HospitalNotification](./hospitalnotification/pdf/FHIR_Hospital%20Notification.pdf)
 
 Danish:
-* [HospitalNotification Use Cases](./pdf/Use_cases_advis_om_sygehusophold.pdf)
-* [Non-technical guidelines for HospitalNotification](./pdf/FHIR_advis_om_sygehusophold.pdf)
+* [HospitalNotification Use Cases](./hospitalnotification/pdf/Use_cases_advis_om_sygehusophold.pdf)
+* [Non-technical guidelines for HospitalNotification](./hospitalnotification/pdf/FHIR_advis_om_sygehusophold.pdf)
 
 
 ### Care Communication Message
@@ -77,7 +77,7 @@ The care communication message is a message sent between danish healthcare organ
 
 The following diagram depicts the structure of the care communication message.
 
-<img alt="Care Communication" src="./CareCommunication.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
+<img alt="Care Communication" src="./carecommunication/CareCommunication.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
 
 The care communication message follows the general message structure described above. The following sections describe the overall purpose of each profiled resource.
 
@@ -93,12 +93,12 @@ The care communication contains the main content of the message. It constrains t
 #### Information regarding non-technical guide lines and use cases for CareCommunication is found here:
 
 English:
-* [CareCommunication Use Cases](./pdf/USE%20CASES_FHIR%20Care%20Communication.pdf)
-* [Non-technical guidelines for CareCommunication](./pdf/FHIR%20Care%20Communication%2C%20MedCom%20FHIR%20Standard.pdf)
+* [CareCommunication Use Cases](./carecommunication/pdf/USE%20CASES_FHIR%20Care%20Communication.pdf)
+* [Non-technical guidelines for CareCommunication](./carecommunication/pdf/FHIR%20Care%20Communication%2C%20MedCom%20FHIR%20Standard.pdf)
 
 Danish:
-* [CareCommunication Use Cases](./pdf/Use%20Cases_FHIR%20Korrespondancemeddelelse.pdf)
-* [Non-technical guidelines for CareCommunication](./pdf/FHIR_Korrespondancemeddelelse.pdf)
+* [CareCommunication Use Cases](./carecommunication/pdf/Use%20Cases_FHIR%20Korrespondancemeddelelse.pdf)
+* [Non-technical guidelines for CareCommunication](./carecommunication/pdf/FHIR_Korrespondancemeddelelse.pdf)
 
 ### Genenal references
 
