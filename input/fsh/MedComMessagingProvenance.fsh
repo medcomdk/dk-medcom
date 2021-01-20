@@ -7,6 +7,7 @@ Description: "Provenance information about the messages preceeding the current m
 * target ^type.aggregation = #bundled
 * occurred[x] 1..
 * occurredDateTime 1.. MS
+* occurredDateTime ^short = "Date and Time the message was send"
 * recorded MS
 * activity 1.. MS
 * activity ^definition = "Activity that occurred and triggered the current or a previous message"
