@@ -79,7 +79,7 @@ InstanceOf: MedComHospitalNotificationEncounter
 Title: "MedCom Hospital Notification Encounter admitted before deceased"
 Description: "Example of MedCom Hospital Noticication inpatient Encounter when patient is admitted"
 * identifier.value = "7b9f8497-3314-4535-8f86-20df7b5f4d55"
-* status = #arrived
+* status = #in-progress
 * class = $ActCodes#IMP
 * subject = Reference(5b72c625-0570-4111-b272-f0351344f8b6)
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
