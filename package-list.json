@@ -2,7 +2,7 @@
   "package-id": "dk.fhir.ig.medcom-core",
   "title": "DK Core (R4)",
   "introduction": "Core MedCom FHIR profiles for Denmark in development by the HL7 Danish FHIR SIG workgroup",
-  "canonical": "http://medcom.dk/fhir/medcom-core/ig/medcom-core",
+  "canonical": "http://medcomfhir.dk/fhir/medcom-core/ig/medcom-core",
   "list": [
     {
       "version": "dev",
@@ -15,7 +15,7 @@
       "version": "0.9.0",
       "date": "2020-02-14",
       "desc": "MedCom core draft",
-      "path": "http://medcom.dk/fhir/medcom-core/ig/medcom-core",
+      "path": "http://medcomfhir.dk/fhir/medcom-core/ig/medcom-core",
       "status": "trial-use",
       "sequence": "STU",
       "fhirVersion": "4.0.1",

@@ -1,4 +1,4 @@
-Alias: $MessageEvents = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-eventCodes
+Alias: $MessageEvents = http://medcomfhir.dk/fhir/medcom-core/CodeSystem/medcom-messaging-eventCodes
 
 Profile: MedComCareCommunicationMessageHeader
 Parent: MedComMessagingMessageHeader
@@ -15,8 +15,8 @@ InstanceOf: MedComCareCommunicationMessageHeader
 Description: "Message header for care communication message. Valid only if used in a bundle (message)."
 * destination.extension[use] = PrimaryCoding
 * eventCoding = $MessageEvents#care-communication-message
-* destination.endpoint = "http://medcom.dk/unknown"
+* destination.endpoint = "http://medcomfhir.dk/unknown"
 * destination.receiver = Reference(MessageReceiver)
 * sender = Reference(MessageSender)
-* source.endpoint = "http://medcom.dk/unknown"
+* source.endpoint = "http://medcomfhir.dk/unknown"
 * focus = Reference(CareCommunicationContent)
