@@ -58,6 +58,7 @@ Description:    "Care related communication between two or more parties in Danis
 * payload[attachment].contentAttachment.contentType from MedComCoreAttachmentMimeTypes
 * payload[attachment].contentAttachment.data MS
 * payload[attachment].contentAttachment.data ^definition = "Shall be present and contain the base64 encoded content if the attachment is an attached document"
+* payload[attachment].contentAttachment.data ^short = "Data inline, base64ed. Maximum size: 50 MB"
 * payload[attachment].contentAttachment.url MS
 * payload[attachment].contentAttachment.url ^definition = "Shall be present if the attachment is a link to a document or a web page"
 * payload[attachment].contentAttachment.title 1.. MS
