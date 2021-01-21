@@ -67,7 +67,7 @@ Description:    "Care related communication between two or more parties in Danis
 
 
 Alias: $EventStatus = http://hl7.org/fhir/event-status
-Alias: $CategoryCodes = http://medcomfhir.dk/fhir/medcom-core/CodeSystem/medcom-careCommunication-categoryCodes
+Alias: $CategoryCodes = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes
 
 Instance: CareCommunicationContent
 InstanceOf: MedComCareCommunication

@@ -12,7 +12,7 @@ Description: "Provenance information about the messages preceeding the current m
 * activity 1.. MS
 * activity ^definition = "Activity that occurred and triggered the current or a previous message"
 * activity.coding.system 1.. MS
-* activity.coding.system = "http://medcomfhir.dk/fhir/medcom-core/CodeSystem/medcom-messaging-activityCodes"
+* activity.coding.system = "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes"
 * agent 1.. MS
 * agent.who 1.. MS
 * agent.who only Reference(MedComMessagingOrganization)
@@ -23,9 +23,10 @@ Description: "Provenance information about the messages preceeding the current m
 * entity.what MS
 * entity.what.reference 1.. MS
 * entity.what.reference ^definition = "Shall contain the message header id of messages given as input to the activity"
+* entity.what.reference ^short = "Reference a previous message. If previous message is EDIFACT or OIOXML it shall be expressed as [lokationsnummer]#[brevid] from the EDIFACT or OIOXML message. If previous message is a FHIR message: Messageheader.id from previous message. If no previous message = NA"
 
 
-Alias: $ActivityCode = http://medcomfhir.dk/fhir/medcom-core/CodeSystem/medcom-messaging-activityCodes
+Alias: $ActivityCode = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes
 
 Instance: NewCareCommunicationProvenance
 InstanceOf: MedComMessagingProvenance

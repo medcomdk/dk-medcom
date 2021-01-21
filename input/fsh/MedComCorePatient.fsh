@@ -19,7 +19,7 @@ Description: "Patient/citizen resource to use as subject in MedCom communication
 * address.postalCode MS
 * address.postalCode ^definition = "Shall be present if the postal code is known"
 * managingOrganization 1.. MS
-* managingOrganization only Reference(http://medcomfhir.dk/fhir/medcom-core/StructureDefinition/medcom-core-organization)
+* managingOrganization only Reference(http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization)
 * managingOrganization ^type.aggregation = #bundled
 
 
