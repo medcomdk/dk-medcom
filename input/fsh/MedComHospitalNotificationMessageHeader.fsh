@@ -11,6 +11,9 @@ Description: "Message header for a hospital notification message."
 * extension[reportOfAdmissionFlag] MS
 * extension[reportOfAdmissionFlag] ^definition = "Shall be set to true if recipient is requested to send a report of admission"
 
+* event[x] ^short = "The MedComMessagingMessageHeader shall contain the event value hospital-notification-message"
+
+
 Instance: HospitalNotificationAdmittedMessageHeader
 InstanceOf: MedComHospitalNotificationMessageHeader
 Description: "Message header for a hospital notification admit message. Valid only if used in a bundle (message)."

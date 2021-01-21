@@ -30,6 +30,7 @@ Description: "Message Header for MedCom message bundles"
 * source MS
 * source.endpoint MS
 
+* event[x] ^short = "The MedComMessagingMessageHeader shall contain the event value care-communication-message"
 
 Instance: PrimaryCoding
 InstanceOf: MedComMessagingDestinationUseExtension
