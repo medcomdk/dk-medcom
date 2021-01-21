@@ -3,8 +3,6 @@ This section describes how to handle  HospitalNotificationMessages and how to ha
 #### How to send HospitalNotification Messages for the same encounter
 This section describes how a HospitalNotificationMessage flow.
 
-Each HospitalNotificationMessage message/notification is a seperate messages where only the encounter *id* and the episodeOfCare *identifier* relates the messages.
-
 
 The change of state is dispicted in both the MedComHospitalNotificationEncounter *status*/*class* and the MedComCoreProvenance element *system*.
 Please refer to following map document for details (The document text is at present only in danish).
@@ -13,10 +11,14 @@ Please refer to following map document for details (The document text is at pres
 
 Please refer to following example:
 * [Simplified example of a MedComHospitalNotificationMessage for admit and finished stay ](./hospitalnotification/HospitalNotificationAdmitFinishedExample.png)
-
+* [Simplified example of a MedComHospitalNotificationMessage for admit, onleave, end onleave and finished stay ](./hospitalnotification/HospitalNotificationAdmitOnleaveFinishedExample.png)
 
 #### Message entered in error  
 This section describes how message entered in error shall be handled.
 
 Please refer to the following examples:
-* [Simplified example of a MedComHospitalNotificationMessage for admit and finished stay ](./hospitalnotification/HospitalNotificationEnteredInErrorExample.png)
+* [Simplified example of a MedComHospitalNotificationMessage entered in error ](./hospitalnotification/HospitalNotificationEnteredInErrorExample.png)
+
+#### Data references between MedCom OIOXML advis standard and the MedCom FHIR profile
+Please refer to:
+* [OIOXML advis -> HospitalNotification ](./hospitalnotification/oioxmlReferencesHospitalNotificaion.png)

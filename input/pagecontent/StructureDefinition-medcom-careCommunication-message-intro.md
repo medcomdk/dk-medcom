@@ -7,5 +7,5 @@ The Bundle containing the CareCommunication message shall contain one instance o
 
 Please refer to the tab "Snapshort Table(Must support)" below for the definition of the required content of a MedComCareCommunicationMessage.
 
-For decription of how to handle message references when sending a reply or forward a MedComCareCommunicationMessage and handling of errors please refer to the section "Notes".
+For decription of how to handle message references when sending a reply or forward a MedComCareCommunicationMessage, handling of errors and references between XDIS91 and CareCommunication please refer to the section "Notes".
 The section "Notes" if found at the end of this page.

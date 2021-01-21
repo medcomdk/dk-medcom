@@ -7,5 +7,5 @@ The Bundle containing the HospitalNotification message shall contain one instanc
 
 Please refer to the tab "Snapshort Table(Must support)" below for the definition of the required content of a MedComHospitalNotificationMessage.
 
-For decription of how to handle the different types of messages and handling of errors please refer to the section "Notes".
+For decription of how to handle the different types of messages, handling of errors and references between OIOXML advis and the HospitalNotification message please refer to the section "Notes".
 The section "Notes" if found at the end of this page.
