@@ -1,2 +1,12 @@
-### Scope and usage
-The ‘Hospital Notification’ contributes to securing the foundation for a coherent clinical pathway across sectors. The specific purpose of the ‘Hospital Notification’ is to inform the citizen’s current care and health provider in the primary sector about the start and end of the citizen’s stay at the hospital. It makes it possible to pause the current care and health providers’ services during the hospital stay and resume them when it ends. At the same time, the ‘Hospital Notification’ can trigger the automatic sending of Report of Admission (XDIS16) from the re-ceiver’s system, which gives the health professionals an overview of the citizen’s current services, level of function and health related prob-lems. The Hospital Notification also contains notification of the patient’s leave from the hospital stay and acute ambulant care.
+### Scope and usage 
+This profile is the root profile of MedCom HosptialNotification message. 
+<img alt="HospitalNotification" src="./hospitalnotification/HospitalNotification.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
+
+The message contains a bundle that is selfcontained regarding references. 
+The Bundle containing the HospitalNotification message shall contain one instance of the MedComMessagingMessage. By convention the cardinality is shown as 0..*
+
+Please refer to the tab "Snapshort Table(Must support)" below for the definition of the required content of a MedComHospitalNotificationMessage.
+
+For decription of how to handle the different types of messages, handling of errors and references between OIOXML advis and the HospitalNotification message please refer to the section "Notes".
+The section "Notes" if found at the end of this page.
+

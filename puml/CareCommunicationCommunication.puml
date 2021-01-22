@@ -1,0 +1,21 @@
+@startuml CareCommunicationCommunication
+
+hide empty members
+
+class "MedComCareCommunication" as communication
+class "MedComCorePatient" as patient
+class "MedComCoreEncounter" as encounter
+class "Organization" as recipientOrganization
+class "PractitionerRole" as recipientRole
+class "Practitioner" as author
+
+communication -- patient : "subject"
+communication -- encounter
+communication --"0..1" recipientOrganization : "sender"
+communication --"0..1" recipientRole : "sender"
+communication --"*" recipientOrganization : "recipient"
+communication --"*" recipientRole : "recipient"
+communication --"1...*" author : "author"
+
+patient - encounter
+@enduml

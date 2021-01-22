@@ -1,5 +1,6 @@
 Alias: $Use = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-destinationUse
 
+
 Profile: MedComMessagingMessageHeader
 Parent: MessageHeader
 Id: medcom-messaging-messageHeader
@@ -30,13 +31,16 @@ Description: "Message Header for MedCom message bundles"
 * source MS
 * source.endpoint MS
 
+* event[x] ^short = "The MedComMessagingMessageHeader shall contain the event value care-communication-message"
 
 Instance: PrimaryCoding
 InstanceOf: MedComMessagingDestinationUseExtension
 Usage: #inline
 * valueCoding = $Use#primary
 
+
 Alias: $MessageEvents = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes
+
 
 Instance: MessageHeaderExample
 InstanceOf: MedComMessagingMessageHeader

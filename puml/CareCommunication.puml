@@ -7,7 +7,7 @@ class "MedComCareCommunicationMessageHeader" as messageHeader <<MedComMessagingM
 class "MedComMessagingOrganization" as organization
 class "MedComCareCommunication" as communication
 class "MedComCorePatient" as patient
-class "MedComCoreLpr3Encounter" as encounter
+class "MedComCoreEncounter" as encounter
 class "MedComMessagingProvenance" as provenance
 class "Organization" as recipientOrganization
 class "PractitionerRole" as recipientRole

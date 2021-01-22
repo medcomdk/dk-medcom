@@ -21,3 +21,12 @@ Description: "A core organization with a SOR identifier."
 * identifier[sorIdentifier].system = "urn:oid:1.2.208.176.1.1"
 * identifier[sorIdentifier].value = "123456789012345"
 * name = "Aros Burn Center"
+
+Instance: PractitionerClinic
+InstanceOf: MedComCoreOrganization
+Title: "Practitioner Clinic"
+Description: "An organization with a SOR identifier."
+* identifier[sorIdentifier].use = #official
+* identifier[sorIdentifier].system = "urn:oid:1.2.208.176.1.1"
+* identifier[sorIdentifier].value = "378631000016009"
+* name = "Test Practitioner clinic"

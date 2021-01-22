@@ -1,4 +1,5 @@
 ### Introduction
+
 This implementation guide is provided by MedCom to describe the use of FHIR<sup>&reg;&copy;</sup> in message based exchange of data in Danish healthcare.
 
 The implementation guide contains profiles in three areas
@@ -45,7 +46,7 @@ The hospital notification messages is a message sent to relevant healthcare orga
 
 The following diagram depicts the structure of the hospital notification mesage.
 
-<img alt="Hospital Notification" src="./HospitalNotification.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
+<img alt="Hospital Notification" src="./hospitalnotification/HospitalNotification.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
 
 The hospital notification message follows the general message structure described above, except that the carbon-copy destination is not allowed. The following sections describe the overall purpose of each profiled resource.
 
@@ -60,12 +61,23 @@ The hospital notification message header constrains the messaging message header
 #### MedComHospitalNotificationEncounter
 The hospital notification message encounter contains the main content of the message and constrain the core encounter further to require a uniqe identifier for the encounter and restrict the status and class to a value set of relevant values. The start time of the encounter and a reference to the service provider is made mandatory. Most other values are disallowed due to the legislation. 
 
+#### Information regarding non-technical guide lines and use cases for HospitalNotification is found here:
+
+English:
+* [HosptialNotification Use Cases](./hospitalnotification/pdf/Use%20cases_Hospital%20Notification_eng.pdf)
+* [Non-technical guidelines for HospitalNotification](./hospitalnotification/pdf/FHIR_Hospital%20Notification.pdf)
+
+Danish:
+* [HospitalNotification Use Cases](./hospitalnotification/pdf/Use_cases_advis_om_sygehusophold.pdf)
+* [Non-technical guidelines for HospitalNotification](./hospitalnotification/pdf/FHIR_advis_om_sygehusophold.pdf)
+
+
 ### Care Communication Message
 The care communication message is a message sent between danish healthcare organizations, similar to an email with or without attachments.
 
 The following diagram depicts the structure of the care communication message.
 
-<img alt="Care Communication" src="./CareCommunication.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
+<img alt="Care Communication" src="./carecommunication/CareCommunication.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
 
 The care communication message follows the general message structure described above. The following sections describe the overall purpose of each profiled resource.
 
@@ -78,6 +90,26 @@ The care communication message header constrains the messaging message header fu
 #### MedComCareCommunication
 The care communication contains the main content of the message. It constrains the communication to the categories given in the MedComCareCommunicationCategories values and the priority to be either routine or ASAP. An optional title of the message is given in the topic of the communication. Care communication must contain an lpr3 encounter if an lpr3 identifier is known. The payload of the message is either text fragments or attachments, each given with a timestamp and an author. It is allowed to add a sender and/or recipient that is more precise than the sender and destination organizations given in the message header.
 
+### MedCom Acknowledgment Message
+
+#### MedComAcknowledgmentMessage
+A Message Acknowledgment is required in MedCom FHIR Messaging and follows the recommandations from HL7 FHIR ValueSet [response-code](http://hl7.org/fhir/R4/valueset-response-code.html "response-code").
+
+#### MedComAcknowledgmentMessageHeader
+Message Acknowledgment is handled through the response element in the MedComAcknowledgmentMessageHeader.
+
+#### Information regarding non-technical guide lines and use cases for CareCommunication is found here:
+
+English:
+* [CareCommunication Use Cases](./carecommunication/pdf/USE%20CASES_FHIR%20Care%20Communication.pdf)
+* [Non-technical guidelines for CareCommunication](./carecommunication/pdf/FHIR%20Care%20Communication%2C%20MedCom%20FHIR%20Standard.pdf)
+
+Danish:
+* [CareCommunication Use Cases](./carecommunication/pdf/Use%20Cases_FHIR%20Korrespondancemeddelelse.pdf)
+* [Non-technical guidelines for CareCommunication](./carecommunication/pdf/FHIR_Korrespondancemeddelelse.pdf)
+
+### Genenal references
+
 All referenced resources within the message are contained in the entry list.
 
 ### Content
@@ -88,12 +120,6 @@ This document presents MedCom messaging concepts defined via FHIR processable ar
 * [Extensions](extensions.html) - are FHIR extensions that are added for local use, covering needed concepts for the messaging
 * [Terminologies](terminology.html) - are defined or referenced code systems and value sets for the messaging context
 
-### References
-
-Further information is found here:
-
-* [Care Communication Use Cases](http://svn.medcom.dk/svn/drafts/Standarder/HL7/FHIR/ClinicalEmail/Dokumentation/USE%20CASES_FHIR%20Care%20Communication_20201208.pdf)
-* [Non-technical guidelines for Care Communication](http://svn.medcom.dk/svn/drafts/Standarder/HL7/FHIR/ClinicalEmail/Dokumentation/FHIR%20Care%20Communication,%20MedCom%20FHIR%20Standard%20v.%200.4_20201208.pdf)
 
 ### Governance
 

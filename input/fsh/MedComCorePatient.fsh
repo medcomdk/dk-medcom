@@ -10,6 +10,8 @@ Description: "Patient/citizen resource to use as subject in MedCom communication
 * name[official].family ^definition = "Shall always be present, danish \"efternavn\" "
 * telecom MS
 * telecom ^definition = "Shall contain all known, relevant telecom information of the patient"
+* deceased[x] MS
+* deceased[x] ^definition = "Shall contain information if the patient is deceased and it is relevant in the given context"
 * address MS
 * address ^definition = "Shall contain all known, relevant addresses of the patient"
 * address.line MS
@@ -19,7 +21,7 @@ Description: "Patient/citizen resource to use as subject in MedCom communication
 * address.postalCode MS
 * address.postalCode ^definition = "Shall be present if the postal code is known"
 * managingOrganization 1.. MS
-* managingOrganization only Reference(http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-core-organization)
+* managingOrganization only Reference(MedComCoreOrganization)
 * managingOrganization ^type.aggregation = #bundled
 
 
@@ -38,3 +40,37 @@ Description: "Patient with a managing organization. Valid only if used in a bund
 * address.city = "Aarhus"
 * address.postalCode = "8000 C"
 * managingOrganization = Reference(BurnCenter)
+
+Instance: 382fb8a3-6725-41e2-a615-2b1cfcfe9931
+InstanceOf: MedComCorePatient
+Title: "Erik Clausen"
+Description: "Patient deceased with a managing organization. Valid only if used in a bundle (message)."
+* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
+* identifier[cpr].value = "0101010141"
+* name[official].use = #official
+* name[official].given = "Erik"
+* name[official].family = "Clausen"
+* telecom.system = #phone
+* telecom.value = "24533421"
+* address.line = "Forskerparken 10"
+* address.city = "Odense M"
+* address.postalCode = "5230"
+* managingOrganization = Reference(PractitionerClinic)
+* deceasedBoolean = true
+
+Instance: 5b72c625-0570-4111-b272-f0351344f8b6
+InstanceOf: MedComCorePatient
+Title: "Erik Clausen"
+Description: "Patient not deceased with a managing organization. Valid only if used in a bundle (message)."
+* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
+* identifier[cpr].value = "0101010141"
+* name[official].use = #official
+* name[official].given = "Erik"
+* name[official].family = "Clausen"
+* telecom.system = #phone
+* telecom.value = "24533421"
+* address.line = "Forskerparken 10"
+* address.city = "Odense M"
+* address.postalCode = "5230"
+* managingOrganization = Reference(PractitionerClinic)
+* deceasedBoolean = false

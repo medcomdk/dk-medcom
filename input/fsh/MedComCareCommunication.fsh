@@ -14,7 +14,7 @@ Description:    "Care related communication between two or more parties in Danis
 * topic MS
 * topic ^definition = "Description of the purpose/content, similar to a subject line in an email. Shall be present if topic of the message is known."
 * encounter MS
-* encounter only Reference(MedComCoreLpr3Encounter)
+* encounter only Reference(MedComCoreEncounter)
 * encounter ^type.aggregation = #bundled
 * encounter ^definition = "Shall contain an encounter with a reference to the episode of care if reported to the Danish National Patient Registry"
 * sent 1.. MS
@@ -65,10 +65,16 @@ Description:    "Care related communication between two or more parties in Danis
 * payload[attachment].contentAttachment.creation MS
 * payload[attachment].contentAttachment.creation ^definition = "Shall be present if the creation time of the attachment will be relevant to a recipient"
 
+* status ^short = "The MedComCareCommunication message status may be unknown. status is required because of basic FHIR profile requirement"
+* category ^short = "The MedComCareCommunication category (danish:Kategori) describes the content of the message."
+* priority ^short = "The MedComCareCommunication priority shall be present if the message priority is known to be ASAP"
+* topic ^short = "The MedComCareCommunication topic (danish:emne) may be added as a supplement to the category"
 
 Alias: $EventStatus = http://hl7.org/fhir/event-status
 Alias: $CategoryCodes = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes
 
+
+// CareCommunication example
 Instance: CareCommunicationContent
 InstanceOf: MedComCareCommunication
 Title: "Example of Care Communication Content"
@@ -82,9 +88,54 @@ Description: "Content of care communication message. Valid only if used in a bun
 * payload.extension[date].valueDateTime = 2020-09-28
 * payload.extension[author].valueReference = Reference(MichaelBurns)
 
+// CareCommunication reply example
+Instance: CareCommunicationReplyContent
+InstanceOf: MedComCareCommunication
+Title: "Example of Care Communication Content"
+Description: "Content of care communication message. Valid only if used in a bundle (message)."
+Usage: #inline
+* status = $EventStatus#unknown
+* category = $CategoryCodes#carecoordination
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
+* encounter = Reference(EncounterWithLPR3Identifier)
+* sent = 2020-09-30T10:22:11Z
+* payload[0].contentString = "The burns are quite severe"
+* payload[0].extension[date].valueDateTime = 2020-09-28
+* payload[0].extension[author].valueReference = Reference(MichaelBurns)
+* payload[1].contentString = "Keep the patient under observation for at least 5 days"
+* payload[1].extension[date].valueDateTime = 2020-09-30
+* payload[1].extension[author].valueReference = Reference(EmmaWaters)
 
+// CareCommunication example
+Instance: CareCommunicationForwardContent
+InstanceOf: MedComCareCommunication
+Title: "Example of Care Communication Content"
+Description: "Content of care communication message. Valid only if used in a bundle (message)."
+Usage: #inline
+* status = $EventStatus#unknown
+* category = $CategoryCodes#carecoordination
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
+* encounter = Reference(EncounterWithLPR3Identifier)
+* sent = 2020-09-30T10:22:11Z
+* payload[0].contentString = "The burns are quite severe"
+* payload[0].extension[date].valueDateTime = 2020-09-28
+* payload[0].extension[author].valueReference = Reference(MichaelBurns)
+* payload[1].contentString = "I have received this from Michael Burns"
+* payload[1].extension[date].valueDateTime = 2020-09-30
+* payload[1].extension[author].valueReference = Reference(EmmaWaters)
+
+
+// Practitioners
 Instance: MichaelBurns
 InstanceOf: Practitioner
 Description: "Simple practitioner with a name"
+Usage: #inline
 * name.given = "Michael"
 * name.family = "Burns"
+
+Instance: EmmaWaters
+InstanceOf: Practitioner
+Description: "Simple practitioner with a name"
+Usage: #inline
+* name.given = "Emma"
+* name.family = "Waters"

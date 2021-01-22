@@ -26,7 +26,11 @@ Description: "Provenance information about the messages preceeding the current m
 * entity.what.reference ^short = "Reference a previous message. If previous message is EDIFACT or OIOXML it shall be expressed as [lokationsnummer]#[brevid] from the EDIFACT or OIOXML message. If previous message is a FHIR message: Messageheader.id from previous message. If no previous message = NA"
 
 
+
 Alias: $ActivityCode = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes
+
+// CareCommunication example
+
 
 Instance: NewCareCommunicationProvenance
 InstanceOf: MedComMessagingProvenance
@@ -37,6 +41,49 @@ Description: "Provenance information for a medcom message. Valid only if used in
 * activity = $ActivityCode#new-message
 * agent.who = Reference(MessageSender)
 
+// CareCommunication reply example
+
+Instance: NewCareCommunicationProvenanceForReply
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(CareCommunicationReplyMessageHeader)
+* occurredDateTime = 2020-09-28T12:34:56Z
+* recorded = 2020-09-28T12:34:56Z
+* activity = $ActivityCode#new-message
+* agent.who = Reference(MessageSender)
+
+Instance: ReplyCareCommunicationProvenance
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(CareCommunicationReplyMessageHeader)
+* occurredDateTime = 2020-09-30T10:22:11Z
+* recorded = 2020-09-30T10:22:11Z
+* activity = $ActivityCode#reply-message
+* agent.who = Reference(MessageReceiver)
+
+// CareCommunication forward example
+
+Instance: NewCareCommunicationProvenanceForForward
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(CareCommunicationForwardMessageHeader)
+* occurredDateTime = 2020-09-28T12:34:56Z
+* recorded = 2020-09-28T12:34:56Z
+* activity = $ActivityCode#new-message
+* agent.who = Reference(MessageSender)
+
+Instance: ForwardCareCommunicationProvenance
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(CareCommunicationForwardMessageHeader)
+* occurredDateTime = 2020-09-30T10:22:11Z
+* recorded = 2020-09-30T10:22:11Z
+* activity = $ActivityCode#reply-message
+* agent.who = Reference(MessageReceiver)
 
 // Admit example
 
@@ -129,3 +176,27 @@ Usage: #inline
 * agent.who = Reference(MessageSender)
 * entity.role = #derivation
 * entity.what = Reference(HospitalNotificationAdmittedMessageHeader)
+
+
+//patient is admitted before deceased
+Instance: HospitalNotificationAdmitBeforeDeceasedProvenance
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(HospitalNotificationAdmitDeceasedMessageHeader)
+* occurredDateTime = 2021-01-10T13:44:14Z
+* recorded = 2021-01-10T13:45:15Z
+* activity = $ActivityCode#admit-inpatient
+* agent.who = Reference(MessageSender)
+
+//patient is deceased
+Instance: HospitalNotificationAdmitForDischargeDeceasedProvenance
+InstanceOf: MedComMessagingProvenance
+Description: "Provenance information for a medcom Hospital Notification message when patient deceased. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(HospitalNotificationDischargedDeceasedMessageHeader)
+* occurredDateTime = 2021-01-13T13:44:14Z
+* recorded = 2021-01-13T13:45:15Z
+* activity = $ActivityCode#discharge-inpatient-home
+* agent.who = Reference(MessageSender)
+
