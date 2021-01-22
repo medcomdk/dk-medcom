@@ -1,4 +1,5 @@
-Alias: $ActivityCode = http://medcom.dk/fhir/medcom-core/CodeSystem/medcom-messaging-activityCodes
+Alias: $ActivityCode = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes
+
 
 ValueSet: MedComHospitalNotificationMessageActivities
 Id: medcom-hospitalNotification-messageActivities
@@ -22,9 +23,3 @@ Description: "ValueSet containg activity codes for hospital notification message
 * $ActivityCode#revise-discharge-inpatient-home "Update of End hospital Stay"
 * $ActivityCode#cancel-discharge-emergency-home "Cancellation of End hospital Stay"
 * $ActivityCode#cancel-discharge-inpatient-home "Cancellation of End hospital Stay"
-* $ActivityCode#discharge-emergency-other "End hospital Stay - patient discharged other than to home/primary sector"
-* $ActivityCode#discharge-inpatient-other "End hospital Stay - patient discharged other than to home/primary sector"
-* $ActivityCode#revise-discharge-emergency-other "Update of End hospital Stay"
-* $ActivityCode#revise-discharge-inpatient-other "Update of End hospital Stay"
-* $ActivityCode#cancel-discharge-emergency-other "Cancellation of End hospital Stay"
-* $ActivityCode#cancel-discharge-inpatient-other "Cancellation of End hospital Stay"

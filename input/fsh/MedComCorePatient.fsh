@@ -1,13 +1,17 @@
 Profile: MedComCorePatient
 Parent: http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient
 Id: medcom-core-patient
-Description: "Patient resource to use as subject in MedCom communication"
+Description: "Patient/citizen resource to use as subject in MedCom communication"
+* identifier[cpr] ^short = "Unique identification number for all citizens in Denmark"
 * name[official] 1.. MS
 * name[official].given MS
-* name[official].given ^definition = "Shall be present if the official given name of the patient is known"
+* name[official].given ^definition = "Shall be present if the official given name of the patient is known, danish \"fornavn\" "
 * name[official].family MS
+* name[official].family ^definition = "Shall always be present, danish \"efternavn\" "
 * telecom MS
 * telecom ^definition = "Shall contain all known, relevant telecom information of the patient"
+* deceased[x] MS
+* deceased[x] ^definition = "Shall contain information if the patient is deceased and it is relevant in the given context"
 * address MS
 * address ^definition = "Shall contain all known, relevant addresses of the patient"
 * address.line MS
@@ -17,11 +21,11 @@ Description: "Patient resource to use as subject in MedCom communication"
 * address.postalCode MS
 * address.postalCode ^definition = "Shall be present if the postal code is known"
 * managingOrganization 1.. MS
-* managingOrganization only Reference(http://medcom.dk/fhir/medcom-core/StructureDefinition/medcom-core-organization)
+* managingOrganization only Reference(MedComCoreOrganization)
 * managingOrganization ^type.aggregation = #bundled
 
 
-Instance: EricFlame
+Instance: 733cef33-3626-422b-955d-d506aaa65fe1
 InstanceOf: MedComCorePatient
 Title: "Eric Flame"
 Description: "Patient with a managing organization. Valid only if used in a bundle (message)."
@@ -36,3 +40,37 @@ Description: "Patient with a managing organization. Valid only if used in a bund
 * address.city = "Aarhus"
 * address.postalCode = "8000 C"
 * managingOrganization = Reference(BurnCenter)
+
+Instance: 382fb8a3-6725-41e2-a615-2b1cfcfe9931
+InstanceOf: MedComCorePatient
+Title: "Erik Clausen"
+Description: "Patient deceased with a managing organization. Valid only if used in a bundle (message)."
+* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
+* identifier[cpr].value = "0101010141"
+* name[official].use = #official
+* name[official].given = "Erik"
+* name[official].family = "Clausen"
+* telecom.system = #phone
+* telecom.value = "24533421"
+* address.line = "Forskerparken 10"
+* address.city = "Odense M"
+* address.postalCode = "5230"
+* managingOrganization = Reference(PractitionerClinic)
+* deceasedBoolean = true
+
+Instance: 5b72c625-0570-4111-b272-f0351344f8b6
+InstanceOf: MedComCorePatient
+Title: "Erik Clausen"
+Description: "Patient not deceased with a managing organization. Valid only if used in a bundle (message)."
+* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
+* identifier[cpr].value = "0101010141"
+* name[official].use = #official
+* name[official].given = "Erik"
+* name[official].family = "Clausen"
+* telecom.system = #phone
+* telecom.value = "24533421"
+* address.line = "Forskerparken 10"
+* address.city = "Odense M"
+* address.postalCode = "5230"
+* managingOrganization = Reference(PractitionerClinic)
+* deceasedBoolean = false

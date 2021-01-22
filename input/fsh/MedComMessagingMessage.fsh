@@ -4,6 +4,7 @@ Id: medcom-messaging-message
 Description: "Base resource for all MedCom messages."
 * type MS
 * type = #message
+* type ^short = "Always message"
 * timestamp 1.. MS
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
