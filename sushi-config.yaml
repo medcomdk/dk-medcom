@@ -1,12 +1,12 @@
 id: dk.fhir.ig.medcom-core
 canonical: http://medcomfhir.dk/fhir/core/1.0
 name: MedComCore
-title: "DK MedCom Core (R4)"
+title: "DK MedCom Core"
 description: The DK MedCom Core IG
-status: draft
-version: 0.9
+status: active
+version: "1.0"
 fhirVersion: 4.0.1
-copyrightYear: 2020+
+copyrightYear: 2021+
 releaseLabel: Build CI
 publisher:
   name: MedCom
