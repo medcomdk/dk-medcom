@@ -19,10 +19,10 @@ InstanceOf: MedComHospitalNotificationMessageHeader
 Description: "Message header for a hospital notification admit message. Valid only if used in a bundle (message)."
 * destination.extension[use] = PrimaryCoding
 * eventCoding = $MessageEvents#hospital-notification-message
-* destination.endpoint = "http://medcom.dk/unknown"
+* destination.endpoint = "http://medcomfhir.dk/unknown"
 * destination.receiver = Reference(MessageReceiver)
 * sender = Reference(MessageSender)
-* source.endpoint = "http://medcom.dk/unknown"
+* source.endpoint = "http://medcomfhir.dk/unknown"
 * focus = Reference(HospitalNotificationEncounterInProgress)
 * extension[reportOfAdmissionFlag].valueBoolean = true
 
@@ -31,10 +31,10 @@ InstanceOf: MedComHospitalNotificationMessageHeader
 Description: "Message header for a hospital notification start leave message. Valid only if used in a bundle (message)."
 * destination.extension[use] = PrimaryCoding
 * eventCoding = $MessageEvents#hospital-notification-message
-* destination.endpoint = "http://medcom.dk/unknown"
+* destination.endpoint = "http://medcomfhir.dk/unknown"
 * destination.receiver = Reference(MessageReceiver)
 * sender = Reference(MessageSender)
-* source.endpoint = "http://medcom.dk/unknown"
+* source.endpoint = "http://medcomfhir.dk/unknown"
 * focus = Reference(HospitalNotificationEncounterOnLeave)
 
 Instance: HospitalNotificationEndLeaveMessageHeader
@@ -42,10 +42,10 @@ InstanceOf: MedComHospitalNotificationMessageHeader
 Description: "Message header for a hospital notification start leave message. Valid only if used in a bundle (message)."
 * destination.extension[use] = PrimaryCoding
 * eventCoding = $MessageEvents#hospital-notification-message
-* destination.endpoint = "http://medcom.dk/unknown"
+* destination.endpoint = "http://medcomfhir.dk/unknown"
 * destination.receiver = Reference(MessageReceiver)
 * sender = Reference(MessageSender)
-* source.endpoint = "http://medcom.dk/unknown"
+* source.endpoint = "http://medcomfhir.dk/unknown"
 * focus = Reference(HospitalNotificationEncounterInProgress)
 
 Instance: HospitalNotificationDischargedMessageHeader
@@ -53,10 +53,10 @@ InstanceOf: MedComHospitalNotificationMessageHeader
 Description: "Message header for a hospital notification discharge message. Valid only if used in a bundle (message)."
 * destination.extension[use] = PrimaryCoding
 * eventCoding = $MessageEvents#hospital-notification-message
-* destination.endpoint = "http://medcom.dk/unknown"
+* destination.endpoint = "http://medcomfhir.dk/unknown"
 * destination.receiver = Reference(MessageReceiver)
 * sender = Reference(MessageSender)
-* source.endpoint = "http://medcom.dk/unknown"
+* source.endpoint = "http://medcomfhir.dk/unknown"
 * focus = Reference(HospitalNotificationEncounterFinished)
 
 // admit message - for patient that will be discharged as deceased

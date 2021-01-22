@@ -9,3 +9,4 @@ Please refer to the tab "Snapshort Table(Must support)" below for the definition
 
 For decription of how to handle the different types of messages, handling of errors and references between OIOXML advis and the HospitalNotification message please refer to the section "Notes".
 The section "Notes" if found at the end of this page.
+

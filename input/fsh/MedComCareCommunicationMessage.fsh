@@ -12,7 +12,8 @@ Description: "Message for communication care related information between parties
 
 
 Alias: $BundleType = http://hl7.org/fhir/bundle-type
-Alias: $ActivityCode = http://medcom.dk/fhir/core/CodeSystem/medcom-messaging-activityCodes
+Alias: $ActivityCode = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes
+
 
 Instance: CareCommunicationMessageExample
 InstanceOf: MedComCareCommunicationMessage
