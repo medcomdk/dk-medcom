@@ -15,12 +15,12 @@ Instance: MessageReceiver
 InstanceOf: MedComMessagingOrganization
 Description: "Example of an organization with a SOR and an EAN identifier."
 * identifier[sorIdentifier].value = "543210987654321"
-* identifier[eanIdentifier].value = "3210987654321"
+* identifier[eanIdentifier].value = "5790000121526"
 * name = "Receiver Organization"
 
 Instance: MessageSender
 InstanceOf: MedComMessagingOrganization
 Description: "Example of an organization with a SOR and an EAN identifier."
 * identifier[sorIdentifier].value = "123456789012345"
-* identifier[eanIdentifier].value = "1234567890123"
+* identifier[eanIdentifier].value = "5790001382445"
 * name = "Sender Organization"
