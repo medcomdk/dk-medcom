@@ -3,7 +3,7 @@
 hide empty members
 
 class "MedComCareCommunicationMessage" as message <<MedComMessagingMessage>>
-class "MedComCareCommunicationMessageHeader" as messageHeader <<MedComMessagingMessageHeader>>
+class "MedComcfa96109-49f3-4d78-a6b7-2c218b34d70a" as messageHeader <<MedComMessagingMessageHeader>>
 class "MedComMessagingOrganization" as organization
 class "MedComCareCommunication" as communication
 class "MedComCorePatient" as patient

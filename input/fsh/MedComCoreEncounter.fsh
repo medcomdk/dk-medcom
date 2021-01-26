@@ -21,7 +21,7 @@ Description: "An interaction between a patient/citizen and healthcare provider(s
 * serviceProvider only Reference(MedComCoreOrganization)
 * serviceProvider ^type.aggregation = #bundled
 
-Instance: example
+Instance: 6220b42d-c4fd-4c77-bae7-78e7d890dc8d
 InstanceOf: MedComCoreEncounter
 Title: "MedCom Core Encounter"
 Description: "Example of a simple MedCom Core Encounter"

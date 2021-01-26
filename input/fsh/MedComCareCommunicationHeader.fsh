@@ -11,39 +11,39 @@ Description: "Message header for care communication message"
 * focus ^type.aggregation = #bundled
 
 // CareCommunication example
-Instance: CareCommunicationMessageHeader
+Instance: 42cb9200-f421-4d08-8391-7d51a2503cb4
 InstanceOf: MedComCareCommunicationMessageHeader
 Description: "Message header for care communication message. Valid only if used in a bundle (message)."
-* destination.extension[use] = PrimaryCoding
+* destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
 * destination.endpoint = "http://medcomfhir.dk/unknown"
-* destination.receiver = Reference(MessageReceiver)
-* sender = Reference(MessageSender)
+* destination.receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcomfhir.dk/unknown"
-* focus = Reference(CareCommunicationContent)
+* focus = Reference(94e65db8-2f0c-4a2c-a7c9-06a160d59a12)
 
 // CareCommunication reply example
-Instance: CareCommunicationReplyMessageHeader
+Instance: b0d424f8-33a9-4cc2-a528-a6cc1c58727b
 InstanceOf: MedComCareCommunicationMessageHeader
 Description: "Message header for care communication reply message. Valid only if used in a bundle (message)."
 Usage: #inline
-* destination.extension[use] = PrimaryCoding
+* destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
 * destination.endpoint = "http://medcom.dk/unknown"
-* destination.receiver = Reference(MessageSender)
-* sender = Reference(MessageReceiver)
+* destination.receiver = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* sender = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
 * source.endpoint = "http://medcom.dk/unknown"
-* focus = Reference(CareCommunicationReplyContent)
+* focus = Reference(75fd6a1b-6af4-4b5c-a170-f70e95aa1e7a)
 
 // CareCommunication forward example
-Instance: CareCommunicationForwardMessageHeader
+Instance: d5bd2111-2576-48d3-84d4-8be0297a038d
 InstanceOf: MedComCareCommunicationMessageHeader
 Description: "Message header for care communication forward message. Valid only if used in a bundle (message)."
 Usage: #inline
-* destination.extension[use] = PrimaryCoding
+* destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
 * destination.endpoint = "http://medcom.dk/unknown"
-* destination.receiver = Reference(MessageSender)
-* sender = Reference(MessageReceiver)
+* destination.receiver = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* sender = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
 * source.endpoint = "http://medcom.dk/unknown"
-* focus = Reference(CareCommunicationForwardContent)
+* focus = Reference(4c712bdc-1558-4125-a854-fa8b3a11f6ed)
