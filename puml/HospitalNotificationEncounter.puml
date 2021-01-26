@@ -1,14 +1,11 @@
-@startuml HospitalNotificationEncounter
+@startuml MedComCorePatient
 
 hide empty members
 
-class "MedComHospitalNotificationEncounter" as encounter <<MedComCoreEncounter>>
 class "MedComCorePatient" as patient
 class "MedComCoreOrganization" as serviceProvider
 
-encounter -- patient : "subject"
-encounter -- serviceProvider : "service provider"
-
+patient -- serviceProvider : "service provider"
 
 
 @enduml
