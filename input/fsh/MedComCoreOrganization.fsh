@@ -13,7 +13,7 @@ Description: "A formally recognized organizations within danish healthcare, regi
 * name ^definition = "Name of the organaization. Shall be present if known by the sender."
 
 
-Instance: BurnCenter
+Instance: 12ee0dde-a672-462f-820d-5efe832d73c9
 InstanceOf: MedComCoreOrganization
 Title: "Aros Burn Center"
 Description: "A core organization with a SOR identifier."
@@ -22,7 +22,7 @@ Description: "A core organization with a SOR identifier."
 * identifier[sorIdentifier].value = "123456789012345"
 * name = "Aros Burn Center"
 
-Instance: PractitionerClinic
+Instance: bca68510-fe3b-4161-aba0-908a693eb54f
 InstanceOf: MedComCoreOrganization
 Title: "Practitioner Clinic"
 Description: "An organization with a SOR identifier."

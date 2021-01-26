@@ -10,7 +10,7 @@ Alias: $StatusCodes = http://hl7.org/fhir/encounter-status
 Alias: $LPR = https://www.esundhed.dk/Registre/Landspatientsregisteret
 Alias: $ActCodes = http://terminology.hl7.org/CodeSystem/v3-ActCode
 
-Instance: EncounterWithLPR3Identifier
+Instance: 09437365-821a-4a94-b32b-8916db1d5f62
 InstanceOf: MedComCoreLpr3Encounter
 Title: "Encounter with LPR3 identifier"
 Description: "Encounter with an identifier that may be a LPR3 id. Valid only if used in a bundle (message)."

@@ -34,10 +34,10 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * partOf ..0
 
 
-Instance: HospitalNotificationEncounterInProgress
+Instance: 7790f964-88d3-4652-bbc8-81d2f3d035f8
 InstanceOf: MedComHospitalNotificationEncounter
 Title: "MedCom Hospital Notification Encounter in progress"
-Description: "Example of MedCom Hospital Noticication inpatient Encounter in progress with Burncenter as serviceProvider"
+Description: "Example of MedCom Hospital Noticication inpatient Encounter in progress with 12ee0dde-a672-462f-820d-5efe832d73c9 as serviceProvider"
 * identifier.value = "1234567890"
 * status = #in-progress
 * class = $ActCodes#IMP 
@@ -45,12 +45,12 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter in pro
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 
 * period.start = 2020-10-15T13:44:14Z
-* serviceProvider = Reference(BurnCenter)
+* serviceProvider = Reference(12ee0dde-a672-462f-820d-5efe832d73c9)
 
-Instance: HospitalNotificationEncounterOnLeave
+Instance: 556e9c54-23d2-43a4-816e-951d2a6e3281
 InstanceOf: MedComHospitalNotificationEncounter
 Title: "MedCom Hospital Notification Encounter on leave"
-Description: "Example of MedCom Hospital Noticication inpatient Encounter on leave with Burncenter as serviceProvider"
+Description: "Example of MedCom Hospital Noticication inpatient Encounter on leave with 12ee0dde-a672-462f-820d-5efe832d73c9 as serviceProvider"
 * identifier.value = "1234567890"
 * status = #onleave
 * class = $ActCodes#IMP 
@@ -58,12 +58,12 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter on lea
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 
 * period.start = 2020-10-15T13:44:14Z
-* serviceProvider = Reference(BurnCenter)
+* serviceProvider = Reference(12ee0dde-a672-462f-820d-5efe832d73c9)
 
-Instance: HospitalNotificationEncounterFinished
+Instance: 8405ba2d-467a-4e92-9acc-9dc2a629760f
 InstanceOf: MedComHospitalNotificationEncounter
 Title: "MedCom Hospital Notification Encounter in progress"
-Description: "Example of MedCom Hospital Noticication inpatient Encounter in progress with Burncenter as serviceProvider"
+Description: "Example of MedCom Hospital Noticication inpatient Encounter in progress with 12ee0dde-a672-462f-820d-5efe832d73c9 as serviceProvider"
 * identifier.value = "1234567890"
 * status = #finished
 * class = $ActCodes#IMP 
@@ -71,10 +71,10 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter in pro
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 
 * period.start = 2020-10-15T13:44:14Z
-* serviceProvider = Reference(BurnCenter)
+* serviceProvider = Reference(12ee0dde-a672-462f-820d-5efe832d73c9)
 
 //Embedded Encounter with admit before patient is deceased
-Instance: HospitalNotificationEncounterAdmittetBeforeDeceased
+Instance: d6145390-62ad-4cd0-8fe0-9679a34c44a9
 InstanceOf: MedComHospitalNotificationEncounter
 Title: "MedCom Hospital Notification Encounter admitted before deceased"
 Description: "Example of MedCom Hospital Noticication inpatient Encounter when patient is admitted"
@@ -85,10 +85,10 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter when p
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "200040a2-e05d-4af3-91e7-5febfa8ad0b3"
 * period.start = 2021-01-10T13:44:14Z
-* serviceProvider = Reference(PractitionerClinic)
+* serviceProvider = Reference(bca68510-fe3b-4161-aba0-908a693eb54f)
 
 //Embedded Encouner with admitted patient deceased
-Instance: HospitalNotificationEncounterFinishedWhenDeceased
+Instance: 8405ba2d-467a-4e92-9acc-9dc2a629760fWhenDeceased
 InstanceOf: MedComHospitalNotificationEncounter
 Title: "MedCom Hospital Notification Encounter finished"
 Description: "Example of MedCom Hospital Noticication inpatient Encounter finished, patient deceased"
@@ -99,5 +99,5 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter finish
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "200040a2-e05d-4af3-91e7-5febfa8ad0b3"
 * period.start = 2021-01-13T13:44:14Z
-* serviceProvider = Reference(PractitionerClinic)
+* serviceProvider = Reference(bca68510-fe3b-4161-aba0-908a693eb54f)
 

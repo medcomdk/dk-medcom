@@ -14,48 +14,48 @@ Description: "A resource that describes a reponse to a message that is exchanged
 Alias: $MessageEvents = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes
 Alias: $AcknowledgementCode = http://hl7.org/fhir/ValueSet/Acknowledgement-code
 
-Instance: AcknowledgementHeaderExample
+Instance: ff9055ec-b1f1-48b6-933a-063dff0a6faf
 InstanceOf: MedComMessagingAcknowledgementHeader
 Description: "Message header for an empty message. Valid only if used in a bundle (message)."
-* destination.extension[use] = PrimaryCoding
+* destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#empty-message
 * destination.endpoint = "http://medcom.dk/unknown"
-* destination.receiver = Reference(MessageReceiver)
-* sender = Reference(MessageSender)
+* destination.receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcom.dk/unknown"
-* response.identifier = "EmptyMessage"
+* response.identifier = "eb26be85-fdb7-454d-a980-95cba6d1745b"
 * response.code = $AcknowledgementCode#ok
 
-Instance: AcknowledgementHeaderExample-fatal-error
+Instance: 4879c81e-0607-4ccb-b358-24a72208e30d
 InstanceOf: MedComMessagingAcknowledgementHeader
 Description: "Message header for an fatal-error message"
-* destination.extension[use] = PrimaryCoding
+* destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#empty-message
 * destination.endpoint = "http://medcomfhir.dk/unknown"
-* destination.receiver = Reference(MessageReceiver)
-* sender = Reference(MessageSender)
+* destination.receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcomfhir.dk/unknown"
-* response.identifier = "MedComHospitalNotificationMessageStartLeaveExample"
+* response.identifier = "53128d9b-cede-4c7f-8904-809eab322d7d"
 * response.code = $AcknowledgementCode#fatal-error
-* response.details = Reference(OperationOutcome-error)
+* response.details = Reference(4ecb2a8e-3a68-4083-910e-811296affd43)
 
-Instance: AcknowledgementHeaderExample-ok
+Instance: 4aa2d9bf-2c6c-47e8-bce4-7928bcd51019
 InstanceOf: MedComMessagingAcknowledgementHeader
 Description: "Message header for an ok message"
-* destination.extension[use] = PrimaryCoding
+* destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#empty-message
 * destination.endpoint = "http://medcomfhir.dk/unknown"
-* destination.receiver = Reference(MessageReceiver)
-* sender = Reference(MessageSender)
+* destination.receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcomfhir.dk/unknown"
 * response.identifier = "382fb8a3-6725-41e2-a615-2b1cfcfe9931"
 * response.code = $AcknowledgementCode#fatal-error
-* response.details = Reference(OperationOutcome-error)
+* response.details = Reference(4ecb2a8e-3a68-4083-910e-811296affd43)
 
 Alias: $ServerityCode = http://hl7.org/fhir/ValueSet/issue-severity
 Alias: $CodeCode = http://hl7.org/fhir/ValueSet/issue-type
 
-Instance: OperationOutcome-error
+Instance: 4ecb2a8e-3a68-4083-910e-811296affd43
 InstanceOf: OperationOutcome
 Description: "Example of a error operationOutcome"
 * issue.severity = $ServerityCode#error
@@ -63,7 +63,7 @@ Description: "Example of a error operationOutcome"
 * issue.diagnostics = "Error parsing resource XML"
 * issue.expression = "Bundle.meta"
 
-Instance: OperationOutcome-ok
+Instance: e87bc9d4-f876-4b6f-8585-40b26dc1e369
 InstanceOf: OperationOutcome
 Description: "Example of a ok operationOutcome"
 * issue.severity = $ServerityCode#information

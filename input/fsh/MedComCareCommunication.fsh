@@ -75,21 +75,21 @@ Alias: $CategoryCodes = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-car
 
 
 // CareCommunication example
-Instance: CareCommunicationContent
+Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a12
 InstanceOf: MedComCareCommunication
 Title: "Example of Care Communication Content"
 Description: "Content of care communication message. Valid only if used in a bundle (message)."
 * status = $EventStatus#unknown
 * category = $CategoryCodes#carecoordination
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* encounter = Reference(EncounterWithLPR3Identifier)
+* encounter = Reference(09437365-821a-4a94-b32b-8916db1d5f62)
 * sent = 2020-09-28T12:34:56Z
 * payload.contentString = "The burns are quite severe"
 * payload.extension[date].valueDateTime = 2020-09-28
-* payload.extension[author].valueReference = Reference(MichaelBurns)
+* payload.extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
 
 // CareCommunication reply example
-Instance: CareCommunicationReplyContent
+Instance: 75fd6a1b-6af4-4b5c-a170-f70e95aa1e7a
 InstanceOf: MedComCareCommunication
 Title: "Example of Care Communication Content"
 Description: "Content of care communication message. Valid only if used in a bundle (message)."
@@ -97,17 +97,17 @@ Usage: #inline
 * status = $EventStatus#unknown
 * category = $CategoryCodes#carecoordination
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* encounter = Reference(EncounterWithLPR3Identifier)
+* encounter = Reference(09437365-821a-4a94-b32b-8916db1d5f62)
 * sent = 2020-09-30T10:22:11Z
 * payload[0].contentString = "The burns are quite severe"
 * payload[0].extension[date].valueDateTime = 2020-09-28
-* payload[0].extension[author].valueReference = Reference(MichaelBurns)
+* payload[0].extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
 * payload[1].contentString = "Keep the patient under observation for at least 5 days"
 * payload[1].extension[date].valueDateTime = 2020-09-30
-* payload[1].extension[author].valueReference = Reference(EmmaWaters)
+* payload[1].extension[author].valueReference = Reference(ad055a3d-16b6-41f9-891a-7dd73eecaf03)
 
 // CareCommunication example
-Instance: CareCommunicationForwardContent
+Instance: 4c712bdc-1558-4125-a854-fa8b3a11f6ed
 InstanceOf: MedComCareCommunication
 Title: "Example of Care Communication Content"
 Description: "Content of care communication message. Valid only if used in a bundle (message)."
@@ -115,25 +115,25 @@ Usage: #inline
 * status = $EventStatus#unknown
 * category = $CategoryCodes#carecoordination
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* encounter = Reference(EncounterWithLPR3Identifier)
+* encounter = Reference(09437365-821a-4a94-b32b-8916db1d5f62)
 * sent = 2020-09-30T10:22:11Z
 * payload[0].contentString = "The burns are quite severe"
 * payload[0].extension[date].valueDateTime = 2020-09-28
-* payload[0].extension[author].valueReference = Reference(MichaelBurns)
+* payload[0].extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
 * payload[1].contentString = "I have received this from Michael Burns"
 * payload[1].extension[date].valueDateTime = 2020-09-30
-* payload[1].extension[author].valueReference = Reference(EmmaWaters)
+* payload[1].extension[author].valueReference = Reference(ad055a3d-16b6-41f9-891a-7dd73eecaf03)
 
 
 // Practitioners
-Instance: MichaelBurns
+Instance: 58c811a5-4082-44eb-9d66-ccbb112d4973
 InstanceOf: Practitioner
 Description: "Simple practitioner with a name"
 Usage: #inline
 * name.given = "Michael"
 * name.family = "Burns"
 
-Instance: EmmaWaters
+Instance: ad055a3d-16b6-41f9-891a-7dd73eecaf03
 InstanceOf: Practitioner
 Description: "Simple practitioner with a name"
 Usage: #inline

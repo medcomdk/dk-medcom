@@ -39,7 +39,7 @@ Description: "Patient with a managing organization. Valid only if used in a bund
 * address.line = "Flammesvinget 1"
 * address.city = "Aarhus"
 * address.postalCode = "8000 C"
-* managingOrganization = Reference(BurnCenter)
+* managingOrganization = Reference(12ee0dde-a672-462f-820d-5efe832d73c9)
 
 Instance: 382fb8a3-6725-41e2-a615-2b1cfcfe9931
 InstanceOf: MedComCorePatient
@@ -55,7 +55,7 @@ Description: "Patient deceased with a managing organization. Valid only if used 
 * address.line = "Forskerparken 10"
 * address.city = "Odense M"
 * address.postalCode = "5230"
-* managingOrganization = Reference(PractitionerClinic)
+* managingOrganization = Reference(bca68510-fe3b-4161-aba0-908a693eb54f)
 * deceasedBoolean = true
 
 Instance: 5b72c625-0570-4111-b272-f0351344f8b6
@@ -72,5 +72,5 @@ Description: "Patient not deceased with a managing organization. Valid only if u
 * address.line = "Forskerparken 10"
 * address.city = "Odense M"
 * address.postalCode = "5230"
-* managingOrganization = Reference(PractitionerClinic)
+* managingOrganization = Reference(bca68510-fe3b-4161-aba0-908a693eb54f)
 * deceasedBoolean = false
