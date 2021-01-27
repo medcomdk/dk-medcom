@@ -10,6 +10,12 @@ The implementation guide contains profiles in three areas
 The profiles are in general made open for additional content to allow further profiling for specific purposes defined by the communicating parties.
 __Note:__ We intend to split the implementation guide into three separate packages in a future version.
 
+For description regarding the transportation layer please refer to this guide:
+English:
+TBD
+Danish:
+* [ MedComs FHIR-meddelelser og forsendelseskuvert 1.0 ](./pdf/MedComs_FHIR-meddelelser_og_forsendelseskuvert_1.0.pdf)
+
 ### General Messaging Model
 The general messaging model containS the basic messaging template, which all messages (including acknowledgement messages) will comply with. The following diagram depicts the structure of a message.
 
