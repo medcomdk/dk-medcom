@@ -9,3 +9,13 @@ Please refer to the tab "Snapshort Table(Must support)" below for the definition
 
 For decription of how to handle message references when sending a reply or forward a MedComCareCommunicationMessage, handling of errors and references between XDIS91 and CareCommunication please refer to the section "Notes".
 The section "Notes" if found at the end of this page.
+
+For description regarding the transportation layer please refer to this guide:  
+  
+English:  
+* [ TBD ]  
+    
+Danish:  
+* [ MedComs FHIR-meddelelser og forsendelseskuvert 1.0 ](./pdf/MedComs_FHIR-meddelelser_og_forsendelseskuvert_1.0.pdf)  
+
+
