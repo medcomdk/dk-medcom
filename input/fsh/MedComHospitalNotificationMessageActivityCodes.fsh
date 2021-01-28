@@ -23,3 +23,7 @@ Description: "ValueSet containg activity codes for hospital notification message
 * $ActivityCode#revise-discharge-inpatient-home "Update of End hospital Stay"
 * $ActivityCode#cancel-discharge-emergency-home "Cancellation of End hospital Stay"
 * $ActivityCode#cancel-discharge-inpatient-home "Cancellation of End hospital Stay"
+* $ActivityCode#deceased "Deceased"
+* $ActivityCode#revise-deceased "Update of Deceased"
+* $ActivityCode#cancel-deceased "Cancellation of Deceased"
+
