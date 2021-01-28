@@ -1,0 +1,45 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "medcom-messaging-map-fhir-to-soredi",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <h2>MedCom Messaging Map Fhir message names To SOREDI message names </h2>\n      <p>MedCom Messaging Map Fhir message names To SOREDI message names </p> </div>"
+  },
+  "url": "http://build.fhir.org/ig/hl7dk/dk-medcom/medcom-messaging-map-fhir-to-soredi",
+  "name": "MedComMessagingMapFhirToSorEdi",
+  "title": "MedCom Messaging Map Fhir message names To SOREDI message names",
+  "status": "active",
+  "date": "2021-01-28",
+  "publisher": "MedCom",
+  "description": "MedCom Messaging Map Fhir message names To SOREDI message names",
+  "purpose": "Purpose of supporting message senders to find the SOR EDI name of the message based upon the FHIR message name ",
+  "targetUri": "http://terminology.hl7.org/ValueSet/v3-AddressUse",
+  "group": [
+    {
+      "element": [
+        {
+          "code": "care-communication-message",
+          "display": "FHIR: Care Communication Message (Korrepondance meddelelse)",
+          "target": [
+            {
+              "code": "FDIS91",
+              "display": "SOREDI: Care Communication Message (Korrepondance meddelelse)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hospital-notification-message",
+          "display": "FHIR: Hospital Notification Message (Advis om Sygehusophold)",
+          "target": [
+            {
+              "code": "FDIS20",
+              "display": "SOREDI: Hospital Notification Message (Advis om Sygehusophold)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }      
+      ]
+    }
+  ]
+}
