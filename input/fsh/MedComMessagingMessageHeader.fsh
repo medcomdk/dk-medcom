@@ -14,7 +14,7 @@ Description: "Message Header for MedCom message bundles"
 * destination ^slicing.discriminator.type = #value
 * destination ^slicing.discriminator.path = "$this.extension.value"
 * destination ^slicing.rules = #closed
-* destination contains primary 1..1 MS and cc 0.. MS
+* destination contains primary 1..1 MS and cc 0..
 * destination[primary].extension[use].valueCoding = $Use#primary
 * destination[primary].receiver only Reference(MedComMessagingOrganization)
 * destination[primary].receiver 1.. MS
@@ -44,6 +44,7 @@ Alias: $MessageEvents = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-mes
 
 Instance: 3881874e-2042-4a00-aee8-23512799f512
 InstanceOf: MedComMessagingMessageHeader
+Title: "Message Header for an empty message. Valid only if used in a bundle (message)"
 Description: "Message Header for an empty message. Valid only if used in a bundle (message)."
 * destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#empty-message
