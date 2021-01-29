@@ -5,5 +5,5 @@ The HospitalNotificationEncounter profile for HospitalNotification is narrowed d
 <img alt="HospitalNotification" src="./hospitalnotification/HospitalNotificationEncounter.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
 
 
-Please refer to the tab "Snapshort Table(Must support)" below for the definition of the required content of a MedComHospitalNotificationEncounter.
+Please refer to the tab "Snapshot Table(Must support)" below for the definition of the required content of a MedComHospitalNotificationEncounter.
 

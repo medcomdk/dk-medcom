@@ -1,0 +1,14 @@
+@startuml MedComMessagingProvenance
+
+hide empty members
+
+class "MedComMessagingProvenance" as provenance
+class "MedComMessagingOrganization" as serviceProvider
+class "MedComMessageHeader" as target
+class "Object" as what
+
+provenance -- serviceProvider : "service provider"
+provenance -- target : "target"
+provenance -- what : "what"
+
+@enduml
