@@ -7,6 +7,7 @@ Description: "Base resource for all MedCom Acknowledgement messages."
 
 Instance: 04ed814c-ccf6-47aa-be73-ae38df23c66a
 InstanceOf: MedComMessagingAcknowledgement
+Title: "Acknowledgement message"
 Description: "Example of a Acknowledgement message."
 * type = $BundleType#message
 * timestamp = 2020-10-01T12:34:56Z
@@ -19,6 +20,7 @@ Description: "Example of a Acknowledgement message."
 
 Instance: 2c9535ef-ed94-4060-a928-7baddec7ee71
 InstanceOf: MedComMessagingAcknowledgement
+Title: "fatal-error Acknowledgement message"
 Description: "Example of a fatal-error Acknowledgement message."
 * type = $BundleType#message
 * timestamp = 2020-10-01T12:34:56Z
@@ -33,6 +35,7 @@ Description: "Example of a fatal-error Acknowledgement message."
 
 Instance: eada5e7a-a7ef-43b1-bfd6-024d5e64294c
 InstanceOf: MedComMessagingAcknowledgement
+Title: "ok Acknowledgement message"
 Description: "Example of a ok Acknowledgement message."
 * type = $BundleType#message
 * timestamp = 2021-01-01T12:34:56Z

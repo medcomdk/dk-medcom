@@ -128,6 +128,7 @@ Usage: #inline
 // Practitioners
 Instance: 58c811a5-4082-44eb-9d66-ccbb112d4973
 InstanceOf: Practitioner
+Title: "Simple practitioner with a name"
 Description: "Simple practitioner with a name"
 Usage: #inline
 * name.given = "Michael"
@@ -135,6 +136,7 @@ Usage: #inline
 
 Instance: ad055a3d-16b6-41f9-891a-7dd73eecaf03
 InstanceOf: Practitioner
+Title: "Simple practitioner with a name"
 Description: "Simple practitioner with a name"
 Usage: #inline
 * name.given = "Emma"

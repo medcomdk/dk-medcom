@@ -13,6 +13,7 @@ Description: "Message header for care communication message"
 // CareCommunication example
 Instance: 42cb9200-f421-4d08-8391-7d51a2503cb4
 InstanceOf: MedComCareCommunicationMessageHeader
+Title: "Message header for care communication message. Valid only if used in a bundle (message)."
 Description: "Message header for care communication message. Valid only if used in a bundle (message)."
 * destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -25,6 +26,7 @@ Description: "Message header for care communication message. Valid only if used 
 // CareCommunication reply example
 Instance: b0d424f8-33a9-4cc2-a528-a6cc1c58727b
 InstanceOf: MedComCareCommunicationMessageHeader
+Title: "Message header for care communication reply message. Valid only if used in a bundle (message)."
 Description: "Message header for care communication reply message. Valid only if used in a bundle (message)."
 Usage: #inline
 * destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
@@ -38,6 +40,7 @@ Usage: #inline
 // CareCommunication forward example
 Instance: d5bd2111-2576-48d3-84d4-8be0297a038d
 InstanceOf: MedComCareCommunicationMessageHeader
+Title: "Message header for care communication forward message. Valid only if used in a bundle (message)."
 Description: "Message header for care communication forward message. Valid only if used in a bundle (message)."
 Usage: #inline
 * destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
