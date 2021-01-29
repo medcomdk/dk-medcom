@@ -1,7 +1,7 @@
 # MedCom FHIR 1.0 Release note
 Release Date: 2020-01-29
 ## What&#39;s new in version 1.0 since 0.9.
-
+Content link: [http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0/](http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0/)
  ´#´ refers to the corresponding GitHub issue: [https://github.com/hl7dk/dk-medcom](https://github.com/hl7dk/dk-medcom)
 
 ### What&#39;s new
@@ -31,4 +31,3 @@ Release Date: 2020-01-29
 
 
 
-Content link: [http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0/](http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0/)
