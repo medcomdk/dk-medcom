@@ -5,7 +5,7 @@ This profile is the root profile of MedCom HosptialNotification message.
 The message contains a bundle that is selfcontained regarding references. 
 The Bundle containing the HospitalNotification message shall contain one instance of the MedComMessagingMessage. By convention the cardinality is shown as 0..*
 
-Please refer to the tab "Snapshort Table(Must support)" below for the definition of the required content of a MedComHospitalNotificationMessage.  
+Please refer to the tab "Snapshot Table(Must support)" below for the definition of the required content of a MedComHospitalNotificationMessage.  
 
 
 For description regarding the transportation layer please refer to this guide:  
