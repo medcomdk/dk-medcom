@@ -3,5 +3,5 @@ This profile is used as the MessageHeader resource for the MedCom HospitalNotifi
 <img alt="HospitalNotification" src="./hospitalnotification/HospitalNotificationMessageHeader.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
 
 
-Please refer to the tab "Snapshort Table(Must support)" below for the definition of the required content of a MedComHospitalNotificationMessageHeader.
+Please refer to the tab "Snapshot Table(Must support)" below for the definition of the required content of a MedComHospitalNotificationMessageHeader.
 
