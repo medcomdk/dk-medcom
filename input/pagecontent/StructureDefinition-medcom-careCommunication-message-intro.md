@@ -44,7 +44,7 @@ Please refer to following example:
 This section describes how a CareCommunicationMessage forward flow shall be handled.  
 When forwarding a received MedComCareCommunication the forward message shall contain both the received message, possible other messages in same communication flow and attachments.
 The Communication status may be "unknown". The provenance entity role shall be "quotation" as it is a repeat of an already transmitted message and provenance system shall be "forward-message".
-
+It is possible to add a decription to the forward message explaining the reason.
 
 Please refer to following example:
 * [Simplified example of a MedComCareCommunicationMessage forward message ](./carecommunication/CareCommunicationForwardExample.png)
