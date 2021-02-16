@@ -21,16 +21,18 @@ Description: "Provenance information about the messages preceeding the current m
 * entity MS
 * entity.role MS
 * entity.what MS
-* entity.what.reference 1.. MS
+* entity.what.identifier MS
+* entity.what.identifier ^definition = "Shall contain the message header id of messages given as input to the activity if the previous message is not a fhir message"
+* entity.what.identifier ^short = "Reference a previous message if previous message is EDIFACT or OIOXML. It shall be expressed as [lokationsnummer]#[brevid] from the EDIFACT or OIOXML message."
+* entity.what.reference MS
 * entity.what.reference ^definition = "Shall contain the message header id of messages given as input to the activity"
-* entity.what.reference ^short = "Reference a previous message. If previous message is EDIFACT or OIOXML it shall be expressed as [lokationsnummer]#[brevid] from the EDIFACT or OIOXML message. If previous message is a FHIR message: Messageheader.id from previous message. If no previous message = NA"
+* entity.what.reference ^short = "Reference a previous message if the previous message is a fhir message. Use messageheader.id from previous message."
 
 
 
 Alias: $ActivityCode = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes
 
 // CareCommunication example
-
 
 Instance: 4c284936-5454-4116-95fc-3c8eeeed2400
 InstanceOf: MedComMessagingProvenance
@@ -119,6 +121,22 @@ Usage: #inline
 * recorded = 2020-10-15T13:45:15Z
 * activity = $ActivityCode#admit-inpatient
 * agent.who = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+
+// CareCommunication reply to XDIS message
+
+Instance: 6de0806d-7050-4db8-8003-0c72aee52948
+InstanceOf: MedComMessagingProvenance
+Title: "Provenance information for a medcom message. Valid only if used in a bundle (message)"
+Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(b0d424f8-33a9-4cc2-a528-a6cc1c58727b)
+* occurredDateTime = 2020-09-30T10:22:11Z
+* recorded = 2020-09-30T10:22:11Z
+* activity = $ActivityCode#reply-message
+* agent.who = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* entity.role = #derivation
+* entity.what.identifier.value = "5790000120420#BrevNr00133"
+
 
 // Admit example
 
