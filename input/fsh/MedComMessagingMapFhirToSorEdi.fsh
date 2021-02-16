@@ -1,4 +1,4 @@
-Instance: medcom-messaging-map-fhir-to-soredi
+Instance: medcom-messaging-mapFhirToSorEdi
 InstanceOf: ConceptMap
 Title: "MedComMessagingMapFhirToSorEdi"
 Description: "MedCom Messaging Map Fhir message names To SOREDI message names"

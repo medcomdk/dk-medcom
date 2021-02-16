@@ -1,6 +1,6 @@
 CodeSystem: MedComMessagingStatisticalCodes
 Id: medcom-messaging-statisticalCodes
-Title: "MedCom Messaging Statistical Codes"
+Title: "MedComMessagingStatisticalCodes"
 Description: "Statistical Codes for MedCom VANS messages"
 * #MCM:FDIS20#AcuteAmbulant "Start hospital stay-acute ambulant"
 * #MCM:FDIS20#AdmissionInpatient "Start hospital stay-admission"
@@ -24,8 +24,8 @@ Description: "Statistical Codes for MedCom VANS messages"
 * #MCM:FDIS91#other "Other"
 
 ValueSet: MedComMessagingVansStatisticalCodeCombinations
-Id: medcom-messaging-vans-statisticalCode-combinations
-Title: "MedCom Messaging Vans StatisticalCode Combinations"
+Id: medcom-messaging-vansStatisticalCodeCombinations
+Title: "MedComMessagingVansStatisticalCodeCombinations"
 Description: "MedCom Messaging Vans StatisticalCode Combinations"
 * include codes from system MedComMessagingStatisticalCodes
 

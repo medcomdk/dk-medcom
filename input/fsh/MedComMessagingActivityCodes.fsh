@@ -1,6 +1,6 @@
-CodeSystem: MedComMessageActivityCodes
+CodeSystem: MedComMessagingActivityCodes
 Id: medcom-messaging-activityCodes
-Title: "MedCom Message Activity Codes"
+Title: "MedComMessagingActivityCodes"
 Description: "Activity codes for MedCom messages"
 * #new-message "A new message has been sent"
 * #forward-message "A message has been forwarded and potentially changed"
