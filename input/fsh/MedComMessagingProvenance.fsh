@@ -65,6 +65,8 @@ Usage: #inline
 * recorded = 2020-09-30T10:22:11Z
 * activity = $ActivityCode#reply-message
 * agent.who = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* entity.role = #derivation
+* entity.what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 
 // CareCommunication forward example
 
@@ -89,6 +91,34 @@ Usage: #inline
 * recorded = 2020-09-30T10:22:11Z
 * activity = $ActivityCode#reply-message
 * agent.who = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* entity.role = #derivation
+* entity.what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
+
+// CareCommunication reply to hospital notification example
+
+Instance: a09a5340-f326-4767-916b-d42a7004d909
+InstanceOf: MedComMessagingProvenance
+Title: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
+Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(aac67161-d0de-4933-a78c-060beafb4814)
+* occurredDateTime = 2020-10-16T13:43:16Z
+* recorded = 2020-10-16T13:43:16Z
+* activity = $ActivityCode#reply-message
+* agent.who = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* entity.role = #derivation
+* entity.what = Reference(51b27813-8aa8-4fa1-846b-aeabf5afb7d4)
+
+Instance: 5c1cd361-9691-4d49-bac8-034313907f16
+InstanceOf: MedComMessagingProvenance
+Title: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message) -admit"
+Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
+Usage: #inline
+* target = Reference(aac67161-d0de-4933-a78c-060beafb4814)
+* occurredDateTime = 2020-10-15T13:44:14Z
+* recorded = 2020-10-15T13:45:15Z
+* activity = $ActivityCode#admit-inpatient
+* agent.who = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 
 // Admit example
 

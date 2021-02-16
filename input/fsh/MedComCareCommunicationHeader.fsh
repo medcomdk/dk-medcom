@@ -50,3 +50,17 @@ Usage: #inline
 * sender = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
 * source.endpoint = "http://medcom.dk/unknown"
 * focus = Reference(4c712bdc-1558-4125-a854-fa8b3a11f6ed)
+
+// CareCommunication reply to hospital notification example
+Instance: aac67161-d0de-4933-a78c-060beafb4814
+InstanceOf: MedComCareCommunicationMessageHeader
+Title: "Message header for care communication forward message. Valid only if used in a bundle (message)."
+Description: "Message header for care communication forward message. Valid only if used in a bundle (message)."
+Usage: #inline
+* destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#care-communication-message
+* destination.endpoint = "http://medcom.dk/unknown"
+* destination.receiver = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* sender = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* source.endpoint = "http://medcom.dk/unknown"
+* focus = Reference(0f8cde6a-d369-4d94-a2ce-c2cc45fd75fb)
