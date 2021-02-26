@@ -1,5 +1,15 @@
 # MedCom FHIR 1.0 Release note
-Release Date: 2020-01-29
+Release Date: 2021-02-26
+
+## What&#39;s new in version 1.0.1 since 1.0.
+Content link: [http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0.1/](http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0.1/)
+ ´#´ refers to the corresponding GitHub issue: [https://github.com/hl7dk/dk-medcom](https://github.com/hl7dk/dk-medcom)
+
+- Documentation has been expanded and improved
+- More examples is added
+- ValueSet containing CareCommunicationMessage activity codes expanded with "modified-message" "A message has been modified". #91
+- ConceptMap betweeen statistic codes and activity codes issues has been fixed #65
+
 ## What&#39;s new in version 1.0 since 0.9.
 Content link: [http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0/](http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0/)
  ´#´ refers to the corresponding GitHub issue: [https://github.com/hl7dk/dk-medcom](https://github.com/hl7dk/dk-medcom)
