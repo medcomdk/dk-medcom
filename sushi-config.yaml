@@ -4,7 +4,7 @@ name: MedComCore
 title: "DK MedCom Core"
 description: The DK MedCom Core IG
 status: active
-version: "1.0"
+version: "1.0.1"
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: Build CI

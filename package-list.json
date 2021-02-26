@@ -12,8 +12,8 @@
       "fhirVersion": "4.0.1"
     },
     {
-      "version": "1.0",
-      "date": "2021-01-22",
+      "version": "1.0.1",
+      "date": "2021-02-26",
       "desc": "MedCom core",
       "path": "http://medcomfhir.dk/fhir/core/1.0/ig/medcom-core",
       "status": "trial-use",
