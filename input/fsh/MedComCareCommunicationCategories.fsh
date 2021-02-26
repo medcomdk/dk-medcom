@@ -1,6 +1,6 @@
 CodeSystem: MedComCareCommunicationCategoryCodes
 Id: medcom-careCommunication-categoryCodes
-Title: "MedCom Care Communication Categories"
+Title: "MedComCareCommunicationCategories"
 Description: "Category codes for care communication messages"
 * #outpatient "Outpatient"
 * #decease "Decease"
@@ -22,6 +22,6 @@ Description: "Category codes for care communication messages"
 
 ValueSet: MedComCareCommunicationCategories
 Id: medcom-careCommunication-categories
-Title: "MedCom Care Communication Category Codes"
+Title: "MedComCareCommunicationCategoryCodes"
 Description: "ValueSet containing category codes for care communication messages"
 * include codes from system MedComCareCommunicationCategoryCodes

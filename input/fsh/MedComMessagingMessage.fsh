@@ -6,7 +6,7 @@ Description: "Base resource for all MedCom messages."
 * type = #message
 * type ^short = "Always message"
 * timestamp 1.. MS
-* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.type = #type
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry contains messageHeader 1..1 MS and messageHistory 0.. MS 

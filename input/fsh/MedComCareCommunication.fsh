@@ -124,6 +124,21 @@ Usage: #inline
 * payload[1].extension[date].valueDateTime = 2020-09-30
 * payload[1].extension[author].valueReference = Reference(ad055a3d-16b6-41f9-891a-7dd73eecaf03)
 
+// CareCommunication reply to hospital notification example
+Instance: 0f8cde6a-d369-4d94-a2ce-c2cc45fd75fb
+InstanceOf: MedComCareCommunication
+Title: "Example of Care Communication Content"
+Description: "Content of care communication message. Valid only if used in a bundle (message)."
+Usage: #inline
+* status = $EventStatus#unknown
+* category = $CategoryCodes#carecoordination
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
+* encounter = Reference(09437365-821a-4a94-b32b-8916db1d5f62)
+* sent = 2020-10-16T13:43:16Z
+* payload[0].contentString = "The patient is easily confused. Speaking loudly and slow reduced this."
+* payload[0].extension[date].valueDateTime = 2020-01-01
+* payload[0].extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
+
 
 // Practitioners
 Instance: 58c811a5-4082-44eb-9d66-ccbb112d4973

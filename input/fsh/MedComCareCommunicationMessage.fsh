@@ -97,3 +97,64 @@ Description: "Example of a forward of a care communication message."
 * entry[9].resource = fdcf5a48-8264-48d5-8291-15f54b187b3e
 * entry[10].fullUrl = "Provenance/7466d9f6-d3ae-4be5-8ed7-b333dad30205"
 * entry[10].resource = 7466d9f6-d3ae-4be5-8ed7-b333dad30205
+
+// CareCommunication reply to hospital notification example
+Instance: 38712617-5762-446f-a2cc-e5bf8caa6807
+InstanceOf: MedComCareCommunicationMessage
+Title: "MedCom Care Communication Reply to Hospital Notification Message Example"
+Description: "Example of a reply to a hospital notification message."
+* type = $BundleType#message
+* timestamp = 2020-10-16T13:43:16Z
+* entry[messageHeader].fullUrl = "MessageHeader/aac67161-d0de-4933-a78c-060beafb4814"
+* entry[messageHeader].resource = aac67161-d0de-4933-a78c-060beafb4814
+* entry[citizen].fullUrl = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
+* entry[citizen].resource = 733cef33-3626-422b-955d-d506aaa65fe1
+* entry[2].fullUrl = "Organization/12ee0dde-a672-462f-820d-5efe832d73c9"
+* entry[2].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
+* entry[3].fullUrl = "Communication/0f8cde6a-d369-4d94-a2ce-c2cc45fd75fb"
+* entry[3].resource = 0f8cde6a-d369-4d94-a2ce-c2cc45fd75fb
+* entry[4].fullUrl = "Encounter/09437365-821a-4a94-b32b-8916db1d5f62"
+* entry[4].resource = 09437365-821a-4a94-b32b-8916db1d5f62
+* entry[5].fullUrl = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
+* entry[5].resource = 58c811a5-4082-44eb-9d66-ccbb112d4973
+* entry[6].fullUrl = "Practitioner/ad055a3d-16b6-41f9-891a-7dd73eecaf03"
+* entry[6].resource = ad055a3d-16b6-41f9-891a-7dd73eecaf03
+* entry[7].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
+* entry[7].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
+* entry[8].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[8].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[9].fullUrl = "Provenance/a09a5340-f326-4767-916b-d42a7004d909"
+* entry[9].resource = a09a5340-f326-4767-916b-d42a7004d909
+* entry[10].fullUrl = "Provenance/5c1cd361-9691-4d49-bac8-034313907f16"
+* entry[10].resource = 5c1cd361-9691-4d49-bac8-034313907f16 
+
+
+// CareCommunication reply to XDIS message
+Instance: bfdeea04-9bfd-4b31-baf8-57aa7546e2b4
+InstanceOf: MedComCareCommunicationMessage
+Title: "MedCom Care Communication Reply to XDIS Message Example"
+Description: "Example of a reply to an XDIS message."
+* type = $BundleType#message
+* timestamp = 2020-09-30T10:22:11Z
+* entry[messageHeader].fullUrl = "MessageHeader/b0d424f8-33a9-4cc2-a528-a6cc1c58727b"
+* entry[messageHeader].resource = b0d424f8-33a9-4cc2-a528-a6cc1c58727b
+* entry[citizen].fullUrl = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
+* entry[citizen].resource = 733cef33-3626-422b-955d-d506aaa65fe1
+* entry[2].fullUrl = "Organization/12ee0dde-a672-462f-820d-5efe832d73c9"
+* entry[2].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
+* entry[3].fullUrl = "Communication/75fd6a1b-6af4-4b5c-a170-f70e95aa1e7a"
+* entry[3].resource = 75fd6a1b-6af4-4b5c-a170-f70e95aa1e7a
+* entry[4].fullUrl = "Encounter/09437365-821a-4a94-b32b-8916db1d5f62"
+* entry[4].resource = 09437365-821a-4a94-b32b-8916db1d5f62
+* entry[5].fullUrl = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
+* entry[5].resource = 58c811a5-4082-44eb-9d66-ccbb112d4973
+* entry[6].fullUrl = "Practitioner/ad055a3d-16b6-41f9-891a-7dd73eecaf03"
+* entry[6].resource = ad055a3d-16b6-41f9-891a-7dd73eecaf03
+* entry[7].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
+* entry[7].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
+* entry[8].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[8].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[9].fullUrl = "Provenance/f18213f8-2e2c-458d-86ff-4e48ac5d7162"
+* entry[9].resource = f18213f8-2e2c-458d-86ff-4e48ac5d7162
+* entry[10].fullUrl = "Provenance/6de0806d-7050-4db8-8003-0c72aee52948"
+* entry[10].resource = 6de0806d-7050-4db8-8003-0c72aee52948

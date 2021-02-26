@@ -2,7 +2,7 @@ Alias: $bcp13 = urn:ietf:bcp:13
 
 ValueSet: MedComCoreAttachmentMimeTypes
 Id: medcom-core-attachmentMimeTypes
-Title: "MedCom Attachment MimeTypes"
+Title: "MedComCoreAttachmentMimeTypes"
 Description: "ValueSet containing allowed mime types for MedCom messages"
 * $bcp13#application/pdf "Adobe Portable Document Format"
 * $bcp13#image/bmp "Bitmap Image File"
