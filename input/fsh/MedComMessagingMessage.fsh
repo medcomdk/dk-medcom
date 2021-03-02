@@ -6,14 +6,20 @@ Description: "Base resource for all MedCom messages."
 * type = #message
 * type ^short = "Always message"
 * timestamp 1.. MS
-* entry ^slicing.discriminator.type = #type
-* entry ^slicing.discriminator.path = "resource"
-* entry ^slicing.rules = #open
-* entry contains messageHeader 1..1 MS and messageHistory 0.. MS 
+* entry MS
 * entry.resource 1.. MS
-* entry[messageHeader].resource only MedComMessagingMessageHeader
-* entry[messageHistory].resource only MedComMessagingProvenance
+* obeys medcom-messaging-1
+* obeys medcom-messaging-2
 
+Invariant: medcom-messaging-1
+Description: "The message header shall conform to medcom-messaging-messageHeader profile"
+Severity: #error
+Expression: "entry.first().resource.exists() and entry.first().resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-messageHeader')"
+
+Invariant: medcom-messaging-2
+Description: "All provenance resources shall conform to medcom-core-provenance profile"
+Severity: #error
+Expression: "entry.all(resource.is(Provenance).not() or resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance'))"
 
 Alias: $BundleType = http://hl7.org/fhir/bundle-type
 
@@ -22,9 +28,9 @@ InstanceOf: MedComMessagingMessage
 Description: "Example of an emty message."
 * type = $BundleType#message
 * timestamp = 2020-09-28T12:34:56Z
-* entry[messageHeader].fullUrl = "MessageHeader/3881874e-2042-4a00-aee8-23512799f512"
-* entry[messageHeader].resource = 3881874e-2042-4a00-aee8-23512799f512
-* entry[1].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
-* entry[1].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
-* entry[2].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
-* entry[2].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
+* entry[+].fullUrl = "MessageHeader/3881874e-2042-4a00-aee8-23512799f512"
+* entry[=].resource = 3881874e-2042-4a00-aee8-23512799f512
+* entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
+* entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
