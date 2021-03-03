@@ -11,7 +11,7 @@ Please refer to the tab "Snapshot Table(Must support)" below for the definition 
 For description regarding the transportation layer please refer to this guide:  
    
 English:
-* [ MedCom FHIR-message and enclosing envelope](./pdf/MedCom_FHIR-messages_and_enclosing_envelope.pdf
+* [ MedCom FHIR-message and enclosing envelope](./pdf/MedCom_FHIR-messages_and_enclosing_envelope.pdf)
 Danish:
 * [ MedComs FHIR-meddelelser og forsendelseskuvert](./pdf/MedComs_FHIR-meddelelser_og_forsendelseskuvert.pdf)
 
