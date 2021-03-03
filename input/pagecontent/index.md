@@ -11,8 +11,11 @@ The profiles are in general made open for additional content to allow further pr
 __Note:__ We intend to split the implementation guide into three separate packages in a future version.
 
 For description regarding the transportation layer please refer to this guide:
+
+
 English:
-* [ MedCom FHIR-message and enclosing envelope](./pdf/MedCom_FHIR-messages_and_enclosing_envelope.pdf)
+* [MedCom FHIR-message and enclosing envelope](./pdf/MedCom_FHIR-messages_and_enclosing_envelope.pdf)
+
 Danish:
 * [ MedComs FHIR-meddelelser og forsendelseskuvert](./pdf/MedComs_FHIR-meddelelser_og_forsendelseskuvert.pdf)
 
