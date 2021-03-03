@@ -30,6 +30,10 @@ Danish:
 * [CareCommunication Use Cases](./carecommunication/pdf/Use%20Cases_FHIR%20Korrespondancemeddelelse.pdf)
 * [Non-technical guidelines for CareCommunication](./carecommunication/pdf/FHIR_Korrespondancemeddelelse.pdf)
 
+### Description using examples for the CareCommunication message flow.
+Please notice, that in the following examples is the Provenance resources listed as an array. This is just an example of an order, the Provenance resources may be listed in any order 
+
+
 #### How to reply a MedComCareCommunicationMessage
 This section describes how a CareCommunicationMessage reply flow shall be handled.
 When sending a reply to a received MedComCareCommunication the reply may contain both the received message and attachments.
@@ -38,7 +42,6 @@ The Communication status may be "unknown". The provenance entity role shall be "
 
 Please refer to following example:
 * [Simplified example of a MedComCareCommunicationMessage reply message](./carecommunication/CareCommunicationReplyExample.png)
-
 
 #### How to forward a MedComCareCommunicationMessage
 This section describes how a CareCommunicationMessage forward flow shall be handled.  

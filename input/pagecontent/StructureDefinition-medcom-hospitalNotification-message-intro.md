@@ -26,6 +26,8 @@ Danish:
 * [HospitalNotification Use Cases](./hospitalnotification/pdf/Use_cases_advis_om_sygehusophold.pdf)
 * [Non-technical guidelines for HospitalNotification](./hospitalnotification/pdf/FHIR_advis_om_sygehusophold.pdf)
 
+### Description using examples for the HospitalNotification message flow.
+Please notice, that in the following examples is the Provenance resources listed as an array. This is just an example of an order, the Provenance resources may be listed in any order 
 
 #### How to send HospitalNotification Messages for the same encounter
 This section describes how a HospitalNotificationMessage flow.
@@ -37,6 +39,7 @@ Please refer to following map document for details.
 
 
 Please refer to following example:  
+
 * [Simplified example of a MedComHospitalNotificationMessage for admit and finished stay ](./hospitalnotification/HospitalNotificationAdmitFinishedExample.png)
 * [Simplified example of a MedComHospitalNotificationMessage for admit, onleave, end onleave and finished stay ](./hospitalnotification/HospitalNotificationAdmitOnleaveFinishedExample.png)
 
