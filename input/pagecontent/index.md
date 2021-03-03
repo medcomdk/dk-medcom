@@ -11,10 +11,12 @@ The profiles are in general made open for additional content to allow further pr
 __Note:__ We intend to split the implementation guide into three separate packages in a future version.
 
 For description regarding the transportation layer please refer to this guide:
+
 English:
-TBD
+* [MedCom FHIR-message and enclosing envelope](./pdf/MedCom_FHIR-messages_and_enclosing_envelope.pdf)
+
 Danish:
-* [ MedComs FHIR-meddelelser og forsendelseskuvert 1.0 ](./pdf/MedComs_FHIR-meddelelser_og_forsendelseskuvert_1.0.pdf)
+* [ MedComs FHIR-meddelelser og forsendelseskuvert](./pdf/MedComs_FHIR-meddelelser_og_forsendelseskuvert.pdf)
 
 ### General Messaging Model
 The general messaging model containS the basic messaging template, which all messages (including acknowledgement messages) will comply with. The following diagram depicts the structure of a message.

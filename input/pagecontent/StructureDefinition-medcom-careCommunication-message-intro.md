@@ -9,11 +9,12 @@ Please refer to the tab "Snapshot Table(Must support)" below for the definition 
 
 For description regarding the transportation layer please refer to this guide:  
   
-English:  
-* [ TBD ]  
-    
-Danish:  
-* [ MedComs FHIR-meddelelser og forsendelseskuvert 1.0 ](./pdf/MedComs_FHIR-meddelelser_og_forsendelseskuvert_1.0.pdf)  
+
+English:
+* [MedCom FHIR-message and enclosing envelope](./pdf/MedCom_FHIR-messages_and_enclosing_envelope.pdf)   
+
+Danish:
+* [ MedComs FHIR-meddelelser og forsendelseskuvert](./pdf/MedComs_FHIR-meddelelser_og_forsendelseskuvert.pdf)  
 
 A CareCommunication message shall contain a text message and zero or more attachments.
 The Communication status may be "unknown". The provenance entity role shall be "source" and provenance system shall be "new-message".
@@ -30,6 +31,10 @@ Danish:
 * [CareCommunication Use Cases](./carecommunication/pdf/Use%20Cases_FHIR%20Korrespondancemeddelelse.pdf)
 * [Non-technical guidelines for CareCommunication](./carecommunication/pdf/FHIR_Korrespondancemeddelelse.pdf)
 
+### Description using examples for the CareCommunication message flow.
+Please notice, that in the following examples is the Provenance resources listed as an array. This is just an example of an order, the Provenance resources may be listed in any order 
+
+
 #### How to reply a MedComCareCommunicationMessage
 This section describes how a CareCommunicationMessage reply flow shall be handled.
 When sending a reply to a received MedComCareCommunication the reply may contain both the received message and attachments.
@@ -38,7 +43,6 @@ The Communication status may be "unknown". The provenance entity role shall be "
 
 Please refer to following example:
 * [Simplified example of a MedComCareCommunicationMessage reply message](./carecommunication/CareCommunicationReplyExample.png)
-
 
 #### How to forward a MedComCareCommunicationMessage
 This section describes how a CareCommunicationMessage forward flow shall be handled.  

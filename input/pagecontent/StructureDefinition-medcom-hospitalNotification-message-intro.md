@@ -10,11 +10,12 @@ Please refer to the tab "Snapshot Table(Must support)" below for the definition 
 
 For description regarding the transportation layer please refer to this guide:  
    
-English:  
-* [ TBD ]  
-    
-Danish:  
-* [ MedComs FHIR-meddelelser og forsendelseskuvert 1.0 ](./pdf/MedComs_FHIR-meddelelser_og_forsendelseskuvert_1.0.pdf)  
+
+English:
+* [MedCom FHIR-message and enclosing envelope](./pdf/MedCom_FHIR-messages_and_enclosing_envelope.pdf)  
+
+Danish:
+* [ MedComs FHIR-meddelelser og forsendelseskuvert](./pdf/MedComs_FHIR-meddelelser_og_forsendelseskuvert.pdf)  
 
 #### Information regarding non-technical guide lines and use cases for HospitalNotification is found here:
 
@@ -26,6 +27,8 @@ Danish:
 * [HospitalNotification Use Cases](./hospitalnotification/pdf/Use_cases_advis_om_sygehusophold.pdf)
 * [Non-technical guidelines for HospitalNotification](./hospitalnotification/pdf/FHIR_advis_om_sygehusophold.pdf)
 
+### Description using examples for the HospitalNotification message flow.
+Please notice, that in the following examples is the Provenance resources listed as an array. This is just an example of an order, the Provenance resources may be listed in any order 
 
 #### How to send HospitalNotification Messages for the same encounter
 This section describes how a HospitalNotificationMessage flow.
@@ -37,6 +40,7 @@ Please refer to following map document for details.
 
 
 Please refer to following example:  
+
 * [Simplified example of a MedComHospitalNotificationMessage for admit and finished stay ](./hospitalnotification/HospitalNotificationAdmitFinishedExample.png)
 * [Simplified example of a MedComHospitalNotificationMessage for admit, onleave, end onleave and finished stay ](./hospitalnotification/HospitalNotificationAdmitOnleaveFinishedExample.png)
 
