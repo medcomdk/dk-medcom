@@ -12,7 +12,6 @@ __Note:__ We intend to split the implementation guide into three separate packag
 
 For description regarding the transportation layer please refer to this guide:
 
-
 English:
 * [MedCom FHIR-message and enclosing envelope](./pdf/MedCom_FHIR-messages_and_enclosing_envelope.pdf)
 
