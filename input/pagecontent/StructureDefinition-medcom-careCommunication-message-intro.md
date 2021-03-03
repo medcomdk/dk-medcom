@@ -9,11 +9,10 @@ Please refer to the tab "Snapshot Table(Must support)" below for the definition 
 
 For description regarding the transportation layer please refer to this guide:  
   
-English:  
-* [ TBD ]  
-    
-Danish:  
-* [ MedComs FHIR-meddelelser og forsendelseskuvert 1.0 ](./pdf/MedComs_FHIR-meddelelser_og_forsendelseskuvert_1.0.pdf)  
+English:
+* [ MedCom FHIR-message and enclosing envelope](./pdf/MedCom_FHIR-messages_and_enclosing_envelope.pdf
+Danish:
+* [ MedComs FHIR-meddelelser og forsendelseskuvert](./pdf/MedComs_FHIR-meddelelser_og_forsendelseskuvert.pdf)
 
 A CareCommunication message shall contain a text message and zero or more attachments.
 The Communication status may be "unknown". The provenance entity role shall be "source" and provenance system shall be "new-message".
