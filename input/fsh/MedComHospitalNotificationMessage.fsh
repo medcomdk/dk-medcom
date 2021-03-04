@@ -9,7 +9,7 @@ Description: "A message for a Hospital Notification. The message is triggered as
 Invariant: medcom-hospitalNotification-1
 Description: "The message header shall conform to medcom-hospitalNotification-messageHeader profile"
 Severity: #error
-Expression: "entry.where(resource.is(MessageHeader)).resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader')"
+Expression: "entry.ofType(MessageHeader).all(resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-hospitalNotification-messageHeader'))"
 
 Invariant: medcom-hospitalNotification-2
 Description: "Entry shall contain exactly one patient resource"
