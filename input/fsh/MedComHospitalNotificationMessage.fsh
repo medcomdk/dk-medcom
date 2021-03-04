@@ -4,7 +4,7 @@ Id: medcom-hospitalNotification-message
 Description: "A message for a Hospital Notification. The message is triggered as patients are admitted, onleave or has finished a hospital stay in order to notify the relevant Municipalicy home care"
 * obeys medcom-hospitalNotification-1
 * obeys medcom-hospitalNotification-2
-// * obeys medcom-hospitalNotification-3
+* obeys medcom-hospitalNotification-3
 
 Invariant: medcom-hospitalNotification-1
 Description: "The message header shall conform to medcom-hospitalNotification-messageHeader profile"
@@ -19,7 +19,7 @@ Expression: "entry.where(resource.is(Patient)).count() = 1"
 Invariant: medcom-hospitalNotification-3
 Description: "All provenance resources shall contain activities from medcom-hospitalNotification-messageActivities valueset"
 Severity: #error
-Expression: "entry.all(resource.is(Provenance).not() or resource.activity.memberOf('medcom-hospitalNotification-messageActivities'))"
+Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('medcom-hospitalNotification-messageActivities'))"
 
 
 Instance: 15e5b880-c087-4055-b9ec-99108695f81d
