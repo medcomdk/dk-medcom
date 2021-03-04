@@ -8,8 +8,8 @@ Description: "Base resource for all MedCom messages."
 * timestamp 1.. MS
 * entry MS
 * entry.resource 1.. MS
-* obeys medcom-messaging-1
-* obeys medcom-messaging-2
+// * obeys medcom-messaging-1
+// * obeys medcom-messaging-2
 
 Invariant: medcom-messaging-1
 Description: "The message header shall conform to medcom-messaging-messageHeader profile"
