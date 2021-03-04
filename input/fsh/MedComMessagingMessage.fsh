@@ -8,18 +8,18 @@ Description: "Base resource for all MedCom messages."
 * timestamp 1.. MS
 * entry MS
 * entry.resource 1.. MS
-// * obeys medcom-messaging-1
-// * obeys medcom-messaging-2
+* obeys medcom-messaging-1
+* obeys medcom-messaging-2
 
 Invariant: medcom-messaging-1
 Description: "The message header shall conform to medcom-messaging-messageHeader profile"
 Severity: #error
-Expression: "entry.first().resource.exists() and entry.first().resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-messageHeader')"
+Expression: "entry.ofType(MessageHeader).all(resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-messageHeader'))"
 
 Invariant: medcom-messaging-2
 Description: "All provenance resources shall conform to medcom-core-provenance profile"
 Severity: #error
-Expression: "entry.all(resource.is(Provenance).not() or resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance'))"
+Expression: "entry.ofType(Provenance).all(resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-provenance'))"
 
 Alias: $BundleType = http://hl7.org/fhir/bundle-type
 
