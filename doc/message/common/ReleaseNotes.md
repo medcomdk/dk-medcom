@@ -1,5 +1,12 @@
 # MedCom FHIR 1.0 Release note
-Release Date: 2021-02-26
+Release Date: 2021-03-09
+
+## What&#38;s new in version 1.0.2 since 1.0.1
+Content link: [http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0.2/](http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0.2/)
+ ´#´ refers to the corresponding GitHub issue: [https://github.com/hl7dk/dk-medcom](https://github.com/hl7dk/dk-medcom)
+
+- Profiles has been re-sliced to fix validation errors
+
 
 ## What&#39;s new in version 1.0.1 since 1.0.
 Content link: [http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0.1/](http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0.1/)
