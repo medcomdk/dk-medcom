@@ -41,6 +41,8 @@ Description: "Example of MedCom Hospital Notification Admit"
 * entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
 * entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
 * entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[+].fullUrl = "Organization/bf839e87-4e44-4977-b38e-92b5a6f187b5"
+* entry[=].resource = bf839e87-4e44-4977-b38e-92b5a6f187b5
 * entry[+].fullUrl = "Provenance/d7cf3888-6f42-4e4d-929c-d2475d24fba0"
 * entry[=].resource = d7cf3888-6f42-4e4d-929c-d2475d24fba0
 
@@ -85,6 +87,8 @@ Description: "Example of MedCom Hospital Notification End Leave"
 * entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
 * entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
 * entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[+].fullUrl = "Organization/bf839e87-4e44-4977-b38e-92b5a6f187b5"
+* entry[=].resource = bf839e87-4e44-4977-b38e-92b5a6f187b5
 * entry[+].fullUrl = "Provenance/0ffb42f5-d172-4df0-92c1-012f55667879"
 * entry[=].resource = 0ffb42f5-d172-4df0-92c1-012f55667879
 * entry[+].fullUrl = "Provenance/1d70842e-1168-41a3-a409-45f63c10f4d2"

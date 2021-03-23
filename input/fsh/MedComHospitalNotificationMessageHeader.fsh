@@ -8,9 +8,11 @@ Description: "Message header for a hospital notification message."
 * focus only Reference(MedComHospitalNotificationEncounter)
 * focus ^type.aggregation = #bundled
 * extension contains MedComHospitalNotificationReportOfAdmissionExtension named reportOfAdmissionFlag ..1
+* extension contains MedComHospitalNotificationReportOfAdmissionRecipientExtension named reportOfAdmissionRecipient ..1
 * extension[reportOfAdmissionFlag] MS
 * extension[reportOfAdmissionFlag] ^definition = "Shall be set to true if recipient is requested to send a report of admission"
-
+* extension[reportOfAdmissionRecipient] MS
+* extension[reportOfAdmissionRecipient] ^definition = "Shall contain recipient of report of admission if the recipient is not the sender of the hospital notification"
 * event[x] ^short = "The MedComMessagingMessageHeader shall contain the event value hospital-notification-message"
 
 
@@ -26,6 +28,7 @@ Description: "Message header for a hospital notification admit message. Valid on
 * source.endpoint = "http://medcomfhir.dk/unknown"
 * focus = Reference(7790f964-88d3-4652-bbc8-81d2f3d035f8)
 * extension[reportOfAdmissionFlag].valueBoolean = true
+* extension[reportOfAdmissionRecipient].valueReference = Reference(bf839e87-4e44-4977-b38e-92b5a6f187b5)
 
 Instance: b563a2b2-bf92-4b13-bbd2-0a021a95bded
 InstanceOf: MedComHospitalNotificationMessageHeader
@@ -91,3 +94,10 @@ Description: "Message header for a hospital notification discharge message when 
 * focus = Reference(8405ba2d-467a-4e92-9acc-9dc2a629760fWhenDeceased)
 
 
+// Service provider instance
+Instance: bf839e87-4e44-4977-b38e-92b5a6f187b5
+InstanceOf: MedComMessagingOrganization
+Title: "Service provider organization with a SOR and an EAN identifier."
+Description: "Example of an organization with a SOR and an EAN identifier."
+* identifier[sorIdentifier].value = "654321098765432"
+* identifier[eanIdentifier].value = "5790000121530"
