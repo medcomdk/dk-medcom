@@ -12,9 +12,9 @@
       "fhirVersion": "4.0.1"
     },
     {
-      "version": "1.0.2",
-      "date": "2021-03-09",
-      "desc": "MedCom core",
+      "version": "1.0.3",
+      "date": "2021-03-23",
+      "desc": "MedCom Core",
       "path": "http://medcomfhir.dk/fhir/core/1.0/ig/medcom-core",
       "status": "trial-use",
       "sequence": "STU",
