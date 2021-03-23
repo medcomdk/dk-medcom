@@ -20,7 +20,6 @@ Description: "Patient/citizen resource to use as subject in MedCom communication
 * address.city ^definition = "Shall be present if the city is known"
 * address.postalCode MS
 * address.postalCode ^definition = "Shall be present if the postal code is known"
-* managingOrganization 1.. MS
 * managingOrganization only Reference(MedComCoreOrganization)
 * managingOrganization ^type.aggregation = #bundled
 
