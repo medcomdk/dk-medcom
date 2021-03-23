@@ -2,7 +2,7 @@
 Release Date: 2021-03-09
 
 ## What&#38;s new in version 1.0.3 since 1.0.2
-Content link: [http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0.3/](http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0.2/)
+Content link: [http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0.3/](http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0.3/)
  ´#´ refers to the corresponding GitHub issue: [https://github.com/hl7dk/dk-medcom](https://github.com/hl7dk/dk-medcom)
 
 - Short description with intended content is added to entries #105
