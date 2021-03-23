@@ -1,6 +1,15 @@
 # MedCom FHIR 1.0 Release note
 Release Date: 2021-03-09
 
+## What&#38;s new in version 1.0.3 since 1.0.2
+Content link: [http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0.3/](http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0.2/)
+ ´#´ refers to the corresponding GitHub issue: [https://github.com/hl7dk/dk-medcom](https://github.com/hl7dk/dk-medcom)
+
+- Short description with intended content is added to entries #105
+- Recipient of report of admission added to hospital notification message header (with EAN number) #107
+- Managing organization is no longer mandatory on core patient #107 
+
+
 ## What&#38;s new in version 1.0.2 since 1.0.1
 Content link: [http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0.2/](http://build.fhir.org/ig/hl7dk/dk-medcom/branches/1.0.2/)
  ´#´ refers to the corresponding GitHub issue: [https://github.com/hl7dk/dk-medcom](https://github.com/hl7dk/dk-medcom)
