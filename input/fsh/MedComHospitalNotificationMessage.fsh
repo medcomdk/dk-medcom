@@ -2,6 +2,7 @@ Profile: MedComHospitalNotificationMessage
 Parent: MedComMessagingMessage
 Id: medcom-hospitalNotification-message
 Description: "A message for a Hospital Notification. The message is triggered as patients are admitted, onleave or has finished a hospital stay in order to notify the relevant Municipalicy home care"
+* entry ^short = "Message content (MedComHospitalNotificationMessageHeader, MedComMessagingOrganization, MedComMessagingProvenance, MedComHospitalNotificationEncounter, MedComCorePatient) - Open"
 * obeys medcom-hospitalNotification-1
 * obeys medcom-hospitalNotification-2
 * obeys medcom-hospitalNotification-3
