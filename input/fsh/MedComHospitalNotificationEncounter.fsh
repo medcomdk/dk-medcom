@@ -45,7 +45,7 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter in pro
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 
 * period.start = 2020-10-15T13:44:14Z
-* serviceProvider = Reference(12ee0dde-a672-462f-820d-5efe832d73c9)
+* serviceProvider = Reference(bf839e87-4e44-4977-b38e-92b5a6f187b5)
 
 Instance: 556e9c54-23d2-43a4-816e-951d2a6e3281
 InstanceOf: MedComHospitalNotificationEncounter
@@ -100,4 +100,3 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter finish
 * episodeOfCare[lpr3identifier].identifier.value = "200040a2-e05d-4af3-91e7-5febfa8ad0b3"
 * period.start = 2021-01-13T13:44:14Z
 * serviceProvider = Reference(bca68510-fe3b-4161-aba0-908a693eb54f)
-

@@ -8,6 +8,7 @@ Description: "Base resource for all MedCom messages."
 * timestamp 1.. MS
 * entry MS
 * entry.resource 1.. MS
+* entry ^short = "Message content (MedComMessagingMessageHeader, MedComMessagingProvenance, MedComMessagingOrganization) - Open"
 * obeys medcom-messaging-1
 * obeys medcom-messaging-2
 

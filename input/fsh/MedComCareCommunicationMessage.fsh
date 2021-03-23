@@ -2,6 +2,7 @@ Profile: MedComCareCommunicationMessage
 Parent: MedComMessagingMessage
 Id: medcom-careCommunication-message
 Description: "Message for communication care related information between parties in Danish Health Care using MedCom Standards"
+* entry ^short = "Message content (MedComCareCommunicationMessageHeader, MedComMessagingOrganization, MedComMessagingProvenance, MedComCareCommunication, MedComCorePatient, MedComCoreEncounter) - Open"
 * obeys medcom-careCommunication-1
 * obeys medcom-careCommunication-2
 * obeys medcom-careCommunication-3
