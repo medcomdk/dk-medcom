@@ -2,6 +2,7 @@ Profile:        MedComCareCommunication
 Parent:         Communication
 Id:             medcom-careCommunication-communication
 Description:    "Care related communication between two or more parties in Danish healthcare"
+/*
 * status MS
 * category 1..1 MS
 * category from MedComCareCommunicationCategories
@@ -156,3 +157,4 @@ Description: "Simple practitioner with a name"
 Usage: #inline
 * name.given = "Emma"
 * name.family = "Waters"
+*/
