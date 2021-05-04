@@ -71,7 +71,7 @@ Title: "Example of a ok operationOutcome"
 Description: "Example of a ok operationOutcome"
 * issue.severity = $ServerityCode#information
 * issue.code =  $CodeCode#structure
-* issue.diagnostics = "Invalid messages from your system 0%"
+* issue.diagnostics = "Invalid messages from your system"
 * issue.expression = "Bundle.meta"
 
 
