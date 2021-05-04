@@ -53,8 +53,8 @@ Description: "Message header for an ok message"
 * response.code = $AcknowledgementCode#fatal-error
 * response.details = Reference(4ecb2a8e-3a68-4083-910e-811296affd43)
 
-Alias: $ServerityCode = http://hl7.org/fhir/ValueSet/issue-severity
-Alias: $CodeCode = http://hl7.org/fhir/ValueSet/issue-type
+Alias: $ServerityCode = http://hl7.org/fhir/issue-severity
+Alias: $CodeCode = http://hl7.org/fhir/issue-type
 
 Instance: 4ecb2a8e-3a68-4083-910e-811296affd43
 InstanceOf: OperationOutcome
