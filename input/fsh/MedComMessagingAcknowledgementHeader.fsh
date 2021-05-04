@@ -9,8 +9,6 @@ Description: "A resource that describes a reponse to a message that is exchanged
 * response.details MS
 * response.details ^definition = "Shall contain identified hints/warnings/error in case the code is transient-error or fatal-error"
 
-
-
 Alias: $MessageEvents = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes
 Alias: $AcknowledgementCode = http://hl7.org/fhir/ValueSet/Acknowledgement-code
 
@@ -55,8 +53,8 @@ Description: "Message header for an ok message"
 * response.code = $AcknowledgementCode#fatal-error
 * response.details = Reference(4ecb2a8e-3a68-4083-910e-811296affd43)
 
-Alias: $ServerityCode = http://hl7.org/fhir/ValueSet/issue-severity
-Alias: $CodeCode = http://hl7.org/fhir/ValueSet/issue-type
+Alias: $ServerityCode = http://hl7.org/fhir/issue-severity
+Alias: $CodeCode = http://hl7.org/fhir/issue-type
 
 Instance: 4ecb2a8e-3a68-4083-910e-811296affd43
 InstanceOf: OperationOutcome
@@ -73,5 +71,7 @@ Title: "Example of a ok operationOutcome"
 Description: "Example of a ok operationOutcome"
 * issue.severity = $ServerityCode#information
 * issue.code =  $CodeCode#structure
-* issue.diagnostics = "Invalid messages from your system 0%"
+* issue.diagnostics = "Invalid messages from your system"
+* issue.expression = "Bundle.meta"
+
 
