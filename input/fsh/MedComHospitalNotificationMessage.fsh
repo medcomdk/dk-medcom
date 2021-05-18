@@ -164,3 +164,30 @@ Description: "Example of MedCom Hospital Notification Discharge when patient is 
 * entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Provenance/09942adb-197a-4e30-bec8-566e3a113efe"
 * entry[=].resource = 09942adb-197a-4e30-bec8-566e3a113efe
+
+
+//Exampels for test and Certification
+
+//Used for STAA_1
+Instance: c815ece3-c7cd-4dd3-9386-ce274351a2d0d
+InstanceOf: MedComHospitalNotificationMessage
+Title: "STAA_1"
+Description: "Example of MedCom Hospital Notification STAA"
+* type = $BundleType#message
+* timestamp = 2021-05-18T12:44:14Z
+* entry[+].fullUrl = "MessageHeader/9f735347-5cf8-4100-aacf-07014998ed36"
+* entry[=].resource = 9f735347-5cf8-4100-aacf-07014998ed36
+* entry[+].fullUrl = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
+* entry[=].resource = 733cef33-3626-422b-955d-d506aaa65fe1
+* entry[+].fullUrl = "Organization/12ee0dde-a672-462f-820d-5efe832d73c9"
+* entry[=].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
+* entry[+].fullUrl = "Encounter/1e4c96de-8cf8-471f-ad65-025a03c0951e"
+* entry[=].resource = 1e4c96de-8cf8-471f-ad65-025a03c0951e
+* entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
+* entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
+* entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[+].fullUrl = "Organization/bf839e87-4e44-4977-b38e-92b5a6f187b5"
+* entry[=].resource = bf839e87-4e44-4977-b38e-92b5a6f187b5
+* entry[+].fullUrl = "Provenance/0b82a955-7780-4c5f-b1d6-7bedda04ecff"
+* entry[=].resource = 0b82a955-7780-4c5f-b1d6-7bedda04ecff

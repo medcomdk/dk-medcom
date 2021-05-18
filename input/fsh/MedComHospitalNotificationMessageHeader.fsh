@@ -101,3 +101,19 @@ Title: "Service provider organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
 * identifier[sorIdentifier].value = "654321098765432"
 * identifier[eanIdentifier].value = "5790000121530"
+
+//Exampels for test and Certification
+
+Instance: 9f735347-5cf8-4100-aacf-07014998ed36
+InstanceOf: MedComHospitalNotificationMessageHeader
+Title: "Message header for a hospital notification admit message. Valid only if used in a bundle (message)."
+Description: "Message header for a hospital notification admit message. Valid only if used in a bundle (message)."
+* destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#hospital-notification-message
+* destination.endpoint = "http://medcomfhir.dk/unknown"
+* destination.receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* source.endpoint = "http://medcomfhir.dk/unknown"
+* focus = Reference(1e4c96de-8cf8-471f-ad65-025a03c0951e)
+* extension[reportOfAdmissionFlag].valueBoolean = true
+* extension[reportOfAdmissionRecipient].valueReference = Reference(bf839e87-4e44-4977-b38e-92b5a6f187b5)

@@ -263,3 +263,16 @@ Usage: #inline
 * activity = $ActivityCode#discharge-inpatient-home
 * agent.who = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 
+//Exampels for Test and Certification
+
+// Admit example
+
+Instance: 0b82a955-7780-4c5f-b1d6-7bedda04ecff
+InstanceOf: MedComMessagingProvenance
+Title: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message) -admit"
+Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
+* target = Reference(9f735347-5cf8-4100-aacf-07014998ed36)
+* occurredDateTime = 2020-10-15T13:44:14Z
+* recorded = 2020-10-15T13:45:15Z
+* activity = $ActivityCode#admit-emergency
+* agent.who = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
