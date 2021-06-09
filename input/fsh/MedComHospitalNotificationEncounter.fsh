@@ -103,6 +103,7 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter finish
 
 
 //Exampels for test and certification
+
 //STAA
 Instance: 1e4c96de-8cf8-471f-ad65-025a03c0951e
 InstanceOf: MedComHospitalNotificationEncounter
@@ -114,5 +115,19 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter in pro
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "b9018eae-f225-4cd5-91ac-6b2ace01dc3e" 
+* period.start = 2020-10-15T13:44:14Z
+* serviceProvider = Reference(bf839e87-4e44-4977-b38e-92b5a6f187b5)
+
+//STIN_1
+Instance: 5584b806-2925-4947-a3af-91656d719f8d
+InstanceOf: MedComHospitalNotificationEncounter
+Title: "MedCom Hospital Notification Encounter in progress"
+Description: "Example of MedCom Hospital Noticication inpatient Encounter in progress with 12ee0dde-a672-462f-820d-5efe832d73c9 as serviceProvider"
+* identifier.value = "1234567890"
+* status = #in-progress
+* class = $ActCodes#IMP 
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
+* episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
+* episodeOfCare[lpr3identifier].identifier.value = "3e285f95-21a0-476b-941d-2c1c5e07aed8" 
 * period.start = 2020-10-15T13:44:14Z
 * serviceProvider = Reference(bf839e87-4e44-4977-b38e-92b5a6f187b5)
