@@ -30,3 +30,31 @@ Description: "An organization with a SOR identifier."
 * identifier[sorIdentifier].system = "urn:oid:1.2.208.176.1.1"
 * identifier[sorIdentifier].value = "378631000016009"
 * name = "Test Practitioner clinic"
+
+Instance: 01e1ba51-1a03-414d-8119-1b4614bf8f18
+InstanceOf: MedComCoreOrganization
+Title: "OUH Anæstesi-Intensiv Ambulatorium"
+Description: "An organization with a SOR identifier."
+* identifier[sorIdentifier].use = #official
+* identifier[sorIdentifier].system = "urn:oid:1.2.208.176.1.1"
+* identifier[sorIdentifier].value = "238091000016006"
+* name = "OUH Anæstesi-Intensiv Ambulatorium"
+
+Instance: 6a292295-1291-4f9f-8024-9346c5152ac2
+InstanceOf: MedComCoreOrganization
+Title: "SLB Anæstesiologisk Afsnit (Vejle)"
+Description: "An organization with a SOR identifier."
+* identifier[sorIdentifier].use = #official
+* identifier[sorIdentifier].system = "urn:oid:1.2.208.176.1.1"
+* identifier[sorIdentifier].value = "246721000016006"
+* name = "SLB Anæstesiologisk Afsnit (Vejle)"
+
+Instance: 2d758f02-1f6d-4832-be7e-5cfc5d094b53
+InstanceOf: MedComCoreOrganization
+Title: "Rigshospitalet Thorax-kirurgisk Klinik RT"
+Description: "An organization with a SOR identifier."
+* identifier[sorIdentifier].use = #official
+* identifier[sorIdentifier].system = "urn:oid:1.2.208.176.1.1"
+* identifier[sorIdentifier].value = "251791000016004"
+* name = "Rigshospitalet Thorax-kirurgisk Klinik RT"
+
