@@ -13,6 +13,9 @@ For information regarding how to run a Touchstone test script, please refer to:
 [http://svn.medcom.dk/svn/drafts/TestProcedurer/Touchstone/MedcomTouchstoneTest/Guide%20to%20the%20mtt.docx](http://svn.medcom.dk/svn/drafts/TestProcedurer/Touchstone/MedcomTouchstoneTest/Guide%20to%20the%20mtt.docx)
 
 
+***Touchstone .NET client Demo***
+[Demo of a .NET client]( https://github.com/medcomdk/touchstone-client-demo-dotnet) calling the MedCom Touchstone test Suite 
+
 
 
 
