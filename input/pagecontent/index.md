@@ -18,7 +18,7 @@ For description regarding the transportation layer please refer to this guide:
 
 English:
 
-* [MedCom FHIR-message and enclosing envelope](./pdf/MedCom FHIR-messages and enclosing envelope 1_1.pdf)
+* [MedCom FHIR-message and enclosing envelope](./pdf/MedCom FHIR-messages and enclosing envelope 1.1.pdf)
 
 Danish:
 
