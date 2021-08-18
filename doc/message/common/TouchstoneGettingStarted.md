@@ -7,7 +7,8 @@
 3.	Send the organization name that is registered to fhir@medcom.dk 
 4.	MedCom will ask AEGIS to raise your subscription level from “Free” to “Starter” 
 
-***How to run a Touchstone test script based on use cases***. 
+***How to run a Touchstone test script based on use cases***
+
 For information regarding how to run a Touchstone test script, please refer to:
 [http://svn.medcom.dk/svn/drafts/TestProcedurer/Touchstone/MedcomTouchstoneTest/Guide%20to%20the%20mtt.docx](http://svn.medcom.dk/svn/drafts/TestProcedurer/Touchstone/MedcomTouchstoneTest/Guide%20to%20the%20mtt.docx)
 
