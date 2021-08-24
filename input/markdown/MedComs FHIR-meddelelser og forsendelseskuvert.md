@@ -31,6 +31,8 @@ Pt. vil afsendelse ske i det eksisterende VANS\-net og dermed med brug af VANSen
 
 Obs. Når moderniseret infrastruktur bliver implementeret, vil den trække på en ny forsendelseskuvert, der vil erstatte VANSenvelope, så dette dokument vil til den tid blive opdateret med det nye kuvertformat. I en overgangsperiode vil både VANSenvelope og den nye kuvert blive anvendt, men der vil komme tydelige præciseringer af, hvorledes dette kommer til at foregå.
 
+---
+
 # Forsendelseskuverter
 
 ## VANSenvelope
@@ -55,23 +57,36 @@ application/fhir+json
 
 afhængigt af, hvilket format FHIR\-meddelelsen er formateret i.
 
+---
+
 ### Format
 
 Format bliver samme som "Standard type" i MedComs standardkatalog og defineres for alle FHIR\-standarder til "HL7".
+
+---
 
 #### Name
 
 Name bliver samme som "Type nr." i MedComs standardkatalog og vil dermed variere fra meddelelsestype til meddelelsestype. Name prefixes med MCM: og vil i øvrigt kunne postfixes med statistiske varianter af en given meddelelsestype. Kendt fra GGOP kan dette udfaldsrum f.eks. være GGOP1, GGOP2 og GGOP3. Lignende konstruktioner vil forekomme så længe FHIR\-meddelelser transporteres i VANSenvelope.
 
+---
+
 ### Version
 
 Version bliver samme som "Version" i MedComs standardkatalog og vil dermed variere fra meddelelsesversion til meddelelsesversion.
 
+---
+
 ## FHIR meddelelsestyper
+
 
 Konkret betyder ovenstående for MedComs FHIR\-meddelelser dette
 
+---
+
 ### CareCommunication
+
+---
 
 Kuvert: VANSenvelope
 
@@ -83,7 +98,11 @@ Postfixværdier for Name vil være indenfor dette code udfaldsrum, som er taget 
 
 Name kan eksplicit tages fra følgende Valueset:  https://build.fhir.org/ig/hl7dk/dk\-medcom/ValueSet\-medcom\-messaging\-vansStatisticalCodeCombinations.html
 
+---
+
 ### HospitalNotification
+
+---
 
 Kuvert: VANSenvelope i afsendelse, KOMBITs BeskedFordeler kuvert i modtagelse hos EOJ\-systemerne
 
@@ -95,7 +114,11 @@ Postfixværdier for Name vil være indenfor dette code udfaldsrum, som er taget 
 
 Name kan eksplicit tages fra følgende Valueset: [https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-messaging-vansStatisticalCodeCombinations.html](https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-messaging-vansStatisticalCodeCombinations.html)
 
+---
+
 ### Acknowledgement
+
+---
 
 Kuvert: VANSenvelope i afsendelse,
 
@@ -107,13 +130,7 @@ Postfixværdier for Name vil være indenfor dette code udfaldsrum, som er taget 
 
 Name kan eksplicit tages fra følgende Valueset: [https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-messaging-vansStatisticalCodeCombinations.html](https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-messaging-vansStatisticalCodeCombinations.html)
 
-Denne snippet er taget fra det sidste ValueSet blot for illustrationens skyld, det fjernes når Acknowledgement værdierne for VANSenvelope er godkendt
-
-* MCM:FCTL#ok "The message was accepted and processed without error"
-
-* MCM:FCTL#transient\-error "Some internal unexpected error occurred \- wait and try again"
-
-* MCM:FCTL#fatal\-error "The message was rejected because of a problem with the content"
+---
 
 [1]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#Indledning
 [2]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#forsendelseskuverter
