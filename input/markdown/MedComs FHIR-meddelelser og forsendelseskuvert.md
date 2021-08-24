@@ -1,4 +1,5 @@
 # MedCom FHIR meddelser og forsendelseskuvert
+
 ## Indholdsfortegnelse
 
 [1. Indledning][1]
@@ -23,7 +24,7 @@
 
 ---
 
-# Indledning
+## Indledning
 
 MedComs FHIR\-meddelelser vil undervejs i deres forsendelsesforløb blive indpakket og optræde i forskellige kuvertformater.
 
@@ -33,9 +34,9 @@ Obs. Når moderniseret infrastruktur bliver implementeret, vil den trække på e
 
 ---
 
-# Forsendelseskuverter
+## Forsendelseskuverter
 
-## VANSenvelope
+### VANSenvelope
 
 VANSenvelope indeholder ift. MedComs nye FHIR\-meddelelser 3 elementer(felter), som influeres af FHIR som ny meddelelsestype. Disse indeholdes i følgende overordnede element "VANSEnvelope/Message/MetaInformation/Document/".
 
@@ -59,26 +60,25 @@ afhængigt af, hvilket format FHIR\-meddelelsen er formateret i.
 
 ---
 
-### Format
+#### Format
 
 Format bliver samme som "Standard type" i MedComs standardkatalog og defineres for alle FHIR\-standarder til "HL7".
 
 ---
 
-#### Name
+##### Name
 
 Name bliver samme som "Type nr." i MedComs standardkatalog og vil dermed variere fra meddelelsestype til meddelelsestype. Name prefixes med MCM: og vil i øvrigt kunne postfixes med statistiske varianter af en given meddelelsestype. Kendt fra GGOP kan dette udfaldsrum f.eks. være GGOP1, GGOP2 og GGOP3. Lignende konstruktioner vil forekomme så længe FHIR\-meddelelser transporteres i VANSenvelope.
 
 ---
 
-### Version
+#### Version
 
 Version bliver samme som "Version" i MedComs standardkatalog og vil dermed variere fra meddelelsesversion til meddelelsesversion.
 
 ---
 
 ## FHIR meddelelsestyper
-
 
 Konkret betyder ovenstående for MedComs FHIR\-meddelelser dette
 
@@ -132,7 +132,7 @@ Name kan eksplicit tages fra følgende Valueset: [https://build.fhir.org/ig/hl7d
 
 ---
 
-[1]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#Indledning
+[1]: ../MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#Indledning
 [2]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#forsendelseskuverter
 [2.1]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#VANSenvelope
 [2.1.1]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#format
