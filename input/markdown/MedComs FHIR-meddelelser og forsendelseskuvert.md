@@ -132,8 +132,8 @@ Name kan eksplicit tages fra følgende Valueset: [https://build.fhir.org/ig/hl7d
 
 ---
 
-[1]: ../MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#Indledning
-[2]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#forsendelseskuverter
+[1]: ./MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#Indledning
+[2]: ./MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#forsendelseskuverter
 [2.1]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#VANSenvelope
 [2.1.1]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#format
 [2.1.2]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#name
