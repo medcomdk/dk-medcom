@@ -132,13 +132,13 @@ Name kan eksplicit tages fra følgende Valueset: [https://build.fhir.org/ig/hl7d
 
 ---
 
-[1]: ../MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#Indledning
-[2]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#forsendelseskuverter
-[2.1]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#VANSenvelope
-[2.1.1]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#format
-[2.1.2]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#name
-[2.1.3]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#version
-[3]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#fhir-meddelelsestyper
-[3.1]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#carecommunication
-[3.2]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#hospitalnotification
-[3.3]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert%201.1.md/#acknowledgment
+[1]: ../MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#Indledning
+[2]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#forsendelseskuverter
+[2.1]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#VANSenvelope
+[2.1.1]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#format
+[2.1.2]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#name
+[2.1.3]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#version
+[3]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#fhir-meddelelsestyper
+[3.1]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#carecommunication
+[3.2]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#hospitalnotification
+[3.3]: https://github.com/hl7dk/dk-medcom/blob/1.0.3-ACK-VANSEnvCodes/input/markdown/MedComs%20FHIR-meddelelser%20og%20forsendelseskuvert.md/#acknowledgment
