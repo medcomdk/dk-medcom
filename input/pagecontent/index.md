@@ -1,8 +1,6 @@
-# Implementation guide for MedCom FHIR Messaging
+### Implementation guide for MedCom FHIR Messaging
 
 ### Introduction
-
-Test of relative links [relativepath](MedComs_FHIR-meddelelser_og_forsendelseskuvert.md)
 
 This implementation guide is provided by MedCom to describe the use of FHIR &reg;&copy; in message based exchange of data in Danish healthcare.
 
