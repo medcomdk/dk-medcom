@@ -20,11 +20,11 @@ For description regarding the transportation layer please refer to this guide:
 
 English:
 
-* [MedCom FHIR-message and enclosing envelope](MedCom_FHIR-messages_and_enclosing_envelope.html)
+* [MedCom FHIR-message and enclosing envelope](Enclosing_envelope_for_FHIR-messages.html)
 
 Danish:
 
-* [MedComs FHIR-meddelelser og forsendelseskuvert](MedComs_FHIR-meddelelser_og_forsendelseskuvert.html)
+* [MedComs FHIR-meddelelser og forsendelseskuvert](Forsendelseskuvert_for_FHIR-meddelelser.html)
 
 ### General Messaging Model
 
