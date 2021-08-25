@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Test of relative links [reletivepath](MedComs_FHIR-meddelelser_og_forsendelseskuvert.md)
+Test of relative links [relativepath](MedComs_FHIR-meddelelser_og_forsendelseskuvert.html)
 
 This implementation guide is provided by MedCom to describe the use of FHIR &reg;&copy; in message based exchange of data in Danish healthcare.
 
@@ -26,7 +26,7 @@ English:
 
 Danish:
 
-* [MedComs FHIR-meddelelser og forsendelseskuvert](./MedComs_FHIR-meddelelser_og_forsendelseskuvert.md)
+* [MedComs FHIR-meddelelser og forsendelseskuvert](MedComs_FHIR-meddelelser_og_forsendelseskuvert.html)
 
 ### General Messaging Model
 
