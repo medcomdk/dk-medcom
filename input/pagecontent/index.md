@@ -4,7 +4,7 @@
 
 Test of relative links [reletivepath](MedComs_FHIR-meddelelser_og_forsendelseskuvert.md)
 
-This implementation guide is provided by MedCom to describe the use of FHIR `<sup>`&reg;&copy;`</sup>` in message based exchange of data in Danish healthcare.
+This implementation guide is provided by MedCom to describe the use of FHIR &reg;&copy; in message based exchange of data in Danish healthcare.
 
 The implementation guide contains profiles in three areas
 
