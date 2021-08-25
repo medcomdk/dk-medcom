@@ -16,19 +16,16 @@ VANSenvelope indeholder ift. MedComs nye FHIR\-meddelelser 3 elementer(felter), 
 
 De indeholdte elementer er:
 
-Format
-
-Name
-
-Version
+- Format
+- Name
+- Version
 
 MedComs FHIR\-meddelelser håndteres i øvrigt som alle andre meddelelser i VANSenvelope ved at selve meddelelsen base\-64 encodes i elementet "VANSEnvelope/Message/Data/"
 
 I Transportelementet, "VANSEnvelope/Message/MetaInformation/Transport", håndteres elementet "TransformMessage" som vanligt, mens "ServiceTag" med attributten name="MCM:MIME" kan angives med følgende værdier:
 
-application/fhir+xml
-
-application/fhir+json
+- application/fhir+xml
+- application/fhir+json
 
 afhængigt af, hvilket format FHIR\-meddelelsen er formateret i.
 
