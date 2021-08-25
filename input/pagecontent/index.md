@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Test of relative links [reletivepath](../markdown/MedComs_FHIR-meddelelser_og_forsendelseskuvert.md)
+Test of relative links [relativepath](../markdown/MedComs_FHIR-meddelelser_og_forsendelseskuvert.md)
 
 This implementation guide is provided by MedCom to describe the use of FHIR `<sup>`&reg;&copy;`</sup>` in message based exchange of data in Danish healthcare.
 
@@ -22,7 +22,7 @@ For description regarding the transportation layer please refer to this guide:
 
 English:
 
-* [MedCom FHIR-message and enclosing envelope](MedCom_FHIR-messages_and_enclosing_envelope.md)
+* [MedCom FHIR-message and enclosing envelope](MedCom_FHIR-messages_and_enclosing_envelope.html)
 
 Danish:
 
