@@ -1,6 +1,7 @@
 ### Introduction
 
 This implementation guide is provided by MedCom to describe the use of FHIR<sup>&reg;&copy;</sup> in message based exchange of data in Danish healthcare.
+Test of relative links [reletivepath](../markdown/Forretningsmssigeusecases.md)
 
 The implementation guide contains profiles in three areas
 * A general messaging model to be used by all defined MedCom FHIR messages
