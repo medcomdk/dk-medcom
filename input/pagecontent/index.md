@@ -26,7 +26,7 @@ English:
 
 Danish:
 
-* [MedComs FHIR-meddelelser og forsendelseskuvert](../markdown/MedComs_FHIR-meddelelser_og_forsendelseskuvert.md)
+* [MedComs FHIR-meddelelser og forsendelseskuvert](MedComs_FHIR-meddelelser_og_forsendelseskuvert.md)
 
 ### General Messaging Model
 
