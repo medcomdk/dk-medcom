@@ -94,9 +94,9 @@ Format:  "HL7"
 Name:    "MCM:FDIS91#`<code>`"
 Version: "1.0"
 
-Postfixværdier for Name vil være indenfor dette code udfaldsrum, som er taget fra CareCommunications ValueSet for categories: https://build.fhir.org/ig/hl7dk/dk\-medcom/ValueSet\-medcom\-careCommunication\-categories.html
+Postfixværdier for Name vil være indenfor dette code udfaldsrum, som er taget fra: [CareCommunications ValueSet for categories](https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-careCommunication-categories.html)
 
-Name kan eksplicit tages fra følgende Valueset:  https://build.fhir.org/ig/hl7dk/dk\-medcom/ValueSet\-medcom\-messaging\-vansStatisticalCodeCombinations.html
+Name kan eksplicit tages fra følgende Valueset: [vansStatisticalCodeCombinations](https://build.fhir.org/ig/hl7dk/dk-medcom/CodeSystem-medcom-messaging-sorEdiSystem.html)
 
 ---
 

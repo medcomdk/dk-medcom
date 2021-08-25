@@ -1,7 +1,5 @@
 # Implementation guide for MedCom FHIR Messaging
 
-## 
-
 ### Introduction
 
 This implementation guide is provided by MedCom to describe the use of FHIR `<sup>`&reg;&copy;`</sup>` in message based exchange of data in Danish healthcare.
