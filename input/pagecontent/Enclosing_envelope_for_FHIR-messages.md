@@ -1,66 +1,60 @@
-### MedCom FHIR meddelser og forsendelseskuvert
+### Enclosing envelope for_distribution of FHIR-messages
 
 ---
 
-### Indledning
+### Introduction
 
-MedComs FHIR\-meddelelser vil undervejs i deres forsendelsesforløb blive indpakket og optræde i forskellige kuvertformater.
-
-Pt. vil afsendelse ske i det eksisterende VANS\-net og dermed med brug af VANSenvelope medmindre andet er specificeret under den enkelte standard. Modtagelse kan være både i VANSenvelope eller i anden modtagelseskuvert, f.eks. KOMBITs BeskedFordeler kuvert.
-
-Obs. Når moderniseret infrastruktur bliver implementeret, vil den trække på en ny forsendelseskuvert, der vil erstatte VANSenvelope, så dette dokument vil til den tid blive opdateret med det nye kuvertformat. I en overgangsperiode vil både VANSenvelope og den nye kuvert blive anvendt, men der vil komme tydelige præciseringer af, hvorledes dette kommer til at foregå.
+In the mode of transport, MedCom's FHIR messages will be packaged and appear in various envelope formats.
+At present, messages are sent in the existing VANS network and therefore in a VANSenvelope unless otherwise specified under the individual standard. Reception can either be in VANSenvelope or another reception envelope, ig. KOMBITs BeskedFordeler nevelope.
+NB: When the modernised infrastructure is implemented, it will use new transmittal envelope that will replace the VANSenvelope. This means that this document will be updated with the new envelope format at that time. In the transition period, both the VANSenvelope and the new envelope will be used. It will be clearly explained how this should be handled.
 
 ---
 
-### Forsendelseskuverter
+### Enclosing envelopes
 
 ---
 
 #### VANSenvelope
 
-VANSenvelope indeholder ift. MedComs nye FHIR\-meddelelser 3 elementer(felter), som influeres af FHIR som ny meddelelsestype. Disse indeholdes i følgende overordnede element "VANSEnvelope/Message/MetaInformation/Document/".
+In relation to MedCom's new FHIR messages, VANSenvelope contains 3 elements (fields) which are influenced by FHIR as a new message type. These are contained in the following enclosing element: “VANSEnvelope/Message/MetaInformation/Document/”.
 
-De indeholdte elementer er:
+The elements are:
 
-Format
+- Format
+- Name
+- Version
 
-Name
+MedCom's FHIR messages are handled like all other messages in VANSenvelope by encoding the message base-64 in the element "VANSEnvelope/Message/Data/"
 
-Version
+In the Transport element, "VANSEnvelope/Message/MetaInformation/Transport", the element "TransformMessage" is handled as usual, while "ServiceTag" with the attribute name = "MCM:MIME" can be specified with the following values:
 
-MedComs FHIR\-meddelelser håndteres i øvrigt som alle andre meddelelser i VANSenvelope ved at selve meddelelsen base\-64 encodes i elementet "VANSEnvelope/Message/Data/"
+- application/fhir+xml
+- application/fhir+json
 
-I Transportelementet, "VANSEnvelope/Message/MetaInformation/Transport", håndteres elementet "TransformMessage" som vanligt, mens "ServiceTag" med attributten name="MCM:MIME" kan angives med følgende værdier:
-
-application/fhir+xml
-
-application/fhir+json
-
-afhængigt af, hvilket format FHIR\-meddelelsen er formateret i.
+depending on the format the FHIR message is formatted in.
 
 ---
 
 ##### Format
 
-Format bliver samme som "Standard type" i MedComs standardkatalog og defineres for alle FHIR\-standarder til "HL7".
+The format will be the same as "Standard type" in MedCom's standard catalogue and is defined for all FHIR standards for "HL7".
 
 ---
 
 ##### Name
 
-Name bliver samme som "Type nr." i MedComs standardkatalog og vil dermed variere fra meddelelsestype til meddelelsestype. Name prefixes med MCM: og vil i øvrigt kunne postfixes med statistiske varianter af en given meddelelsestype. Kendt fra GGOP kan dette udfaldsrum f.eks. være GGOP1, GGOP2 og GGOP3. Lignende konstruktioner vil forekomme så længe FHIR\-meddelelser transporteres i VANSenvelope.
+Name will be the same as "Type no." in MedCom's standard catalogue and will thus vary from message type to message type. Name will be prefixed with MCM: and it will, in addition, be possible to postfix it with statistical variants of a given message type. As in the GGOP standard, you can select for example GGOP1, GGOP2 and GGOP3. Similar solutions will occur as long as the FHIR messages are transported in the VANSenvelope.
 
 ---
 
 #### Version
 
-Version bliver samme som "Version" i MedComs standardkatalog og vil dermed variere fra meddelelsesversion til meddelelsesversion.
+Version will be the same as "Version" in MedCom's standard catalogue and will thus vary from message version to message version.
 
 ---
 
-### FHIR meddelelsestyper
-
-Konkret betyder ovenstående for MedComs FHIR\-meddelelser dette
+### FHIR message types
+Specifically, the above-mentioned means the following for MedCom's FHIR messages
 
 ---
 
@@ -68,15 +62,14 @@ Konkret betyder ovenstående for MedComs FHIR\-meddelelser dette
 
 ---
 
-Kuvert: VANSenvelope
+- Envelope: VANSenvelope
+- Format: ”HL7”
+- Name: ”MCM:FDIS91#<postfix value>”
+- Version: ”1.0”
 
-Format:  "HL7"
-Name:    "MCM:FDIS91#`<code>`"
-Version: "1.0"
-
-Postfixværdier for Name vil være indenfor dette code udfaldsrum, som er taget fra: [CareCommunications ValueSet for categories](https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-careCommunication-categories.html)
-
-Name kan eksplicit tages fra følgende Valueset: [VANS StatisticalCode Combinations](https://build.fhir.org/ig/hl7dk/dk-medcom/CodeSystem-medcom-messaging-sorEdiSystem.html)
+Postfix values for Name will be within this enumeration, which is taken from CareCommunication’s ValueSet for categories: 
+https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-careCommunication-categories.html 
+Name can explicitly be taken from the following Valueset:  https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-messaging-vansStatisticalCodeCombinations.html
 
 ---
 
@@ -84,15 +77,14 @@ Name kan eksplicit tages fra følgende Valueset: [VANS StatisticalCode Combinati
 
 ---
 
-Kuvert: VANSenvelope i afsendelse, KOMBITs BeskedFordeler kuvert i modtagelse hos EOJ\-systemerne
+- Envelope for sending: VANSenvelope
+- Envelope for reception: KOMBITs BeskedFordeler (The Municipality Message distribution system) envelope for Municipality systems like the Electronic Homecare Records (“EOJ” systems) and SAPA.
+- Format: ”HL7”
+- Name: ”MCM:FDIS20#<postfix value>”
+- Version: ”1.0”
 
-Format:  "HL7"
-Name:    "MCM:FDIS20#`<code>`"
-Version: "1.0"
-
-Postfixværdier for Name vil være indenfor dette code udfaldsrum, som er taget fra HospitalNotifications ValueSet: MedCom Hospital Notification Message Activity Codes:  [https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-hospitalNotification-messageActivities.html](https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-hospitalNotification-messageActivities.html)
-
-Name kan eksplicit tages fra følgende Valueset: [https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-messaging-vansStatisticalCodeCombinations.html](https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-messaging-vansStatisticalCodeCombinations.html)
+Postfix values for Name will be within this enumeration, which is taken from HospitalNotification’s ValueSet: MedCom Hospital Notification Message Activity Codes: https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-hospitalNotification-messageActivities.html 
+Name can explicitly be taken from the following Valueset:  https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-messaging-vansStatisticalCodeCombinations.html 
 
 ---
 
@@ -100,14 +92,11 @@ Name kan eksplicit tages fra følgende Valueset: [https://build.fhir.org/ig/hl7d
 
 ---
 
-Kuvert: VANSenvelope i afsendelse,
+- Envelope: VANSenvelope 
+- Format: ”HL7”
+- Name: ”MCM:FCTL#<postfix value>”
+- Version: ”1.0”
 
-Format:  "HL7"
-Name:    "MCM:FCTL#`<code>`"
-Version: "1.0"
-
-Postfixværdier for Name vil være indenfor dette code udfaldsrum, som er taget fra Response Code ValueSet: Codes:  [http://hl7.org/fhir/R4/valueset-response-code.html](http://hl7.org/fhir/R4/valueset-response-code.html)
-
-Name kan eksplicit tages fra følgende Valueset: [https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-messaging-vansStatisticalCodeCombinations.html](https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-messaging-vansStatisticalCodeCombinations.html)
-
----
+Postfix values for Name will be within this enumeration, which is taken from Response Code ValueSet: Codes: 
+http://hl7.org/fhir/R4/valueset-response-code.html 
+Name can explicitly be taken from the following Valueset:  https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-messaging-vansStatisticalCodeCombinations.html
