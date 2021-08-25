@@ -20,11 +20,11 @@ For description regarding the transportation layer please refer to this guide:
 
 English:
 
-* [MedCom FHIR-message and enclosing envelope](../markdown/MedCom FHIR-messages and enclosing envelope.md)
+* [MedCom FHIR-message and enclosing envelope](MedCom_FHIR-messages_and_enclosing_envelope.md)
 
 Danish:
 
-* [MedComs FHIR-meddelelser og forsendelseskuvert](MedComs_FHIR-meddelelser_og_forsendelseskuvert.md)
+* [MedComs FHIR-meddelelser og forsendelseskuvert](./MedComs_FHIR-meddelelser_og_forsendelseskuvert.md)
 
 ### General Messaging Model
 
@@ -94,7 +94,7 @@ The hospital notification message encounter contains the main content of the mes
 
 English:
 
-* [HosptialNotification Use Cases](./hospitalnotification/pdf/Use%20cases_Hospital%20Notification_eng.pdf)
+* [HospitalNotification Use Cases](./hospitalnotification/pdf/Use%20cases_Hospital%20Notification_eng.pdf)
 * [Non-technical guidelines for HospitalNotification](./hospitalnotification/pdf/FHIR_Hospital_Notification.pdf)
 
 Danish:
