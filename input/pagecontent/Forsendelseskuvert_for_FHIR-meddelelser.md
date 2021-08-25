@@ -59,11 +59,10 @@ Konkret betyder ovenstående for MedComs FHIR\-meddelelser dette
 
 ---
 
-Kuvert: VANSenvelope
-
-Format:  "HL7"
-Name:    "MCM:FDIS91#`<code>`"
-Version: "1.0"
+- Kuvert: VANSenvelope
+- Format:  "HL7"
+- Name:    "MCM:FDIS91#`<code>`"
+- Version: "1.0"
 
 Postfixværdier for Name vil være indenfor dette code udfaldsrum, som er taget fra: [CareCommunications ValueSet for categories](https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-careCommunication-categories.html)
 
@@ -75,11 +74,11 @@ Name kan eksplicit tages fra følgende Valueset: [VANS StatisticalCode Combinati
 
 ---
 
-Kuvert: VANSenvelope i afsendelse, KOMBITs BeskedFordeler kuvert i modtagelse hos EOJ\-systemerne
-
-Format:  "HL7"
-Name:    "MCM:FDIS20#`<code>`"
-Version: "1.0"
+- Kuvert for afsendelse: VANSenvelope
+- Kuvert for modtagelse: KOMBITs BeskedFordeler kuvert for kommunale systemer som EOJ-systemerne og SAPA
+- Format:  "HL7"
+- Name:    "MCM:FDIS20#`<code>`"
+- Version: "1.0"
 
 Postfixværdier for Name vil være indenfor dette code udfaldsrum, som er taget fra HospitalNotifications ValueSet: MedCom Hospital Notification Message Activity Codes:  [https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-hospitalNotification-messageActivities.html](https://build.fhir.org/ig/hl7dk/dk-medcom/ValueSet-medcom-hospitalNotification-messageActivities.html)
 
@@ -91,11 +90,10 @@ Name kan eksplicit tages fra følgende Valueset: [https://build.fhir.org/ig/hl7d
 
 ---
 
-Kuvert: VANSenvelope i afsendelse,
-
-Format:  "HL7"
-Name:    "MCM:FCTL#`<code>`"
-Version: "1.0"
+- Kuvert: VANSenvelope i afsendelse,
+- Format:  "HL7"
+- Name:    "MCM:FCTL#`<code>`"
+- Version: "1.0"
 
 Postfixværdier for Name vil være indenfor dette code udfaldsrum, som er taget fra Response Code ValueSet: Codes:  [http://hl7.org/fhir/R4/valueset-response-code.html](http://hl7.org/fhir/R4/valueset-response-code.html)
 
