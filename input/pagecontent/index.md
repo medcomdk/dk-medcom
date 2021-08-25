@@ -20,7 +20,7 @@ For description regarding the transportation layer please refer to this guide:
 
 English:
 
-* [MedCom FHIR-message and enclosing envelope](../markdown/MedCom FHIR-messages and enclosing envelope.md)
+* [MedCom FHIR-message and enclosing envelope](MedCom_FHIR-messages_and_enclosing_envelope.md)
 
 Danish:
 
