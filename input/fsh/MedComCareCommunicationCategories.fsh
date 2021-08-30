@@ -16,6 +16,7 @@ Description: "Category codes for care communication messages"
 * #regarding-referral "Regarding Referral"
 * #assessment "Assessment"
 * #examination-results "Examination Results"
+* #drug-treatment "Drug Treatment"
 * #other "Other"
 
 
