@@ -128,8 +128,6 @@ Description: "Example of a reply to a hospital notification message."
 * entry[=].resource = 09437365-821a-4a94-b32b-8916db1d5f62
 * entry[+].fullUrl = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
 * entry[=].resource = 58c811a5-4082-44eb-9d66-ccbb112d4973
-* entry[+].fullUrl = "Practitioner/ad055a3d-16b6-41f9-891a-7dd73eecaf03"
-* entry[=].resource = ad055a3d-16b6-41f9-891a-7dd73eecaf03
 * entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
 * entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
