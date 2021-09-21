@@ -51,7 +51,7 @@ Description: "Message header for an ok message"
 * source.endpoint = "http://medcomfhir.dk/unknown"
 * response.identifier = "382fb8a3-6725-41e2-a615-2b1cfcfe9931"
 * response.code = $AcknowledgementCode#fatal-error
-* response.details = Reference(4ecb2a8e-3a68-4083-910e-811296affd43)
+* response.details = Reference(e87bc9d4-f876-4b6f-8585-40b26dc1e369)
 
 Alias: $ServerityCode = http://hl7.org/fhir/issue-severity
 Alias: $CodeCode = http://hl7.org/fhir/issue-type

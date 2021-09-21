@@ -35,7 +35,7 @@ Description: "Example of a fatal-error Acknowledgement message."
 * entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
-* entry[+].fullUrl = "MedComMessagingAcknowledgementHeader/4ecb2a8e-3a68-4083-910e-811296affd43"
+* entry[+].fullUrl = "OperationOutcome/4ecb2a8e-3a68-4083-910e-811296affd43"
 * entry[=].resource = 4ecb2a8e-3a68-4083-910e-811296affd43
 
 Instance: eada5e7a-a7ef-43b1-bfd6-024d5e64294c
@@ -50,5 +50,5 @@ Description: "Example of a ok Acknowledgement message."
 * entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
-* entry[+].fullUrl = "MedComMessagingAcknowledgementHeader/4ecb2a8e-3a68-4083-910e-811296affd43"
+* entry[+].fullUrl = "OperationOutcome/e87bc9d4-f876-4b6f-8585-40b26dc1e369"
 * entry[=].resource = e87bc9d4-f876-4b6f-8585-40b26dc1e369
