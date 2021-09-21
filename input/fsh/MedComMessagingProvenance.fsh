@@ -263,3 +263,17 @@ Usage: #inline
 * activity = $ActivityCode#discharge-inpatient-home
 * agent.who = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 
+
+// Acknowledgement example
+
+Instance: 21ec3323-3e3b-43d9-8a53-e1155ef29f99
+InstanceOf: MedComMessagingProvenance
+Title: "Provenance information for a medcom acknowledgement message. Valid only if used in a bundle (message) "
+Description: "Provenance information for a medcom medcom acknowledgementmessage. Valid only if used in a bundle (message)."
+* target = Reference(6b027613-c442-406d-bc53-3d913f73e0a8)
+* occurredDateTime = 2021-09-21T07:15:43Z
+* recorded = 2021-09-21T07:15:43Z
+* activity = $ActivityCode#reply-message
+* agent.who = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* entity.role = #derivation
+* entity.what = Reference(51b27813-8aa8-4fa1-846b-aeabf5afb7d4)
