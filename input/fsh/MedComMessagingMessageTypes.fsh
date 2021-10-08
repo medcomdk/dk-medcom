@@ -5,6 +5,7 @@ Description: "Message events for MedCom messages"
 * #empty-message "Message with no content"
 * #care-communication-message "Care Communication Message"
 * #hospital-notification-message "Hospital Notification Message"
+* #acknowledgment-message "Acknowledgment Message"
 
 
 ValueSet: MedComMessagingMessageTypes
