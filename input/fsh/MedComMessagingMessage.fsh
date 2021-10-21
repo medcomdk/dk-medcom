@@ -2,6 +2,7 @@ Profile: MedComMessagingMessage
 Parent: Bundle
 Id: medcom-messaging-message
 Description: "Base resource for all MedCom messages."
+* id MS
 * type MS
 * type = #message
 * type ^short = "Always message"

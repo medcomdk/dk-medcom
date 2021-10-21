@@ -5,6 +5,7 @@ Profile: MedComMessagingMessageHeader
 Parent: MessageHeader
 Id: medcom-messaging-messageHeader
 Description: "Message Header for MedCom message bundles"
+* id MS
 * event[x] MS
 * event[x] only Coding
 * eventCoding 1..
