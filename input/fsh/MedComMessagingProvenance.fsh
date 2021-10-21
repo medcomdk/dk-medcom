@@ -9,8 +9,11 @@ Description: "Provenance information about the messages preceeding the current m
 * recorded MS
 * activity 1.. MS
 * activity ^definition = "Activity that occurred and triggered the current or a previous message"
+* activity.coding 1.. MS
 * activity.coding.system 1.. MS
 * activity.coding.system = "http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes"
+* activity.coding.code 1.. MS
+* activity.coding.code ^definition = "The activity defined by the system"
 * agent 1.. MS
 * agent.who 1.. MS
 * agent.who only Reference(MedComMessagingOrganization)
