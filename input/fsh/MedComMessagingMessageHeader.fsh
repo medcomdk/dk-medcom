@@ -27,6 +27,7 @@ Description: "Message Header for MedCom message bundles"
 * destination[cc].endpoint MS
 * destination[cc] ^definition = "Shall contain carbon copy recipients of the message"
 * sender 1.. MS
+* sender ^type.aggregation = #bundled
 * sender only Reference(MedComMessagingOrganization)
 * source MS
 * source.endpoint MS
