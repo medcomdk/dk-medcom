@@ -3,6 +3,7 @@ Parent: Provenance
 Id: medcom-messaging-provenance
 Description: "Provenance information about the messages preceeding the current message"
 * target 1..1 MS
+* target only Reference(MedComMessagingMessageHeader)
 * occurred[x] 1..
 * occurredDateTime 1.. MS
 * occurredDateTime ^short = "Date and Time the message was send"
