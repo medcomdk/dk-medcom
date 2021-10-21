@@ -62,7 +62,7 @@ The following diagram depicts the structure of the hospital notification mesage.
 The hospital notification message follows the general message structure described above, except that the carbon-copy destination is not allowed. The following sections describe the overall purpose of each profiled resource.
 
 #### MedComHospitalNotificationMessage
-The hospital notification message constrains the messaging message further to use the hospital notification messsage header and to require excactly one patient resource in the message. Furthermore, it constrains the provenance activity to contain only activities from the MedComHospitalNotificationMessageActivities value set, which contains activities such as admit, start-leave, end-leave, discharge, and other events triggering the message.
+The hospital notification message constrains the messaging message further to use the hospital notification message header and to require exactly one patient resource in the message. Furthermore, it constrains the provenance activity to contain only activities from the MedComHospitalNotificationMessageActivities value set, which contains activities such as admit, start-leave, end-leave, discharge, and other events triggering the message.
 
 All referenced resources within the message are contained in the entry list.
 
