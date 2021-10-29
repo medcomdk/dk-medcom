@@ -89,6 +89,7 @@ The care communication message is a message sent between danish healthcare organ
 The following diagram depicts the structure of the care communication message.
 
 <img alt="Care Communication" src="./carecommunication/CareCommunication.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
+<img alt="Test" src="./carecommunication/CareCommunication.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
 
 The care communication message follows the general message structure described above. The following sections describe the overall purpose of each profiled resource.
 

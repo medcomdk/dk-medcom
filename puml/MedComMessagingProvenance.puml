@@ -3,11 +3,11 @@
 hide empty members
 
 class "MedComMessagingProvenance" as provenance
-class "MedComMessagingOrganization" as serviceProvider
-class "MedComMessageHeader" as target
-class "Object" as what
+class "MedComMessagingOrganization" as who <<MedComCoreOrganization>>
+class "MedComMessagingMessageHeader" as target
+class "Resource" as what
 
-provenance -- serviceProvider : "service provider"
+provenance -- who : "who"
 provenance -- target : "target"
 provenance -- what : "what"
 
