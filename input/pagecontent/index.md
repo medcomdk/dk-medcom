@@ -35,7 +35,7 @@ The top level message bundle, which constrains the bundle resource to be a messa
 The top level message header, which constrains the message header resource to have at least one sender and split the destination list into one primary destination organization and optionally a list of carbon-copy destination organizations. The message header uses a valueset of all message type allowed.
 
 #### MedComMessagingOrganization
-Organization resource used for sender and destination information in the messages. The resource contrains the organization resource to contain a SOR identifier as well as an EAN number for addressing purposes.
+Organization resource used for sender and destination information in the messages. The resource constrains the organization resource to contain a SOR identifier as well as an EAN number for addressing purposes.
 
 #### MedComMessagingProvenance
 The provenance resource describes the activity an who has triggered the message. The provenance list describes the history of message activities if the message is releated to a previously exchanged message. Provenance information about previous activities refer to the previous message through its message header id.
