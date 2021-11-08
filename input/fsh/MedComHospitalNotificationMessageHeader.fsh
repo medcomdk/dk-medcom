@@ -94,10 +94,4 @@ Description: "Message header for a hospital notification discharge message when 
 * focus = Reference(8405ba2d-467a-4e92-9acc-9dc2a629760fWhenDeceased)
 
 
-// Service provider instance
-Instance: bf839e87-4e44-4977-b38e-92b5a6f187b5
-InstanceOf: MedComMessagingOrganization
-Title: "Service provider organization with a SOR and an EAN identifier."
-Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[sorIdentifier].value = "654321098765432"
-* identifier[eanIdentifier].value = "5790000121530"
+
