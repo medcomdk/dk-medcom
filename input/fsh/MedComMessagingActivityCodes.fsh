@@ -28,3 +28,9 @@ Description: "Activity codes for MedCom messages"
 * #deceased "Deceased"
 * #revise-deceased "Update of Deceased"
 * #cancel-deceased "Cancellation of Deceased"
+
+ValueSet: MedComMessagingActivityCodesValueset
+Id: medcom-messaging-activityCodes-ValueSet
+Title: "MedComMessagingActivityCodes"
+Description: "ValueSet containing activity codes for MedCom messages"
+* include codes from system MedComMessagingActivityCodes
