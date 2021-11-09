@@ -9,7 +9,8 @@ Description: "Patient/citizen resource to use as subject in MedCom communication
 * name[official].family MS
 * name[official].family ^definition = "Shall always be present, danish \"efternavn\" "
 * telecom MS
-* telecom ^definition = "Shall contain all known, relevant telecom information of the patient"
+* telecom ^definition = "Shall contain value, system and use if these information are known."
+* telecom only MedComMessagingContactPoint
 * deceased[x] MS
 * deceased[x] ^definition = "Shall contain information if the patient is deceased and it is relevant in the given context"
 * address MS
@@ -37,6 +38,7 @@ Description: "Patient with a managing organization. Valid only if used in a bund
 * name[official].family = "Flame"
 * telecom.system = #phone
 * telecom.value = "12345678"
+* telcom.use = #mobile
 * address.line = "Flammesvinget 1"
 * address.city = "Aarhus"
 * address.postalCode = "8000 C"
@@ -53,6 +55,7 @@ Description: "Patient deceased with a managing organization. Valid only if used 
 * name[official].family = "Clausen"
 * telecom.system = #phone
 * telecom.value = "24533421"
+* telecom.use = #home
 * address.line = "Forskerparken 10"
 * address.city = "Odense M"
 * address.postalCode = "5230"
@@ -70,6 +73,7 @@ Description: "Patient not deceased with a managing organization. Valid only if u
 * name[official].family = "Clausen"
 * telecom.system = #phone
 * telecom.value = "24533421"
+* telecom.use = #work
 * address.line = "Forskerparken 10"
 * address.city = "Odense M"
 * address.postalCode = "5230"
