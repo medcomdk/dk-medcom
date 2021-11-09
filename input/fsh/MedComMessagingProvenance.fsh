@@ -9,6 +9,7 @@ Description: "Provenance information about the messages preceeding the current m
 * occurredDateTime ^short = "Date and Time the message was send"
 * recorded MS
 * activity 1.. MS
+* activity from MedComMessagingActivityCodesValueset
 * activity ^definition = "Activity that occurred and triggered the current or a previous message"
 * activity.coding 1.. MS
 * activity.coding.system 1.. MS
@@ -38,8 +39,8 @@ Alias: $ActivityCode = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-mess
 
 Instance: 4c284936-5454-4116-95fc-3c8eeeed2400
 InstanceOf: MedComMessagingProvenance
-Title: "Provenance information for a medcom message. Valid only if used in a bundle (message)"
-Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
+Title: "Provenance information for a CareCommunication message. Valid only if used in a bundle (message) - new message"
+Description: "Provenance information for a CareCommunication message. Valid only if used in a bundle (message) - new-message"
 * target = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 * occurredDateTime = 2020-09-28T12:34:56Z
 * recorded = 2020-09-28T12:34:56Z
@@ -61,8 +62,8 @@ Usage: #inline
 
 Instance: 30c0f779-783f-46b2-b38f-faebd2bedb3f
 InstanceOf: MedComMessagingProvenance
-Title: "Provenance information for a medcom message. Valid only if used in a bundle (message)"
-Description: "Provenance information for a medcom message. Valid only if used in a bundle (message)."
+Title: "Provenance information for a CareCommunication message. Valid only if used in a bundle (message) - reply message"
+Description: "Provenance information for a CareCommunication message. Valid only if used in a bundle (message) - reply message"
 Usage: #inline
 * target = Reference(b0d424f8-33a9-4cc2-a528-a6cc1c58727b)
 * occurredDateTime = 2020-09-30T10:22:11Z
@@ -115,8 +116,8 @@ Usage: #inline
 
 Instance: 5c1cd361-9691-4d49-bac8-034313907f16
 InstanceOf: MedComMessagingProvenance
-Title: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message) -admit"
-Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
+Title: "Provenance information for a medcom HospitalNotification message. Valid only if used in a bundle (message) - admit"
+Description: "Provenance information for a medcom HospitalNotification message. Valid only if used in a bundle (message)."
 Usage: #inline
 * target = Reference(aac67161-d0de-4933-a78c-060beafb4814)
 * occurredDateTime = 2020-10-15T13:44:14Z
@@ -144,8 +145,8 @@ Usage: #inline
 
 Instance: d7cf3888-6f42-4e4d-929c-d2475d24fba0
 InstanceOf: MedComMessagingProvenance
-Title: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message) -admit"
-Description: "Provenance information for a medcom Hospital Notification message. Valid only if used in a bundle (message)."
+Title: "Provenance information for a medcom HospitalNotification message. Valid only if used in a bundle (message) - admit"
+Description: "Provenance information for a medcom HospitalNotification message. Valid only if used in a bundle (message)."
 * target = Reference(51b27813-8aa8-4fa1-846b-aeabf5afb7d4)
 * occurredDateTime = 2020-10-15T13:44:14Z
 * recorded = 2020-10-15T13:45:15Z
@@ -276,6 +277,32 @@ Description: "Provenance information for a medcom medcom acknowledgementmessage.
 * occurredDateTime = 2021-09-21T07:15:43Z
 * recorded = 2021-09-21T07:15:43Z
 * activity = $ActivityCode#reply-message
+* agent.who = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* entity.role = #derivation
+* entity.what = Reference(51b27813-8aa8-4fa1-846b-aeabf5afb7d4)
+
+
+// TEST - Start leave example
+
+Instance: ccea231f-51c9-4eaa-a2f8-TESTadmit
+InstanceOf: MedComMessagingProvenance
+Title: "Provenance information for a medcom Hospital Notification message. TEST admit pt"
+Description: "Provenance information for a medcom Hospital Notification message.TEST admit pt"
+Usage: #inline
+* target = Reference(b563a2b2-bf92-4b13-bbd2-0a021a95bded)
+* occurredDateTime = 2020-10-20T10:21:56Z
+* recorded = 2020-10-20T10:21:56Z
+* activity = $ActivityCode#admit-inpatient
+* agent.who = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+
+Instance: dc421d0a-cded-470f-9a53-TESTstartleave
+InstanceOf: MedComMessagingProvenance
+Title: "Provenance information for a medcom Hospital Notification message.TEST - start leave"
+Description: "Provenance information for a medcom Hospital Notification message - start leave"
+* target = Reference(b563a2b2-bf92-4b13-bbd2-0a021a95bded)
+* occurredDateTime = 2020-10-20T10:21:56Z
+* recorded = 2020-10-20T10:21:56Z
+* activity = $ActivityCode#start-leave-inpatient
 * agent.who = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * entity.role = #derivation
 * entity.what = Reference(51b27813-8aa8-4fa1-846b-aeabf5afb7d4)
