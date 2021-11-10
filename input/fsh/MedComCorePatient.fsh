@@ -38,7 +38,7 @@ Description: "Patient with a managing organization. Valid only if used in a bund
 * name[official].family = "Flame"
 * telecom.system = #phone
 * telecom.value = "12345678"
-* telcom.use = #mobile
+* telecom.use = #mobile
 * address.line = "Flammesvinget 1"
 * address.city = "Aarhus"
 * address.postalCode = "8000 C"
