@@ -46,14 +46,14 @@ This section describes how a HospitalNotificationMessage flows.
 
 Please refer to the following examples:  
 
-* [Simplified example of a MedComHospitalNotificationMessage for admit and finished stay ](./hospitalnotification/HospitalNotificationAdmitFinishedExample.png)
-* [Simplified example of a MedComHospitalNotificationMessage for admit, onleave, end onleave and finished stay ](./hospitalnotification/HospitalNotificationAdmitOnleaveFinishedExample.png)
+* [Simplified example of a MedComHospitalNotificationMessage for admit and finished stay ](./hospitalnotification/HNAdmitFinish.png)
+* [Simplified example of a MedComHospitalNotificationMessage for admit, onleave, end onleave and finished stay ](./hospitalnotification/HNAdmitOnleaveEndFinish.png)
 
 #### Message entered in error    
 This section describes how message entered in error shall be handled.
 
 Please refer to the following example:  
-* [Simplified example of a MedComHospitalNotificationMessage entered in error ](./hospitalnotification/HospitalNotificationEnteredInErrorExample.png)
+* [Simplified example of a MedComHospitalNotificationMessage entered in error ](./hospitalnotification/HNAdmitEnteredInError.png)
 
 ### Data references between MedCom OIOXML advis standard and the MedCom FHIR HospitalNotification message.
 This section describes how to map between MedCom OIOXML advis standard and the MedCom FHIR HospitalNotification message
