@@ -13,6 +13,7 @@ Description: "Patient/citizen resource to use as subject in MedCom communication
 * telecom only MedComMessagingContactPoint
 * deceased[x] MS
 * deceased[x] ^definition = "Shall contain information if the patient is deceased and it is relevant in the given context"
+* deceased[x] ^short = "Shall only be sent if the patient is deceased or the status change from deceased to non-deceased"
 * address MS
 * address ^definition = "Shall contain all known, relevant addresses of the patient"
 * address.line MS
