@@ -10,10 +10,10 @@ The change of state is dispicted in both the MedComHospitalNotificationEncounter
 Please refer to following maping documents for more details.  
 
 English: 
-[Map between HospitalNotification codes and FHIR elements](./hospitalnotification/pdf/Overview_advis_codes_HL7_FHIR.pdf)
+* [Map between HospitalNotification codes and FHIR elements](./hospitalnotification/pdf/Overview_HospitalNotification_codes_HL7_FHIR_1.0.3.pdf)
 
 Danish: 
-[Mapning mellem advis koder og FHIR elementer](.hospitalnotification\pdf\Oversigt_adviskoder_HL7_FHIR.pdf)
+* [Mapning mellem advis koder og FHIR elementer](.hospitalnotification\pdf\Oversigt_adviskoder_HL7_FHIR_1.0.3.pdf)
 
 
 For description regarding the transportation layer please refer to this guide:  
