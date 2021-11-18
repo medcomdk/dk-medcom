@@ -30,7 +30,7 @@ InstanceOf: MedComMessagingAcknowledgementHeader
 Title: "Message header for a fatal-error message"
 Description: "Message header for a fatal-error message"
 * destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
-* eventCoding = $MessageEvents#empty-message
+* eventCoding = $MessageEvents#acknowledgment-message
 * destination.endpoint = "http://medcomfhir.dk/unknown"
 * destination.receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
 * sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
@@ -44,7 +44,7 @@ InstanceOf: MedComMessagingAcknowledgementHeader
 Title: "Message header for an ok message"
 Description: "Message header for an ok message"
 * destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
-* eventCoding = $MessageEvents#empty-message
+* eventCoding = $MessageEvents#acknowledgment-message
 * destination.endpoint = "http://medcomfhir.dk/unknown"
 * destination.receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
 * sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
@@ -58,7 +58,7 @@ InstanceOf: MedComMessagingAcknowledgementHeader
 Title: "Message header for a fatal-error message with provenance"
 Description: "Message header for a fatal-error message with provenance"
 * destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
-* eventCoding = $MessageEvents#empty-message
+* eventCoding = $MessageEvents#acknowledgment-message
 * destination.endpoint = "http://medcomfhir.dk/unknown"
 * destination.receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
 * sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
