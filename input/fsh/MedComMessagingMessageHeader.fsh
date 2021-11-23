@@ -5,6 +5,7 @@ Profile: MedComMessagingMessageHeader
 Parent: MessageHeader
 Id: medcom-messaging-messageHeader
 Description: "Message Header for MedCom message bundles"
+* id MS
 * event[x] MS
 * event[x] only Coding
 * eventCoding 1..
@@ -27,11 +28,12 @@ Description: "Message Header for MedCom message bundles"
 * destination[cc].endpoint MS
 * destination[cc] ^definition = "Shall contain carbon copy recipients of the message"
 * sender 1.. MS
+* sender ^type.aggregation = #bundled
 * sender only Reference(MedComMessagingOrganization)
 * source MS
 * source.endpoint MS
 
-* event[x] ^short = "The MedComMessagingMessageHeader shall contain the event value care-communication-message"
+* event[x] ^short = "The MedComMessagingMessageHeader shall contain a value from MedComMessagingMessageTypes"
 
 Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 InstanceOf: MedComMessagingDestinationUseExtension

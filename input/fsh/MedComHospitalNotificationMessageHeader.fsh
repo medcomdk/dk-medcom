@@ -41,6 +41,7 @@ Description: "Message header for a hospital notification start leave message. Va
 * sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcomfhir.dk/unknown"
 * focus = Reference(556e9c54-23d2-43a4-816e-951d2a6e3281)
+* extension[reportOfAdmissionFlag].valueBoolean = false
 
 Instance: e47254da-f170-46f0-b624-4778a9c92b1f
 InstanceOf: MedComHospitalNotificationMessageHeader
@@ -53,6 +54,7 @@ Description: "Message header for a hospital notification start leave message. Va
 * sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcomfhir.dk/unknown"
 * focus = Reference(7790f964-88d3-4652-bbc8-81d2f3d035f8)
+* extension[reportOfAdmissionFlag].valueBoolean = false
 
 Instance: 01affa53-c157-4080-abb0-8e681524f969
 InstanceOf: MedComHospitalNotificationMessageHeader
@@ -65,6 +67,7 @@ Description: "Message header for a hospital notification discharge message. Vali
 * sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcomfhir.dk/unknown"
 * focus = Reference(8405ba2d-467a-4e92-9acc-9dc2a629760f)
+* extension[reportOfAdmissionFlag].valueBoolean = false
 
 // admit message - for patient that will be discharged as deceased
 Instance: 29b4818e-02de-4cc4-b418-d20cbc7b5404
@@ -78,6 +81,7 @@ Description: "Message header for a hospital notification admit message when pati
 * sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcom.dk/unknown"
 * focus = Reference(d6145390-62ad-4cd0-8fe0-9679a34c44a9)
+* extension[reportOfAdmissionFlag].valueBoolean = false
 
 
 // Discharge message - patient discharged as deceased
@@ -92,12 +96,7 @@ Description: "Message header for a hospital notification discharge message when 
 * sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcom.dk/unknown"
 * focus = Reference(8405ba2d-467a-4e92-9acc-9dc2a629760fWhenDeceased)
+* extension[reportOfAdmissionFlag].valueBoolean = false
 
 
-// Service provider instance
-Instance: bf839e87-4e44-4977-b38e-92b5a6f187b5
-InstanceOf: MedComMessagingOrganization
-Title: "Service provider organization with a SOR and an EAN identifier."
-Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[sorIdentifier].value = "654321098765432"
-* identifier[eanIdentifier].value = "5790000121530"
+

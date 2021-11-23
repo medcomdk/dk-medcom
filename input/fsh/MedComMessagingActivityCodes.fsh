@@ -25,6 +25,10 @@ Description: "Activity codes for MedCom messages"
 * #revise-discharge-inpatient-home "Update of End hospital Stay"
 * #cancel-discharge-emergency-home "Cancellation of End hospital Stay"
 * #cancel-discharge-inpatient-home "Cancellation of End hospital Stay"
-* #deceased "Deceased"
-* #revise-deceased "Update of Deceased"
-* #cancel-deceased "Cancellation of Deceased"
+
+
+ValueSet: MedComMessagingActivityCodesValueset
+Id: medcom-messaging-activityCodes-ValueSet
+Title: "MedComMessagingActivityCodes"
+Description: "ValueSet containing activity codes for MedCom messages"
+* include codes from system MedComMessagingActivityCodes

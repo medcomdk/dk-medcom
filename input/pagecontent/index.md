@@ -44,7 +44,9 @@ The top level message header, which constrains the message header resource to ha
 
 #### MedComMessagingOrganization
 
+
 Organization resource used for sender and destination information in the messages. The resource contrains the organization resource to contain a SOR identifier as well as an EAN number for addressing purposes.
+
 
 #### MedComMessagingProvenance
 
@@ -78,7 +80,9 @@ The hospital notification message follows the general message structure describe
 
 #### MedComHospitalNotificationMessage
 
+
 The hospital notification message constrains the messaging message further to use the hospital notification messsage header and to require excactly one patient resource in the message. Furthermore, it constrains the provenance activity to contain only activities from the MedComHospitalNotificationMessageActivities value set, which contains activities such as admit, start-leave, end-leave, discharge, and other events triggering the message.
+
 
 All referenced resources within the message are contained in the entry list.
 
@@ -108,7 +112,9 @@ The care communication message is a message sent between danish healthcare organ
 
 The following diagram depicts the structure of the care communication message.
 
-`<img alt="Care Communication" src="./carecommunication/CareCommunication.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />`
+
+<img alt="Care Communication" src="./carecommunication/CareCommunication.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
+
 
 The care communication message follows the general message structure described above. The following sections describe the overall purpose of each profiled resource.
 

@@ -3,15 +3,18 @@ Parent: http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient
 Id: medcom-core-patient
 Description: "Patient/citizen resource to use as subject in MedCom communication"
 * identifier[cpr] ^short = "Unique identification number for all citizens in Denmark"
+* identifier[cpr] MS
 * name[official] 1.. MS
 * name[official].given MS
 * name[official].given ^definition = "Shall be present if the official given name of the patient is known, danish \"fornavn\" "
 * name[official].family MS
 * name[official].family ^definition = "Shall always be present, danish \"efternavn\" "
 * telecom MS
-* telecom ^definition = "Shall contain all known, relevant telecom information of the patient"
+* telecom ^definition = "Shall contain value, system and use if these information are known."
+* telecom only MedComMessagingContactPoint
 * deceased[x] MS
 * deceased[x] ^definition = "Shall contain information if the patient is deceased and it is relevant in the given context"
+* deceased[x] ^short = "Shall only be sent if the patient is deceased or the status change from deceased to non-deceased"
 * address MS
 * address ^definition = "Shall contain all known, relevant addresses of the patient"
 * address.line MS
@@ -22,6 +25,8 @@ Description: "Patient/citizen resource to use as subject in MedCom communication
 * address.postalCode ^definition = "Shall be present if the postal code is known"
 * managingOrganization only Reference(MedComCoreOrganization)
 * managingOrganization ^type.aggregation = #bundled
+* managingOrganization ^definition = "Organization that is the custodian of the patient record. This can e.g. be the sender of a message or responsable for the patients treatment. One of these organizations will always be included in the bundle, why this element is not mandatory to include."
+
 
 
 Instance: 733cef33-3626-422b-955d-d506aaa65fe1
@@ -35,6 +40,7 @@ Description: "Patient with a managing organization. Valid only if used in a bund
 * name[official].family = "Flame"
 * telecom.system = #phone
 * telecom.value = "12345678"
+* telecom.use = #mobile
 * address.line = "Flammesvinget 1"
 * address.city = "Aarhus"
 * address.postalCode = "8000 C"
@@ -51,6 +57,7 @@ Description: "Patient deceased with a managing organization. Valid only if used 
 * name[official].family = "Clausen"
 * telecom.system = #phone
 * telecom.value = "24533421"
+* telecom.use = #home
 * address.line = "Forskerparken 10"
 * address.city = "Odense M"
 * address.postalCode = "5230"
@@ -68,6 +75,7 @@ Description: "Patient not deceased with a managing organization. Valid only if u
 * name[official].family = "Clausen"
 * telecom.system = #phone
 * telecom.value = "24533421"
+* telecom.use = #work
 * address.line = "Forskerparken 10"
 * address.city = "Odense M"
 * address.postalCode = "5230"

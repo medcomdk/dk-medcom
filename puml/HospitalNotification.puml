@@ -10,11 +10,11 @@ class "MedComHospitalNotificationEncounter" as encounter <<MedComCoreEncounter>>
 class "MedComMessagingProvenance" as provenance
 class "MedComCoreOrganization" as serviceProvider
 
-message -- messageHeader
-messageHeader -- encounter
-encounter -- patient
-encounter -- serviceProvider : "service provider"
-message -- provenance
+message -- messageHeader : "entry"
+messageHeader -- encounter : "focus"
+encounter -- patient : "subject"
+encounter -- serviceProvider : "serviceProvider"
+message -- provenance : "entry"
 
 messageHeader -- organization : "sender"
 messageHeader -- organization : "receiver"
