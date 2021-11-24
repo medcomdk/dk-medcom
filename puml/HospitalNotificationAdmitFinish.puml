@@ -45,6 +45,7 @@ package "Message 1: Admit inpatient" as admit <<Frame>>{
     class "Provenance 1" as admitPRO{
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "admit-inpatient"
+        Provenance.agent.who = "Regional Organization"
         Provenance.entity.role = "source"
         Provenance.entity.what = NA
         ...
@@ -92,6 +93,7 @@ package "Message 2: Finished inpatient" as finished <<Frame>> {
     class "Provenance 1" as admitfinishedPRO{
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "admit-inpatient"
+        Provenance.agent.who = "Regional Organization"
         Provenance.entity.role = "source"
         Provenance.entity.what = NA
         ...
@@ -99,6 +101,7 @@ package "Message 2: Finished inpatient" as finished <<Frame>> {
     class "Provenance 2" as finishedPRO{
         Provenance.target = MessageHeader/MHID2
         Provenance.activity = "discharge-imp-home"
+        Provenance.agent.who = "Regional Organization"
         Provenance.entity.role = "derivation"
         Provenance.entity.what = MessageHeader/MHID1
         ...
