@@ -7,7 +7,7 @@ Description: "Base resource for all MedCom Acknowledgement messages."
 Invariant: medcom-messaging-3
 Description: "The message header shall conform to medcom-messaging-acknowledgementHeader profile"
 Severity: #error
-Expression: "entry.first().resource.exists() and entry.first().resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader')"
+Expression: "entry.ofType(MessageHeader).all(resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader'))"
 
 
 Instance: 04ed814c-ccf6-47aa-be73-ae38df23c66a

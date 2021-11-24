@@ -22,6 +22,9 @@ Description: "Statistical Codes for MedCom VANS messages"
 * #MCM:FDIS91#assessment "Assessment"
 * #MCM:FDIS91#examination-results "Examination Results"
 * #MCM:FDIS91#other "Other"
+* #MCM:FCTL#ok "The message was accepted and processed without error"
+* #MCM:FCTL#transient-error	"Some internal unexpected error occurred - wait and try again"
+* #MCM:FCTL#fatal-error "The message was rejected because of a problem with the content"
 
 ValueSet: MedComMessagingVansStatisticalCodeCombinations
 Id: medcom-messaging-vansStatisticalCodeCombinations

@@ -3,9 +3,9 @@
 hide empty members
 
 class "MedComCorePatient" as patient
-class "MedComCoreOrganization" as serviceProvider
+class "MedComCoreOrganization" as managingOrganization
 
-patient -- serviceProvider : "service provider"
+patient -- managingOrganization : "managing organization"
 
 
 @enduml
