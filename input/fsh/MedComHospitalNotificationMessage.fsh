@@ -6,6 +6,8 @@ Description: "A message for a Hospital Notification. The message is triggered as
 * obeys medcom-hospitalNotification-1
 * obeys medcom-hospitalNotification-2
 * obeys medcom-hospitalNotification-3
+* id ^short = "A unique identifier for a bundle. The element must be updated with a new value each time a new message is sent."
+* timestamp ^short = "Holds information about when a bundle is created."
 
 Invariant: medcom-hospitalNotification-1
 Description: "The message header shall conform to medcom-hospitalNotification-messageHeader profile"
