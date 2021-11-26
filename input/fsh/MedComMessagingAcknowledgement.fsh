@@ -3,11 +3,17 @@ Parent: MedComMessagingMessage
 Id: medcom-messaging-acknowledgement
 Description: "Base resource for all MedCom Acknowledgement messages."
 * obeys medcom-messaging-3
+* obeys medcom-messaging-4
 
 Invariant: medcom-messaging-3
 Description: "The message header shall conform to medcom-messaging-acknowledgementHeader profile"
 Severity: #error
 Expression: "entry.ofType(MessageHeader).all(resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader'))"
+
+Invariant: medcom-messaging-4
+Description: "The Acknowledgement entry shall contain at least one provenance resource"
+Severity: #error
+Expression: "entry.resource.ofType(Provenance).count() >0"
 
 
 Instance: 04ed814c-ccf6-47aa-be73-ae38df23c66a
