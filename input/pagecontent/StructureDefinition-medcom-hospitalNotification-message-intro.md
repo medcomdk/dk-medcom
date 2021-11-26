@@ -61,6 +61,6 @@ This section describes how to map between MedCom OIOXML advis standard and the M
 Please notice, that not all elements are mentioned in the document, as not all information in relevant to map between the two standards. For a full overview of the requirements in the HospitalNotification message, view the included profiles, as showns on the figure in the top of the page.
 Please refer to the following document:  
 English (only):
-* [OIOXML advis -> HospitalNotification ](./hospitalnotification/oioxmlReferencesHospitalNotificaion.png)
+* [OIOXML advis -> HospitalNotification ](./hospitalnotification/pdf/Map_between_OIOXML_and_FHIR_HospitalNotificationMessages-21-11-25.pdf)
 
 
