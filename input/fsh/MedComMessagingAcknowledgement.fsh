@@ -11,7 +11,7 @@ Severity: #error
 Expression: "entry.ofType(MessageHeader).all(resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader'))"
 
 Invariant: medcom-messaging-4
-Description: "The Acknowledgement entry shall contain at least one provenance resource"
+Description: "The Acknowledgement entry shall contain at least one Provenance resource"
 Severity: #error
 Expression: "entry.resource.ofType(Provenance).count() >0"
 
