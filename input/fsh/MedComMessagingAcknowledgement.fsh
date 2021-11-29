@@ -3,11 +3,17 @@ Parent: MedComMessagingMessage
 Id: medcom-messaging-acknowledgement
 Description: "Base resource for all MedCom Acknowledgement messages."
 * obeys medcom-messaging-3
+* obeys medcom-messaging-4
 
 Invariant: medcom-messaging-3
 Description: "The message header shall conform to medcom-messaging-acknowledgementHeader profile"
 Severity: #error
 Expression: "entry.ofType(MessageHeader).all(resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-acknowledgementHeader'))"
+
+Invariant: medcom-messaging-4
+Description: "The Acknowledgement entry shall contain at least one Provenance resource"
+Severity: #error
+Expression: "entry.resource.ofType(Provenance).count() >0"
 
 
 Instance: 04ed814c-ccf6-47aa-be73-ae38df23c66a
@@ -64,3 +70,24 @@ Description: "Example of a ok Acknowledgement message- CareCommunication"
 * entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
 * entry[+].fullUrl = "OperationOutcome/e87bc9d4-f876-4b6f-8585-40b26dc1e369"
 * entry[=].resource = e87bc9d4-f876-4b6f-8585-40b26dc1e369
+
+Instance: 840655c6-2812-4c14-8f03-2c59752da9eb
+InstanceOf: MedComMessagingAcknowledgement
+Title: "fatal-error Acknowledgement message with Provenance"
+Description: "Example of a fatal-error Acknowledgement message with provenance refferencing -MedCom Hospital Notification Message Admit Example-"
+* type = $BundleType#message
+* timestamp = 2021-09-21T07:15:56Z
+* entry[+].fullUrl = "MessageHeader/6b027613-c442-406d-bc53-3d913f73e0a8"
+* entry[=].resource = 6b027613-c442-406d-bc53-3d913f73e0a8
+* entry[+].fullUrl = "Provenance/d7cf3888-6f42-4e4d-929c-d2475d24fba0"
+* entry[=].resource = d7cf3888-6f42-4e4d-929c-d2475d24fba0
+* entry[+].fullUrl = "Provenance/21ec3323-3e3b-43d9-8a53-e1155ef29f99"
+* entry[=].resource = 21ec3323-3e3b-43d9-8a53-e1155ef29f99
+* entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
+* entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
+* entry[+].fullUrl = "OperationOutcome/d0055484-2a56-4da2-81b8-a9d5087d865c"
+* entry[=].resource = d0055484-2a56-4da2-81b8-a9d5087d865c
+* entry[=].resource = e87bc9d4-f876-4b6f-8585-40b26dc1e369
+
