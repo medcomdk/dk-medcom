@@ -30,7 +30,7 @@ Danish:
 
 The general messaging model containS the basic messaging template, which all messages (including acknowledgement messages) will comply with. The following diagram depicts the structure of a message.
 
-`<img alt="Messaging Model" src="./MessagingModel.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />`
+<img alt="Messaging Model" src="./MessagingModel.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
 
 These profiles are prefixed "MedComMessaging". The general messaging model also include some core resources that are useful in profiling the actual messages. These are prefixed "MedComCore". The following sections describe the overall purpose of each profiled resource.
 
@@ -74,7 +74,7 @@ The hospital notification messages is a message sent to relevant healthcare orga
 
 The following diagram depicts the structure of the hospital notification mesage.
 
-`<img alt="Hospital Notification" src="./hospitalnotification/HospitalNotification.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />`
+<img alt="Hospital Notification" src="./hospitalnotification/HospitalNotification.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
 
 The hospital notification message follows the general message structure described above, except that the carbon-copy destination is not allowed. The following sections describe the overall purpose of each profiled resource.
 

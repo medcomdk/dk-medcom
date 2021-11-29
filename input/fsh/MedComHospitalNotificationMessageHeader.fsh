@@ -2,6 +2,7 @@ Profile: MedComHospitalNotificationMessageHeader
 Parent: MedComMessagingMessageHeader
 Id: medcom-hospitalNotification-messageHeader
 Description: "Message header for a hospital notification message."
+* id ^short = "A unique identifier for each message. This identifier should be globally unique."
 * eventCoding = $MessageEvents#hospital-notification-message
 * destination[cc] ..0
 * focus 1..1 MS
