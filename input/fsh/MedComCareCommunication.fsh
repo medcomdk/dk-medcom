@@ -64,7 +64,6 @@ Description:    "Care related communication between two or more parties in Danis
 * payload[attachment].contentAttachment.title 1.. MS
 * payload[attachment].contentAttachment.creation MS
 * payload[attachment].contentAttachment.creation ^definition = "Shall be present if the creation time of the attachment will be relevant to a recipient"
-
 * status ^short = "The MedComCareCommunication message status may be unknown. status is required because of basic FHIR profile requirement"
 * category ^short = "The MedComCareCommunication category (danish:Kategori) describes the content of the message."
 * priority ^short = "The MedComCareCommunication priority shall be present if the message priority is known to be ASAP"
@@ -77,8 +76,8 @@ Alias: $CategoryCodes = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-car
 // CareCommunication example
 Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a12
 InstanceOf: MedComCareCommunication
-Title: "Example of Care Communication Content"
-Description: "Content of care communication message. Valid only if used in a bundle (message)."
+Title: "Example of Care Communication Content - new message"
+Description: "Content of care communication message. Valid only if used in a bundle (message) - new message"
 * status = $EventStatus#unknown
 * category = $CategoryCodes#carecoordination
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
@@ -91,9 +90,8 @@ Description: "Content of care communication message. Valid only if used in a bun
 // CareCommunication reply example
 Instance: 75fd6a1b-6af4-4b5c-a170-f70e95aa1e7a
 InstanceOf: MedComCareCommunication
-Title: "Example of Care Communication Content"
-Description: "Content of care communication message. Valid only if used in a bundle (message)."
-Usage: #inline
+Title: "Example of Care Communication Content - reply message"
+Description: "Content of care communication message. Valid only if used in a bundle (message) - reply message"
 * status = $EventStatus#unknown
 * category = $CategoryCodes#carecoordination
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
@@ -106,12 +104,11 @@ Usage: #inline
 * payload[1].extension[date].valueDateTime = 2020-09-30
 * payload[1].extension[author].valueReference = Reference(ad055a3d-16b6-41f9-891a-7dd73eecaf03)
 
-// CareCommunication example
+// CareCommunication forward example
 Instance: 4c712bdc-1558-4125-a854-fa8b3a11f6ed
 InstanceOf: MedComCareCommunication
-Title: "Example of Care Communication Content"
-Description: "Content of care communication message. Valid only if used in a bundle (message)."
-Usage: #inline
+Title: "Example of Care Communication Content - forward message"
+Description: "Content of care communication message. Valid only if used in a bundle (message) - forward message"
 * status = $EventStatus#unknown
 * category = $CategoryCodes#carecoordination
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
@@ -138,6 +135,42 @@ Usage: #inline
 * payload[0].contentString = "The patient is easily confused. Speaking loudly and slow reduced this."
 * payload[0].extension[date].valueDateTime = 2020-01-01
 * payload[0].extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
+
+// CareCommunication with attachment example
+/* Instance: 487e2238-527b-11ec-bf63-0242ac130002
+InstanceOf: MedComCareCommunication
+Title: "Example of Care Communication Content - new message with attachment"
+Description: "Content of care communication message. Valid only if used in a bundle (message) - new message with attachment"
+Usage: #example
+* status = $EventStatus#unknown
+* category = $CategoryCodes#carecoordination
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
+* encounter = Reference(09437365-821a-4a94-b32b-8916db1d5f62)
+* sent = 2021-11-30T12:34:56Z
+* payload.contentString = "The burns are quite severe, see picture."
+* payload.extension[date].valueDateTime = 2021-11-30
+* payload.extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
+* payload.contentAttachment.contentType = $bcp13#application/pdf // the attachment is not included when generating the IG.
+* payload.contentAttachment.data = "UGljdHVyZSBvZiBhIGJ1cm4=" 
+* payload.extension[date].valueDateTime = 2021-11-29
+* payload.extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
+* payload.contentAttachment.title = "Picture of Patient's burn. Taken at arrival on 2021-11-29" */
+
+// CareCommunication regarding referal example
+Instance: 4ec35384-527b-11ec-bf63-0242ac130002
+InstanceOf: MedComCareCommunication
+Title: "Example of Care Communication Content - new message with priority"
+Description: "Content of care communication message. Valid only if used in a bundle (message) - new message  with priority"
+* status = $EventStatus#unknown
+* category = $CategoryCodes#regarding-referral
+* priority = $PriorityCode#asap
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
+* encounter = Reference(09437365-821a-4a94-b32b-8916db1d5f62)
+* sent = 2021-11-30T12:34:56Z
+* payload.contentString = "We have a question regarding the referal you sent and it is very urgent..."
+* payload.extension[date].valueDateTime = 2021-11-29
+* payload.extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
+
 
 
 // Practitioners
