@@ -65,7 +65,7 @@ Description:    "Care related communication between two or more parties in Danis
 * payload[attachment].contentAttachment.creation MS
 * payload[attachment].contentAttachment.creation ^definition = "Shall be present if the creation time of the attachment will be relevant to a recipient"
 
-* status ^short = "The MedComCareCommunication message status may be unknown. status is required because of basic FHIR profile requirement"
+* status ^short = "The MedComCareCommunication message status shall always unknown. status is required because of basic FHIR profile requirement"
 * category ^short = "The MedComCareCommunication category (danish:Kategori) describes the content of the message."
 * priority ^short = "The MedComCareCommunication priority shall be present if the message priority is known to be ASAP"
 * topic ^short = "The MedComCareCommunication topic (danish:emne) may be added as a supplement to the category"
