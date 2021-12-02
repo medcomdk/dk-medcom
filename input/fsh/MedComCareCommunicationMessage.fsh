@@ -28,8 +28,8 @@ Alias: $ActivityCode = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-mess
 
 Instance: 0dd5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c
 InstanceOf: MedComCareCommunicationMessage
-Title: "MedCom Care Communication Message Example"
-Description: "Example of a care communication message."
+Title: "MedCom CareCommunication - Message Example"
+Description: "Example of a CareCommunication message."
 * type = $BundleType#message
 * timestamp = 2020-09-28T12:34:56Z
 * entry[+].fullUrl = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
@@ -40,8 +40,8 @@ Description: "Example of a care communication message."
 * entry[=].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
 * entry[+].fullUrl = "Communication/94e65db8-2f0c-4a2c-a7c9-06a160d59a12"
 * entry[=].resource = 94e65db8-2f0c-4a2c-a7c9-06a160d59a12
-* entry[+].fullUrl = "Encounter/09437365-821a-4a94-b32b-8916db1d5f62"
-* entry[=].resource = 09437365-821a-4a94-b32b-8916db1d5f62
+* entry[+].fullUrl = "Encounter/6220b42d-c4fd-4c77-bae7-78e7d890dc8d"
+* entry[=].resource = 6220b42d-c4fd-4c77-bae7-78e7d890dc8d
 * entry[+].fullUrl = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
 * entry[=].resource = 58c811a5-4082-44eb-9d66-ccbb112d4973
 * entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
@@ -53,8 +53,8 @@ Description: "Example of a care communication message."
 
 Instance: 256549f7-ed10-422d-8088-f7222b686e46
 InstanceOf: MedComCareCommunicationMessage
-Title: "MedCom Care Communication Reply Message Example"
-Description: "Example of a reply to a care communication message."
+Title: "MedCom CareCommunication - Reply Message Example"
+Description: "Example of a reply to a CareCommunication message."
 * type = $BundleType#message
 * timestamp = 2020-09-30T10:22:11Z
 * entry[+].fullUrl = "MessageHeader/b0d424f8-33a9-4cc2-a528-a6cc1c58727b"
@@ -65,8 +65,8 @@ Description: "Example of a reply to a care communication message."
 * entry[=].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
 * entry[+].fullUrl = "Communication/75fd6a1b-6af4-4b5c-a170-f70e95aa1e7a"
 * entry[=].resource = 75fd6a1b-6af4-4b5c-a170-f70e95aa1e7a
-* entry[+].fullUrl = "Encounter/09437365-821a-4a94-b32b-8916db1d5f62"
-* entry[=].resource = 09437365-821a-4a94-b32b-8916db1d5f62
+* entry[+].fullUrl = "Encounter/6220b42d-c4fd-4c77-bae7-78e7d890dc8d"
+* entry[=].resource = 6220b42d-c4fd-4c77-bae7-78e7d890dc8d
 * entry[+].fullUrl = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
 * entry[=].resource = 58c811a5-4082-44eb-9d66-ccbb112d4973
 * entry[+].fullUrl = "Practitioner/ad055a3d-16b6-41f9-891a-7dd73eecaf03"
@@ -82,8 +82,8 @@ Description: "Example of a reply to a care communication message."
 
 Instance: 40426e3e-978f-46e8-a366-a30f27854b0a
 InstanceOf: MedComCareCommunicationMessage
-Title: "MedCom Care Communication Forward Message Example"
-Description: "Example of a forward of a care communication message."
+Title: "MedCom CareCommunication - Forward Message Example"
+Description: "Example of a forward of a CareCommunication message."
 * type = $BundleType#message
 * timestamp = 2020-09-30T10:22:11Z
 * entry[+].fullUrl = "MessageHeader/d5bd2111-2576-48d3-84d4-8be0297a038d"
@@ -94,8 +94,8 @@ Description: "Example of a forward of a care communication message."
 * entry[=].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
 * entry[+].fullUrl = "Communication/4c712bdc-1558-4125-a854-fa8b3a11f6ed"
 * entry[=].resource = 4c712bdc-1558-4125-a854-fa8b3a11f6ed
-* entry[+].fullUrl = "Encounter/09437365-821a-4a94-b32b-8916db1d5f62"
-* entry[=].resource = 09437365-821a-4a94-b32b-8916db1d5f62
+* entry[+].fullUrl = "Encounter/6220b42d-c4fd-4c77-bae7-78e7d890dc8d"
+* entry[=].resource = 6220b42d-c4fd-4c77-bae7-78e7d890dc8d
 * entry[+].fullUrl = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
 * entry[=].resource = 58c811a5-4082-44eb-9d66-ccbb112d4973
 * entry[+].fullUrl = "Practitioner/ad055a3d-16b6-41f9-891a-7dd73eecaf03"
@@ -112,8 +112,8 @@ Description: "Example of a forward of a care communication message."
 // CareCommunication reply to hospital notification example
 Instance: 38712617-5762-446f-a2cc-e5bf8caa6807
 InstanceOf: MedComCareCommunicationMessage
-Title: "MedCom Care Communication Reply to Hospital Notification Message Example"
-Description: "Example of a reply to a hospital notification message."
+Title: "MedComCare Communication - Reply to HospitalNotification Message Example"
+Description: "Example of a reply to a HospitalNotification message."
 * type = $BundleType#message
 * timestamp = 2020-10-16T13:43:16Z
 * entry[+].fullUrl = "MessageHeader/aac67161-d0de-4933-a78c-060beafb4814"
@@ -124,8 +124,8 @@ Description: "Example of a reply to a hospital notification message."
 * entry[=].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
 * entry[+].fullUrl = "Communication/0f8cde6a-d369-4d94-a2ce-c2cc45fd75fb"
 * entry[=].resource = 0f8cde6a-d369-4d94-a2ce-c2cc45fd75fb
-* entry[+].fullUrl = "Encounter/09437365-821a-4a94-b32b-8916db1d5f62"
-* entry[=].resource = 09437365-821a-4a94-b32b-8916db1d5f62
+* entry[+].fullUrl = "Encounter/6220b42d-c4fd-4c77-bae7-78e7d890dc8d"
+* entry[=].resource = 6220b42d-c4fd-4c77-bae7-78e7d890dc8d
 * entry[+].fullUrl = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
 * entry[=].resource = 58c811a5-4082-44eb-9d66-ccbb112d4973
 * entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
@@ -141,7 +141,7 @@ Description: "Example of a reply to a hospital notification message."
 // CareCommunication reply to XDIS message
 Instance: bfdeea04-9bfd-4b31-baf8-57aa7546e2b4
 InstanceOf: MedComCareCommunicationMessage
-Title: "MedCom Care Communication Reply to XDIS Message Example"
+Title: "MedCom CareCommunication - Reply to XDIS Message Example"
 Description: "Example of a reply to an XDIS message."
 * type = $BundleType#message
 * timestamp = 2020-09-30T10:22:11Z
@@ -153,8 +153,8 @@ Description: "Example of a reply to an XDIS message."
 * entry[=].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
 * entry[+].fullUrl = "Communication/75fd6a1b-6af4-4b5c-a170-f70e95aa1e7a"
 * entry[=].resource = 75fd6a1b-6af4-4b5c-a170-f70e95aa1e7a
-* entry[+].fullUrl = "Encounter/09437365-821a-4a94-b32b-8916db1d5f62"
-* entry[=].resource = 09437365-821a-4a94-b32b-8916db1d5f62
+* entry[+].fullUrl = "Encounter/6220b42d-c4fd-4c77-bae7-78e7d890dc8d"
+* entry[=].resource = 6220b42d-c4fd-4c77-bae7-78e7d890dc8d
 * entry[+].fullUrl = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
 * entry[=].resource = 58c811a5-4082-44eb-9d66-ccbb112d4973
 * entry[+].fullUrl = "Practitioner/ad055a3d-16b6-41f9-891a-7dd73eecaf03"
