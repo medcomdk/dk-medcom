@@ -82,7 +82,7 @@ Description: "Content of care communication message. Valid only if used in a bun
 * status = $EventStatus#unknown
 * category = $CategoryCodes#carecoordination
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* encounter = Reference(09437365-821a-4a94-b32b-8916db1d5f62)
+* encounter = Reference(6220b42d-c4fd-4c77-bae7-78e7d890dc8d)
 * sent = 2020-09-28T12:34:56Z
 * payload.contentString = "The burns are quite severe"
 * payload.extension[date].valueDateTime = 2020-09-28
@@ -97,7 +97,7 @@ Usage: #inline
 * status = $EventStatus#unknown
 * category = $CategoryCodes#carecoordination
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* encounter = Reference(09437365-821a-4a94-b32b-8916db1d5f62)
+* encounter = Reference(6220b42d-c4fd-4c77-bae7-78e7d890dc8d)
 * sent = 2020-09-30T10:22:11Z
 * payload[0].contentString = "The burns are quite severe"
 * payload[0].extension[date].valueDateTime = 2020-09-28
@@ -115,7 +115,7 @@ Usage: #inline
 * status = $EventStatus#unknown
 * category = $CategoryCodes#carecoordination
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* encounter = Reference(09437365-821a-4a94-b32b-8916db1d5f62)
+* encounter = Reference(6220b42d-c4fd-4c77-bae7-78e7d890dc8d)
 * sent = 2020-09-30T10:22:11Z
 * payload[0].contentString = "The burns are quite severe"
 * payload[0].extension[date].valueDateTime = 2020-09-28
@@ -133,7 +133,7 @@ Usage: #inline
 * status = $EventStatus#unknown
 * category = $CategoryCodes#carecoordination
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* encounter = Reference(09437365-821a-4a94-b32b-8916db1d5f62)
+* encounter = Reference(6220b42d-c4fd-4c77-bae7-78e7d890dc8d)
 * sent = 2020-10-16T13:43:16Z
 * payload[0].contentString = "The patient is easily confused. Speaking loudly and slow reduced this."
 * payload[0].extension[date].valueDateTime = 2020-01-01
