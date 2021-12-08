@@ -137,7 +137,7 @@ Usage: #inline
 * payload[0].extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
 
 // CareCommunication with attachment example
-/* Instance: 487e2238-527b-11ec-bf63-0242ac130002
+Instance: 487e2238-527b-11ec-bf63-0242ac130002
 InstanceOf: MedComCareCommunication
 Title: "Example of Care Communication Content - new message with attachment"
 Description: "Content of care communication message. Valid only if used in a bundle (message) - new message with attachment"
@@ -147,14 +147,14 @@ Usage: #example
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * encounter = Reference(09437365-821a-4a94-b32b-8916db1d5f62)
 * sent = 2021-11-30T12:34:56Z
-* payload.contentString = "The burns are quite severe, see picture."
-* payload.extension[date].valueDateTime = 2021-11-30
-* payload.extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
-* payload.contentAttachment.contentType = $bcp13#application/pdf // the attachment is not included when generating the IG.
-* payload.contentAttachment.data = "UGljdHVyZSBvZiBhIGJ1cm4=" 
-* payload.extension[date].valueDateTime = 2021-11-29
-* payload.extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
-* payload.contentAttachment.title = "Picture of Patient's burn. Taken at arrival on 2021-11-29" */
+* payload[0].contentString = "The burns are quite severe, see picture."
+* payload[0].extension[date].valueDateTime = 2021-11-30
+* payload[0].extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
+* payload[1].contentAttachment.contentType = $bcp13#application/png 
+* payload[1].contentAttachment.data = "UGljdHVyZSBvZiBhIGJ1cm4=" 
+* payload[1].contentAttachment.title = "Picture of Patient's burn. Taken at arrival on 2021-11-29" 
+* payload[1].extension[date].valueDateTime = 2021-11-29
+* payload[1].extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
 
 // CareCommunication regarding referal example
 Instance: 4ec35384-527b-11ec-bf63-0242ac130002
