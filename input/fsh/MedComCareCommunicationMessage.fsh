@@ -6,21 +6,27 @@ Description: "Message for communication care related information between parties
 * obeys medcom-careCommunication-1
 * obeys medcom-careCommunication-2
 * obeys medcom-careCommunication-3
+* obeys medcom-careCommunication-4
 
 Invariant: medcom-careCommunication-1
-Description: "The message header shall conform to medcom-careCommunication-messageHeader profile"
+Description: "The MessageHeader shall conform to medcom-careCommunication-messageHeader profile"
 Severity: #error
 Expression: "entry.ofType(MessageHeader).all(resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-messageHeader'))"
 
 Invariant: medcom-careCommunication-2
-Description: "Entry shall contain exactly one patient resource"
+Description: "Entry shall contain exactly one Patient profile"
 Severity: #error
 Expression: "entry.where(resource.is(Patient)).count() = 1"
 
 Invariant: medcom-careCommunication-3
-Description: "All provenance resources shall contain activities from medcom-careCommunication-messagingActivities valueset"
+Description: "All Provenance profiles shall contain activities from medcom-careCommunication-messagingActivities valueset"
 Severity: #error
 Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('medcom-careCommunication-messagingActivities'))"
+
+Invariant: medcom-careCommunication-4
+Description: "The status in the Communication profile shall always be 'unknown'"
+Severity: #error
+Expression: "entry.ofType(Communication).status = 'unknown'"
 
 Alias: $BundleType = http://hl7.org/fhir/bundle-type
 Alias: $ActivityCode = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes
