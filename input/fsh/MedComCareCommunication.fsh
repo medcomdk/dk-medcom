@@ -161,6 +161,7 @@ Instance: 4ec35384-527b-11ec-bf63-0242ac130002
 InstanceOf: MedComCareCommunication
 Title: "Example of Care Communication Content - new message with priority"
 Description: "Content of care communication message. Valid only if used in a bundle (message) - new message  with priority"
+Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#regarding-referral
 * priority = $PriorityCode#asap
