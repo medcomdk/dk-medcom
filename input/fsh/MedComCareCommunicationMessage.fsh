@@ -15,12 +15,12 @@ Expression: "entry.resource.ofType(MessageHeader).all(resource.conformsTo('http:
 Invariant: medcom-careCommunication-2
 Description: "Entry shall contain exactly one patient resource"
 Severity: #error
-Expression: "entry.where(resource.is(Patient)).count() = 1"
+Expression: "entry.resource.ofType(Patient).count() = 1"
 
 Invariant: medcom-careCommunication-3
 Description: "All provenance resources shall contain activities from medcom-careCommunication-messagingActivities valueset"
 Severity: #error
-Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('medcom-careCommunication-messagingActivities'))"
+Expression: "entry.resource.ofType(Provenance).all(resource.activity.memberOf('medcom-careCommunication-messagingActivities'))"
 
 Alias: $BundleType = http://hl7.org/fhir/bundle-type
 Alias: $ActivityCode = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes
