@@ -1,10 +1,14 @@
 INFORMATION ON THIS PAGE IS DEPRECATED!!
-If you are looking after the Implementations guide for MedCom Standards please follow the following links: 
+If you are looking after the Implementations guide for MedCom FHIR Standards please follow the following links: 
 
 * [MedCom Core](https://build.fhir.org/ig/medcomdk/dk-medcom-core/ "MedCom Core")
 * [MedCom Messaging](https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/ "Medcom Messaging")
 * [MedCom HospitalNotification](https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/ "MedCom HospitalNotification")
+* [MedCom CareCommunication](https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/ "Medcom CareCommunication")
+* [MedCom Acknowledgement](https://build.fhir.org/ig/medcomdk/dk-medcom-acknowledgement/ "MedCom Acknowledgement")
 
+
+For any question regarding this site or the MedCom FHIR standards, please contact <a href="mailto:fhir@medcom.dk">fhir@medcom.dk</a>
 
 ### Introduction
 
